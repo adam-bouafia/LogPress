@@ -1,6 +1,6 @@
-# LogSim v1.0: Semantic Log Compression & Schema Extraction
+# LogSim : Semantic Log Compression & Schema Extraction
 
-**A queryable log compression system achieving 16.91x compression with automatic schema extraction and structured query support**
+**A queryable log compression system compression with automatic schema extraction and structured query support**
 
 ## Overview
 
