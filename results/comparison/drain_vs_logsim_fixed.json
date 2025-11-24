@@ -1,0 +1,23 @@
+{
+  "Apache": {
+    "drain": {
+      "dataset": "Apache",
+      "parser": "Drain",
+      "templates_found": 0,
+      "parse_time": 0.40571141242980957,
+      "logs_processed": 5000,
+      "configuration": {
+        "log_format": "<Content>",
+        "depth": 4,
+        "st": 0.5
+      }
+    },
+    "logsim": {
+      "dataset": "Apache",
+      "parser": "LogSim",
+      "templates_found": 15,
+      "parse_time": 0.12634038925170898,
+      "logs_processed": 5000
+    }
+  }
+}

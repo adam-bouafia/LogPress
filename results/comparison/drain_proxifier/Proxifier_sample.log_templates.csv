@@ -1,0 +1,14 @@
+EventId,EventTemplate,Occurrences
+99780eae,"<*> close, <*> bytes sent, <*> bytes received, lifetime <1 sec",469
+6383932e,"proxy.cse.cuhk.edu.hk:5070 close, <*> bytes <*> <*> <*> <*> <*> received, lifetime <1 sec",308
+302b2f17,<*> open through proxy <*> <*>,2475
+dff2fdce,"<*> close, <*> bytes sent, <*> bytes received, lifetime <*>",418
+e1c63b63,"proxy.cse.cuhk.edu.hk:5070 close, <*> bytes <*> KB) sent, <*> bytes <*> KB) received, lifetime <1 sec",211
+26f6e6d9,"<*> close, <*> bytes sent, <*> bytes <*> <*> received, lifetime <*>",162
+b115920d,"<*> close, <*> bytes <*> KB) sent, <*> bytes <*> <*> received, lifetime <*>",714
+915413a8,"<*> close, <*> bytes <*> KB) sent, <*> bytes received, lifetime <*>",149
+cb4cfc43,<*> error : A connection request was canceled before the completion.,25
+0ac0b4d8,<*> error : Could not connect through proxy proxy.cse.cuhk.edu.hk:5070 - Proxy closed the connection unexpectedly.,10
+da47298a,"<*> error : Could not connect through proxy proxy.cse.cuhk.edu.hk:5070 - Proxy server cannot establish a connection with the target, status code 403",22
+ca6d918b,"<*> close, <*> bytes sent, <*> bytes <*> KB) received, lifetime <1 sec",35
+076ff65d,"get.sogou.com:80 close, <*> bytes <*> KB) sent, <*> bytes received, lifetime <1 sec",2

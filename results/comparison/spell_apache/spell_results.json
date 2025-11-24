@@ -1,0 +1,9 @@
+{
+  "dataset": "Apache",
+  "total_logs": 5000,
+  "templates_found": 0,
+  "parse_time_seconds": 0.4801,
+  "throughput_logs_per_sec": 10414.93,
+  "templates": [],
+  "timestamp": "2025-11-23 23:59:36"
+}

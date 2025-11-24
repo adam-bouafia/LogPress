@@ -1,0 +1,60 @@
+{
+  "dataset": "Apache",
+  "created_at": "2025-11-23",
+  "annotations": [
+    {
+      "log_id": "apache_001",
+      "raw_text": "[Thu Jun 09 06:07:04 2005] [notice] LDAP: Built with OpenLDAP LDAP SDK",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "TIMESTAMP",
+          "start_pos": 1,
+          "end_pos": 25,
+          "value": "Thu Jun 09 06:07:04 2005"
+        },
+        {
+          "name": "severity",
+          "type": "SEVERITY",
+          "start_pos": 28,
+          "end_pos": 34,
+          "value": "notice"
+        },
+        {
+          "name": "message",
+          "type": "MESSAGE",
+          "start_pos": 36,
+          "end_pos": 71,
+          "value": "LDAP: Built with OpenLDAP LDAP SDK"
+        }
+      ]
+    },
+    {
+      "log_id": "apache_002",
+      "raw_text": "[Thu Jun 09 06:07:04 2005] [notice] LDAP: SSL support unavailable",
+      "fields": [
+        {
+          "name": "timestamp",
+          "type": "TIMESTAMP",
+          "start_pos": 1,
+          "end_pos": 25,
+          "value": "Thu Jun 09 06:07:04 2005"
+        },
+        {
+          "name": "severity",
+          "type": "SEVERITY",
+          "start_pos": 28,
+          "end_pos": 34,
+          "value": "notice"
+        },
+        {
+          "name": "message",
+          "type": "MESSAGE",
+          "start_pos": 36,
+          "end_pos": 64,
+          "value": "LDAP: SSL support unavailable"
+        }
+      ]
+    }
+  ]
+}

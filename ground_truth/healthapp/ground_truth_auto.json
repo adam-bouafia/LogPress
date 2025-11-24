@@ -1,0 +1,4021 @@
+{
+  "dataset": "HealthApp",
+  "total_logs": 212394,
+  "total_annotations": 500,
+  "templates": 1,
+  "method": "auto_generated",
+  "annotations": [
+    {
+      "log": "201812-7:0:10:478|Step_StandReportReceiver|30002312|REPORT : 755 539 16172 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:9:21:136|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=365438",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:56:46:890|Step_StandReportReceiver|30002312|REPORT : 1062 758 30881 30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:54:41:455|HiH_DataStatManager|30002312|new date =20171226, type=40021,15636.599999999999,old=7068.599999999999",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:31:48:566|Step_LSC|30002312|onStandStepChanged 7744",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:13:39:303|HiH_DataStatManager|30002312|new date =20171230, type=40044,60.0,old=60.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-12:5:37:336|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-23:21:27:458|Step_StandReportReceiver|30002312|onReceive action: android.intent.action.SCREEN_ON",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-8:10:41:376|HiH_HiSyncControl|30002312|ifCanSync not! no cloud version",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:52:0:514|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=202912",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-18:9:33:408|Step_StandReportReceiver|30002312|onReceive action: android.intent.action.SCREEN_ON",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-22:58:8:568|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=300",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:54:41:389|Step_FlushableStepDataCache|30002312|upLoadOneMinuteDataToEngine time=25237494,0,81,0,20002",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:37:21:492|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=267351",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-17:41:31:534|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=61038",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:53:39:543|HiH_HiSyncControl|30002312|needAutoSync autoSyncSwitch is open",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:21:34:368|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-20:26:54:887|Step_LSC|30002312|onStandStepChanged 11943",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-21:6:18:320|HiH_DataStatManager|30002312|new date =20180101, type=40041,6720.0,old=6120.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201813-8:37:11:752|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:12:23:307|Step_StandReportReceiver|30002312|REPORT : 4313 3079 111922 90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-22:25:8:682|Step_LSC|30002312|onStandStepChanged 10624",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:10:40:164|Step_StandReportReceiver|30002312|REPORT : 12361 8825 376104 510",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-20:46:32:434|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=221843",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-20:9:47:782|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=218092",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:43:59:216|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:25:4:8|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514215440000##14022##912275##76964##61450##114754412",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:54:34:172|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:2:28:524|Step_StandReportReceiver|30002312|REPORT : 8660 6183 185497 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:22:5:401|Step_StandReportReceiver|30002312|REPORT : 7632 5449 285123 570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:34:48:31|Step_StandReportReceiver|30002312|REPORT : 3752 2678 116495 180",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-23:48:12:441|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514130420000##16920##767037##45591##57350##29743508",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:5:48:157|Step_LSC|30002312|onStandStepChanged 3753",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-21:23:7:823|HiH_DataStatManager|30002312|new date =20171225, type=40004,7831.866,old=7784.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-20:15:40:491|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=480",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-11:39:11:549|Step_StandStepCounter|30002312|flush sensor data",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-12:13:31:703|Step_LSC|30002312|onStandStepChanged 1769",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-20:14:39:466|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514722380000##10474##62325##31610##10363##36523133",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:58:6:614|HiH_HiSyncControl|30002312|ifCanSync not! no cloud version",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-14:16:45:477|HiH_HiSyncControl|30002312|startInsertSportSync first 500 steps sync,do all sync",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:1:48:530|HiH_HiHealthBinder|30002312|insertHiHealthData() checkAppType  0 appID = 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-18:23:18:441|HiH_DataStatManager|30002312|new date =20180102, type=40022,3641.399999999999,old=3641.399999999999",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:54:58:156|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514249580000##864##950840##77229##62451##21503104",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-17:51:19:978|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514713800000##9510##46438##31610##10265##27923645",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-20:35:6:690|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=270",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:33:21:339|Step_LSC|30002312|onStandStepChanged 21641",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:29:27:139|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-20:15:30:467|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514722440000##10559##70995##31610##10363##36574134",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-21:6:18:338|HiH_HiSyncControl|30002312|startInsertSportSync start auto sync,app is 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:25:6:882|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514643840000##7974##1546047##84671##106890##85726323",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:53:14:672|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514249520000##656##926064##77229##62451##21399620",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-17:51:38:227|Step_StandReportReceiver|30002312|REPORT : 4706 3360 161439 300",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-12:58:7:781|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=105193",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:24:52:378|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514643780000##7948##1543230##84671##106890##85712321",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:29:23:840|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514525280000##2275##1267831##83501##100712##297168796",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:51:52:285|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514112600000##9819##589646##8661##22394##11962359",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:10:18:941|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=176366",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-3:25:27:561|Step_LSC|30002312|onStandStepChanged 3786",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-21:41:42:566|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=120684",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:53:44:295|HiH_HiAppUtil|30002312|getBinderPackageName packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:29:28:222|HiH_HiHealthBinder|30002312|insertHiHealthData() checkAppType  0 appID = 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-17:7:1:810|HiH_HiAppUtil|30002312|getBinderPackageName packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-22:31:21:982|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514125800000##16337##754775##31825##54384##25133049",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:31:3:845|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514525400000##2399##1276156##83501##100712##297268801",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:45:30:329|Step_StandReportReceiver|30002312|REPORT : 4204 3001 138089 240",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-10:13:55:391|HiH_HiSyncControl|30002312|startSync hiSyncOption = HiSyncOption{syncAction=2, syncMethod=2, syncScope=0, syncDataType=20000, syncModel=2, pushAction=0},app = 1 who = 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-11:0:59:123|HiH_HiAppUtil|30002312|getBinderPackageName packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:54:56:419|Step_StandStepCounter|30002312|flush sensor data",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-0:26:12:461|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514737500000##16##92787##31610##18631##51607135",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:18:4:753|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=179002",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-11:49:40:96|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514778480000##518##93533##31610##18631##92623265",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:12:32:844|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514117460000##11562##659532##8661##25953##16802911",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:13:11:442|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=150",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:11:35:170|Step_StandReportReceiver|30002312|REPORT : 12483 8912 381330 510",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-7:0:13:238|Step_StandReportReceiver|30002312|REPORT : 773 551 16557 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:28:48:512|Step_LSC|30002312|onStandStepChanged 8578",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171223-22:15:52:674|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=240",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-21:26:35:524|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514292540000##4583##1029349##77229##64555##64448819",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-15:44:29:990|Step_StandReportReceiver|30002312|REPORT : 5083 3582 107485 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-19:3:8:68|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514890920000##14357##321162##32208##29341##205031793",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-9:56:13:340|HiH_HiAppUtil|30002312|getBinderPackageName packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-22:6:34:712|Step_LSC|30002312|onStandStepChanged 23676",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-11:51:12:29|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=37219",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-20:52:28:348|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:37:24:980|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514633760000##6808##1475504##84671##106890##75664271",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:6:3:480|Step_StandReportReceiver|30002312|REPORT : 8797 6281 188431 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-12:50:31:331|Step_LSC|30002312|timeStamp back,extendReportTimeStamp=1514089730000",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-18:29:54:94|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514284080000##4186##1008175##77229##62451##55998540",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-17:54:55:584|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=133872",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:25:32:510|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514215440000##14079##914783##76964##61450##114782913",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:49:9:983|Step_LSC|30002312|onStandStepChanged 4582",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-12:12:59:380|HiH_HiHealthDataInsertStore|30002312|bulkSaveDetailHiHealthData() size = 4,totalTime = 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:52:11:476|Step_StandReportReceiver|30002312|REPORT : 4883 3486 104593 180",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-18:15:40:803|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514542440000##2770##1294876##83501##100712##314345446",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:20:2:641|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=182557",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-10:16:16:978|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=33086",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-6:57:21:960|Step_StandReportReceiver|30002312|REPORT : 669 477 14329 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-20:26:19:329|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514204700000##8981##837119##45591##60231##104030001",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-19:54:13:661|Step_LSC|30002312|onStandStepChanged 11469",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-21:28:30:994|HiH_HiSyncControl|30002312|stepSyncOrNot appSynTimes is 0, statsyncTimes is 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-10:30:46:406|Step_StandReportReceiver|30002312|REPORT : 233 166 4990 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-14:51:43:528|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=390",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-10:11:38:194|Step_StandReportReceiver|30002312|REPORT : 206 82 2484 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:23:53:613|HiH_DataStatManager|30002312|new date =20171230, type=40031,2194.8360000000002,old=2051.3219999999997",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-20:36:54:744|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514378100000##7375##1143301##77229##72726##150019676",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-18:31:31:509|HiH_HiSyncControl|30002312|initDataPrivacy the dataPrivacy switch is open, start push health data!",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-21:31:49:777|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=307220",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:49:0:705|HiH_HiAppUtil|30002312|getBinderPackageName packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:37:24:262|HiH_HiHealthDataInsertStore|30002312|bulkSaveDetailHiHealthData() size = 12,totalTime = 33",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:26:39:434|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514852700000##3405##222248##31610##27490##166842598",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:9:27:822|Step_LSC|30002312|onStandStepChanged 24051",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-19:7:17:539|Step_LSC|30002312|onStandStepChanged 29242",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-23:22:38:630|Step_LSC|30002312|onStandStepChanged 18999",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-8:52:16:774|Step_LSC|30002312|getTodaySportData mStepsRecordManager=com.huawei.health.g.c@d978c46",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-14:49:29:807|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=390",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:12:50:970|Step_LSC|30002312|onStandStepChanged 17272",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-17:56:22:996|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514714100000##9628##48704##31610##10265##28225661",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:0:53:685|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514685540000##3160##10722##15022##1987##127472856",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:42:49:854|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514900460000##15726##344575##32208##29341##7436584",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-13:31:41:369|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514784540000##651##93669##31610##18631##98677764",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-19:20:38:561|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=210",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:23:49:11|HiH_HiAppUtil|30002312|getBinderPackageName packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:37:30:414|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514853360000##3511##225276##31610##27490##167494081",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-14:48:17:654|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514702820000##7417##40168##31610##10265##16941009",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-14:59:22:42|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=323297",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:23:33:857|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514643720000##7800##1527992##84671##106890##85633299",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-21:47:50:761|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514382360000##7391##1143631##77229##73095##154275369",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:38:28:380|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=52512",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-8:31:10:465|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=342",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-12:57:58:382|HiH_HiSyncControl|30002312|stepSyncOrNot appSynTimes is 0, statsyncTimes is 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:0:49:88|Step_LSC|30002312|onStandStepChanged 16383",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-18:27:55:306|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514196900000##6127##790093##45591##57350##96249537",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:20:44:511|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514215140000##13695##891795##76964##61450##114494422",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-8:36:27:8|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514507700000##408##1203707##83501##91877##279591964",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-17:52:32:43|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=131024",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-11:50:16:331|Step_StandStepCounter|30002312|flush sensor data",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-21:51:25:254|HiH_HiHealthBinder|30002312|insertHiHealthData() size = 4,app = 1,One Data Type = 40002,packageName = com.huawei.health,writeStatType = 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-12:20:51:373|HiH_DataStatManager|30002312|new date =20171226, type=40002,2100.0,old=2337.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-12:15:57:441|HiH_HiSyncControl|30002312|initUserPrivacy the userPrivacy switch is open, start push user data!",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-21:26:30:77|Step_LSC|30002312|onStandStepChanged 22902",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:46:39:565|Step_LSC|30002312|onStandStepChanged 18201",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:31:59:633|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514111400000##9244##576314##8661##16256##10770203",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-8:51:3:441|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514335800000##436##1078945##77229##71899##107668388",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:32:53:591|Step_LSC|30002312|onStandStepChanged 283",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:32:3:217|Step_StandReportReceiver|30002312|REPORT : 2496 1782 65019 60",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:15:10:100|HiH_HiSyncControl|30002312|startSync hiSyncOption = HiSyncOption{syncAction=2, syncMethod=2, syncScope=0, syncDataType=20000, syncModel=2, pushAction=0},app = 1 who = 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-17:44:32:250|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=152467",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:8:47:478|Step_StandReportReceiver|30002312|REPORT : 11118 7938 238147 210",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-18:56:37:951|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=98752",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-11:50:7:791|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:22:8:856|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514643660000##7638##1509520##84671##106890##85548303",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:18:14:575|HiH_DataStatManager|30002312|new date =20171231, type=40042,360.0,old=360.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:22:33:16|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514215260000##13814##898343##76964##61450##114603419",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:26:24:113|Step_LSC|30002312|onStandStepChanged 1867",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:55:42:223|Step_StandReportReceiver|30002312|REPORT : 17856 12749 382475 270",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:49:0:808|HiH_HiSyncControl|30002312|startInsertSportSync first 500 steps sync,do all sync",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:29:15:692|HiH_HiSyncControl|30002312|initDataPrivacy the dataPrivacy switch is open, start push health data!",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:5:46:283|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514297040000##4962##1054987##77229##64555##68950725",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-21:2:52:916|Step_StandReportReceiver|30002312|REPORT : 10153 7249 289373 360",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:15:19:549|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=120959",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-13:11:46:764|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514437800000##3082##1154320##77229##73641##209711195",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-19:6:33:97|Step_StandReportReceiver|30002312|REPORT : 6812 4863 176090 150",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-18:53:26:878|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514458320000##3654##1174599##77229##76569##230211312",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:13:39:104|Step_FlushableStepDataCache|30002312|upLoadOneMinuteDataToEngine time=25243452,0,44,0,20002",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:23:19:405|Step_StandReportReceiver|30002312|REPORT : 7773 5549 288142 570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:53:45:217|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=120",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-20:2:54:927|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514808060000##5827##123741##31610##19177##122218594",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:13:24:849|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514117520000##11671##671088##8661##25953##16855915",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:6:12:280|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514297100000##5014##1059838##77229##64555##68976726",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-20:17:13:493|Step_StandReportReceiver|30002312|REPORT : 10753 7677 271170 480",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-13:2:0:99|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.TIME_TICK",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-13:17:22:418|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514438160000##3541##1174449##77229##75129##210047350",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-17:16:18:780|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=450",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-13:16:57:999|Step_StandReportReceiver|30002312|REPORT : 3192 2279 89328 90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:56:40:0|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514854500000##3838##232153##31610##27490##168643160",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-13:3:21:170|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-20:33:52:617|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.SCREEN_ON",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-19:3:31:569|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514890920000##14394##324762##32208##29341##205054292",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-19:14:44:647|Step_StandReportReceiver|30002312|REPORT : 7308 5217 186712 150",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-19:4:10:774|HiH_|30002312|initUserPrivacy the userPrivacy is true",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-10:13:23:35|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514599920000##402##1348561##84671##101048##41822978",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:34:19:693|HiH_HiHealthBinder|30002312|insertHiHealthData() end totalTime = 41",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:18:3:729|Step_StandReportReceiver|30002312|REPORT : 7192 5135 275700 570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-19:2:57:311|HiH_DataStatManager|30002312|new date =20180102, type=40003,441325.0,old=434460.9599999998",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-15:24:1:11|HiH_HiHealthDataInsertStore|30002312|bulkSaveDetailHiHealthData() size = 24,totalTime = 17",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-12:22:10:175|Step_LSC|30002312|onStandStepChanged 20096",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-18:1:27:900|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514714400000##9872##50500##31610##10363##28531567",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:26:1:914|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514643900000##8076##1551712##84671##106890##85781857",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:30:41:490|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=172381",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-9:10:57:430|HiH_DataStatManager|30002312|new date =20171228, type=40004,507.6539999999999,old=308.4479999999999",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-11:55:0:63|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.TIME_TICK",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-7:53:47:194|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514418720000##0##1143631##77229##73095##190631813",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:11:14:674|Step_StandReportReceiver|30002312|REPORT : 12448 8887 379831 510",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:42:6:631|HiH_DataStatManager|30002312|new date =20180102, type=40013,1307.0,old=1307.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-11:36:24:514|Step_LSC|30002312|onStandStepChanged 19427",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-21:36:53:527|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514554500000##4266##1340087##83501##101048##326415576",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-19:54:4:652|Step_LSC|30002312|onStandStepChanged 11457",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:14:44:366|HiH_HiHealthDataInsertStore|30002312|saveHealthDetailData() saveOneDetailData fail hiHealthData = 1514044800000,type = 40003",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:15:31:227|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514628840000##4915##1416406##84671##102904##70750671",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-17:53:4:23|Step_StandReportReceiver|30002312|REPORT : 9573 6835 239004 450",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:41:36:442|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=64960",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:26:33:418|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514607900000##1876##1361112##84671##101811##49812861",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201813-9:8:36:469|Step_StandReportReceiver|30002312|REPORT : 946 675 33495 30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-12:21:57:997|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:11:56:448|HiH_DataStatManager|30002312|new date =20180102, type=40021,299344.49999999994,old=299344.49999999994",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:15:41:145|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514117640000##11946##682153##8661##25953##16991712",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-11:50:45:458|HiH_HiHealthDataInsertStore|30002312|bulkSaveDetailHiHealthData() size = 20,totalTime = 8",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-17:4:35:316|Step_FlushableStepDataCache|30002312|upLoadOneMinuteDataToEngine time=25235089,0,102,0,20002",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:33:41:337|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=840",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-18:35:19:537|Step_StandReportReceiver|30002312|REPORT : 4567 3260 144104 210",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-6:59:30:957|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=15588",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171223-22:17:54:849|Step_LSC|30002312|onStandStepChanged 3676",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-23:45:50:356|Step_StandReportReceiver|30002312|onReceive action: android.intent.action.SCREEN_ON",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:1:48:927|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=510",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-22:24:58:21|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=420",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:54:11:672|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=24713",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:37:27:508|Step_StandReportReceiver|30002312|REPORT : 6812 4863 267565 570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:12:57:678|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514607060000##1539##1351512##84671##101811##48997621",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-19:13:15:832|Step_FlushableStepDataCache|30002312|upLoadOneMinuteDataToEngine time=25236673,0,49,0,20002",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-18:40:55:523|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=153424",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:10:42:181|Step_StandReportReceiver|30002312|REPORT : 12368 8830 376404 510",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-6:30:12:453|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:53:1:183|Step_StandReportReceiver|30002312|REPORT : 632 451 21672 30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:10:55:443|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=177930",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-20:36:0:479|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514896440000##15350##342114##32208##29341##3420704",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-12:15:46:277|HiH_DataStatManager|30002312|new date =20171226, type=40011,1647.0,old=1562.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:30:21:159|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=236799",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-21:54:13:758|Step_LSC|30002312|onStandStepChanged 9628",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-3:24:21:862|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514056980000##0##549659##8661##16256##45706181",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-21:54:29:58|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514123580000##14672##735759##31825##33271##22919630",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-19:14:51:456|HiH_HiSyncControl|30002312|initDataPrivacy the dataPrivacy switch is open, start push health data!",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-14:58:6:710|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=97963",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:13:33:335|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514851920000##2265##188903##31610##26503##166056502",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-8:29:37:435|Step_StandStepCounter|30002312|flush sensor data",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:11:56:365|HiH_HiHealthBinder|30002312|insertHiHealthData() end totalTime = 43",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-12:33:56:543|Step_StandReportReceiver|30002312|onReceive action: android.intent.action.SCREEN_OFF",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-11:28:54:529|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-13:53:14:933|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514785920000##651##93669##31610##18631##100038600",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-22:33:33:982|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514125920000##16611##764913##42495##54384##25264548",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:3:34:270|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514296920000##4706##1030869##77229##64555##68818714",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-17:55:1:556|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514195640000##5414##773642##45591##57350##94952122",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-18:52:59:544|HiH_HiHealthBinder|30002312|aggregateHiHealthData aggregateOption is HiAggregateOption{startTime=1512230400000, endTime=1514908799999, type=[2004, 2001], alignType=0, aggregateType=1, groupUnitType=0}",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-18:28:32:40|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=660",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-21:52:52:475|Step_LSC|30002312|onStandStepChanged 14658",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-19:0:26:510|Step_FlushableStepDataCache|30002312|InsertCallBack() onSuccess  type = 0 data=true",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-12:13:35:13|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=59606",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-0:5:59:848|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514217840000##0##922040##76964##62451##117210251",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-20:52:6:356|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-21:51:49:44|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=282475",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-9:59:0:369|HiH_HiSyncControl|30002312|needAutoSync autoSyncSwitch is open",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-17:52:45:547|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=131795",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-22:2:10:638|Step_LSC|30002312|onStandStepChanged 8305",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-8:53:1:556|Step_StandReportReceiver|30002312|onReceive action: android.intent.action.SCREEN_OFF",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-23:46:6:101|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=458441",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:52:41:287|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514112660000##9900##597581##8661##22394##12011861",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-11:37:23:375|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514864100000##4769##237394##32208##27809##178241382",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:49:0:681|HiH_DataStatManager|30002312|new date =20171231, type=40002,4624.0,old=4238.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:31:45:794|HiH_HiSyncUtil|30002312|checkFirstSyncByType no such data in db ,type is 1 deviceCode is 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-18:31:46:672|Step_LSC|30002312|onStandStepChanged 6730",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-21:51:32:577|Step_StandReportReceiver|30002312|REPORT : 14344 10241 307248 360",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-22:46:50:440|Step_LSC|30002312|onStandStepChanged 11903",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-9:6:34:263|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=150714",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-12:38:30:468|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.TIME_TICK",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:28:30:828|Step_StandReportReceiver|30002312|REPORT : 23240 16593 497800 810",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-15:54:2:835|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514879520000##11924##279342##32208##29341##193651486",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-12:21:50:837|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:54:41:466|Step_FlushableStepDataCache|30002312|InsertEvent success begin:25237474 end:25237494",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:53:8:674|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:19:7:233|HiH_DataStatManager|30002312|new date =20171225, type=40002,13540.0,old=13248.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:49:40:486|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=192628",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-19:9:44:563|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514545680000##3558##1336495##83501##100712##317588783",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:47:49:834|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=58848",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-20:47:52:513|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514897160000##15350##342114##32208##29341##4139243",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:24:35:122|Step_LSC|30002312|onStandStepChanged 17831",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-12:16:50:514|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:35:15:16|Step_StandReportReceiver|30002312|REPORT : 3802 2714 117566 180",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:30:49:580|Step_LSC|30002312|uploadStaticsToDB() onResult  type = 4 obj=true",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:13:37:361|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=150",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:46:31:854|Step_StandReportReceiver|30002312|REPORT : 2060 1470 56171 60",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:24:11:569|Step_LSC|30002312|onStandStepChanged 7872",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:36:28:984|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514633700000##6707##1466860##84671##106890##75608927",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:59:2:773|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=510",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-16:57:13:569|Step_LSC|30002312|onStandStepChanged 21769",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-18:58:36:788|Step_StandReportReceiver|30002312|REPORT : 4089 2919 107126 90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:2:1:487|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514685660000##3310##10722##23114##1987##127540658",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-8:27:45:316|Step_StandReportReceiver|30002312|REPORT : 916 654 19620 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-17:55:58:257|Step_LSC|30002312|onStandStepChanged 17427",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-19:9:39:865|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514545680000##3485##1336495##83501##100712##317584820",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-19:54:32:477|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514375580000##6017##1099189##77229##72294##147477409",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-9:1:58:371|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-20:40:18:472|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514205540000##9775##848746##45591##60231##104868646",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-8:9:53:376|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-18:24:49:383|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514542980000##3012##1300890##83501##100712##314894339",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:10:8:443|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=210",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:47:46:818|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514609160000##2179##1368935##84671##101811##51085262",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-6:39:23:464|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514846280000##237##140698##31610##19177##160407131",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-20:32:20:732|Step_StandReportReceiver|30002312|REPORT : 7056 5037 189061 180",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:19:4:717|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=277991",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:11:33:828|Step_LSC|30002312|onStandStepChanged 24384",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-20:0:1:281|Step_FlushableStepDataCache|30002312|upLoadOneMinuteDataToEngine time=25248220,0,96,30,20004",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-18:26:37:41|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=425393",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-4:14:37:572|Step_LSC|30002312|onStandStepChanged 3786",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201813-9:8:28:315|HiH_HiSyncControl|30002312|startInsertSportSync first 500 steps sync,do all sync",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:59:20:489|Step_LSC|30002312|onStandStepChanged 5489",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:51:40:795|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-8:15:27:804|Step_LSC|30002312|onStandStepChanged 8449",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-7:7:9:420|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=34292",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-20:0:1:649|HiH_HiSyncControl|30002312|stepSyncOrNot appSynTimes is 0, statsyncTimes is 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:28:34:601|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514644020000##8366##1567133##84671##106890##85934054",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-12:29:32:221|Step_LSC|30002312|onStandStepChanged 20717",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-19:54:18:485|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=160104",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:26:32:574|Step_StandReportReceiver|30002312|onReceive action: android.intent.action.SCREEN_ON",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:12:56:542|Step_LSC|30002312|onStandStepChanged 6599",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-9:4:3:624|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=150072",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-11:5:34:176|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=60",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-23:45:37:416|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514389440000##7425##1143631##77229##73095##161342348",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-18:51:9:677|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514198940000##6769##790489##45591##57350##98270329",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:55:0:155|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514249580000##866##951084##77229##62451##21504103",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-13:15:21:445|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=84507",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-17:54:55:595|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:29:53:172|Step_LSC|30002312|onStandStepChanged 5293",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-18:11:15:62|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=93505",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:15:4:910|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=48637",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:18:54:645|Step_LSC|30002312|onStandStepChanged 538",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:19:25:489|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514215080000##13569##884286##76964##61450##114415397",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:56:12:934|Step_LSC|30002312|onStandStepChanged 5266",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:32:26:252|HiH_HiHealthBinder|30002312|getAppContext() isAppValid health or wear, packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-0:27:29:316|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.TIME_TICK",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-19:27:53:679|Step_StandReportReceiver|30002312|REPORT : 4802 3428 108067 30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-20:32:22:704|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514377860000##7060##1140287##77229##72294##149747637",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-9:30:38:520|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-18:2:45:581|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=253398",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-21:54:7:575|Step_StandReportReceiver|30002312|REPORT : 14634 10448 313460 390",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-8:9:36:818|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-18:58:49:329|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-3:47:53:561|Step_LSC|30002312|onStandStepChanged 3786",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-18:34:47:138|Step_LSC|30002312|onStandStepChanged 10270",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-11:22:21:840|HiH_HiSyncControl|30002312|ifCanSync not! no cloud version",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:46:0:327|Step_StandReportReceiver|30002312|REPORT : 4252 3035 151718 300",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-9:0:43:600|Step_LSC|30002312|onStandStepChanged 13342",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:26:29:949|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=115540",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-12:22:0:182|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514262060000##2448##997830##77229##62451##33925129",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-20:0:42:311|HiH_HiSyncControl|30002312|stepSyncOrNot appSynTimes is 0, statsyncTimes is 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-22:26:40:990|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514125500000##15754##751105##31825##40486##24851554",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-22:6:31:713|Step_LSC|30002312|onStandStepChanged 23663",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:27:28:631|Step_LSC|30002312|onStandStepChanged 21076",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-18:31:57:641|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=120",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:25:28:924|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514852640000##3270##210553##31610##27490##166772591",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-12:13:25:479|Step_LSC|30002312|onStandStepChanged 20047",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-12:25:28:997|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=60",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-22:33:35:713|HiH_HiSyncControl|30002312|needAutoSync autoSyncSwitch is open",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-14:19:42:812|HiH_DataStatManager|30002312|new date =20180102, type=40004,6525.960000000001,old=6525.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-13:37:49:526|Step_FlushableStepDataCache|30002312|InsertEvent success begin:25236252 end:25236255",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:23:51:553|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=510",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-10:13:23:31|HiH_HiHealthDataInsertStore|30002312|saveRealTimeHealthDatasStat() size = 1,totalTime = 11",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:22:53:861|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514643660000##7724##1519480##84671##106890##85591299",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-22:30:26:429|HiH_HiHealthDataInsertStore|30002312|saveRealTimeHealthDatasStat() size = 1,totalTime = 24",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:42:6:702|HiH_HiSyncControl|30002312|initDataPrivacy the dataPrivacy switch is open, start push health data!",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-17:36:38:215|Step_OneMinuteStepData|30002312|checkLocalDataValue false",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-13:41:39:834|Step_LSC|30002312|onStandStepChanged 21939",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-23:39:0:86|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.TIME_TICK",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:19:3:219|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=277927",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-20:17:32:449|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514808960000##5995##135084##31610##19177##123096116",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:28:35:24|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=156995",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:58:25:554|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=150",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-13:14:33:938|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=60",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:35:23:703|Step_LSC|30002312|onStandStepChanged 3815",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:56:39:493|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514854500000##3838##232153##31610##27490##168643160",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:12:45:768|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=381930",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-9:10:10:384|HiH_ListenerManager|30002312|startListenerChange subscribeList = [1]",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-14:19:42:757|HiH_HiHealthDataInsertStore|30002312|saveHealthDetailData() saveOneDetailData fail hiHealthData = 1514822400000,type = 40005",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-17:12:25:506|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514106660000##7273##570164##8661##16256##5996587",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-19:17:40:992|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514200560000##7589##827215##45591##57350##99911743",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:31:49:869|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514118600000##12762##711441##8661##33271##17960437",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:31:46:829|Step_StandReportReceiver|30002312|REPORT : 23552 16816 504483 840",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-10:43:3:256|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:10:39:227|HiH_HiHealthBinder|30002312|insertHiHealthData() checkAppType  0 appID = 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-9:25:47:446|HiH_HiHealthDataInsertStore|30002312|saveRealTimeHealthDatasStat() size = 1,totalTime = 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:53:13:806|Step_StandReportReceiver|30002312|REPORT : 9950 7104 213128 120",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201813-8:35:29:131|Step_LSC|30002312|onStandStepChanged 9235",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:2:1:996|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=145414",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-12:13:25:878|Step_LSC|30002312|onStandStepChanged 1593",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:14:48:174|Step_LSC|30002312|onStandStepChanged 6822",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-22:36:0:281|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=138536",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-6:40:26:8|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-17:50:17:733|Step_StandReportReceiver|30002312|REPORT : 4568 3261 158483 300",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-20:1:12:671|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=360",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:29:19:104|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514644080000##8453##1575002##84671##106890##85978543",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:22:33:856|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514643660000##7690##1515400##84671##106890##85573301",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:16:11:506|HiH_HiSyncControl|30002312|checkInsertStatus stepStatSum or calorieStatSum is enough",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-21:55:36:224|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=152865",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-20:16:27:966|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514722500000##10662##81573##31610##10363##36631633",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-18:24:48:425|Step_StandReportReceiver|30002312|REPORT : 3010 2149 81189 90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:5:2:478|Step_LSC|30002312|onStandStepChanged 4849",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-14:16:14:838|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514873700000##8830##247728##32208##29189##187818563",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:21:35:907|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-13:57:23:480|HiH_HiHealthBinder|30002312|insertHiHealthData() size = 20,app = 1,One Data Type = 2,packageName = com.huawei.health,writeStatType = 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-18:21:1:413|HiH_HiAppUtil|30002312|getBinderPackageName packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-20:35:15:960|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514205240000##9436##841366##45591##60231##104566633",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:29:32:545|Step_LSC|30002312|onStandStepChanged 21290",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-13:46:28:261|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=112822",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201813-0:11:53:100|Step_LSC|30002312|onStandStepChanged 9010",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:20:15:700|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=180",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:29:7:585|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-21:8:28:379|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514552520000##4266##1340087##83501##101048##324441826",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:53:44:117|Step_LSC|30002312|onStandStepChanged 5450",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:59:49:990|Step_LSC|30002312|onStandStepChanged 5545",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-18:30:57:114|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=120",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-18:26:27:529|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=425029",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171223-23:14:46:928|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=131079",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:17:54:425|Step_LSC|30002312|onStandStepChanged 5172",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-9:9:56:592|Step_StandReportReceiver|30002312|onReceive action: android.intent.action.SCREEN_OFF",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:52:30:791|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514112660000##9883##595898##8661##22394##12000864",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:8:38:754|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=360",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:28:49:329|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=443275",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:54:37:676|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=25827",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-17:38:11:651|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=59540",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-17:56:22:16|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=450",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-13:58:26:501|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=420",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-6:39:58:505|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=6702",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:18:31:228|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514629020000##5234##1445446##84671##102904##70930671",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-6:39:22:965|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514846280000##236##140595##31610##19177##160406632",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-8:38:51:370|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=9249",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-15:51:58:952|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=381173",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:14:23:199|Step_LSC|30002312|onStandStepChanged 17462",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:38:35:539|Step_StandReportReceiver|30002312|REPORT : 4659 3326 122030 90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:10:15:424|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514117340000##11294##637919##8661##25953##16666490",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:37:23:480|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=260616",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:25:25:509|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514215440000##14067##914099##76964##61450##114775913",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:22:9:111|HiH_DataStatManager|30002312|new date =20180102, type=40041,13200.0,old=13200.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:44:9:796|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514616180000##4165##1384701##84671##101896##58069244",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:25:11:900|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=292682",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-19:13:42:121|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=184356",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-22:32:11:324|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514903460000##23583##362266##87715##56974##10397559",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-18:58:35:555|Step_StandReportReceiver|30002312|REPORT : 10415 7436 223089 150",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-7:53:46:881|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514418720000##0##1143631##77229##73095##190631813",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-15:50:18:712|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514879340000##11671##269661##32208##29341##193462111",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-18:21:35:281|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514715600000##10062##55355##31610##10363##29738948",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-19:13:31:667|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=150",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-17:55:39:573|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=135714",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-20:0:53:383|Step_StandReportReceiver|30002312|REPORT : 15162 10825 324770 30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-15:24:1:17|HiH_DataStatManager|30002312|new date =20180101, type=40041,1800.0,old=1500.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:15:50:953|Step_LSC|30002312|Alarm uploadStaticsToDB totalSteps=4950Calories:173842Floor:330Distance:3533",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-12:7:39:200|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.TIME_TICK",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-19:5:2:368|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514891040000##14549##334140##32208##29341##205145592",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-8:36:5:510|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514507700000##364##1198934##83501##91877##279570465",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-9:11:1:641|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514509800000##1013##1214917##83501##91877##281666097",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-19:57:51:391|Step_StandReportReceiver|30002312|onReceive action: android.intent.action.SCREEN_ON",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:20:7:437|HiH_ListenerManager|30002312|startListenerChange subscribeList = [1]",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:37:25:965|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514118960000##13360##712051##23965##33271##18297031",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-10:59:7:410|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=38361",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-10:19:50:139|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=58108",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:56:51:942|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514213700000##13367##880111##76964##61450##113062346",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-19:12:28:773|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514459460000##4323##1185861##81989##76569##231353229",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-22:32:21:73|Step_StandReportReceiver|30002312|REPORT : 8803 6285 310201 570",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:19:31:128|Step_LSC|30002312|onStandStepChanged 5301",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-23:15:0:30|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.SCREEN_ON",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:17:25:336|HiH_HiHealthDataInsertStore|30002312|saveStatData() type =40004,time = 1514822400000,statClient = 2,who is 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-19:0:59:554|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514890740000##14122##303430##32208##29341##204902780",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-15:27:9:427|HiH_HiSyncControl|30002312|startInsertSportSync first 500 steps sync,do all sync",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-19:20:32:372|Step_LSC|30002312|onStandStepChanged 5930",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-7:0:36:444|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514847540000##821##165677##31610##19177##161680111",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-14:16:0:287|HiH_HiHealthBinder|30002312|insertHiHealthData() checkAppType  0 appID = 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-17:53:2:489|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514713920000##9568##48648##31610##10265##28026156",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-21:49:55:372|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=271889",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:19:49:9|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514215080000##13609##885619##76964##61450##114438912",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-22:10:2:650|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=371649",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-13:9:56:510|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=90",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-11:43:33:920|Step_LSC|30002312|onStandStepChanged 4688",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:26:37:433|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514852700000##3402##221909##31610##27490##166841100",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-19:38:12:687|Step_LSC|30002312|onStandStepChanged 6858",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-20:34:32:6|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=254437",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-18:16:35:516|HiH_DataStatManager|30002312|new date =20171230, type=40024,79200.0,old=79200.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-7:6:17:599|Step_StandReportReceiver|30002312|REPORT : 936 668 20049 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:44:7:386|HiH_|30002312|initDataPrivacy the dataPrivacy is true",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-18:13:0:107|Step_LSC|30002312|processHandleBroadcastAction action:android.intent.action.TIME_TICK",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-17:46:48:722|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=156793",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-19:2:57:466|HiH_DataStatManager|30002312|new date =20180102, type=40024,158400.0,old=158400.0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-18:26:54:853|Step_SPUtils|30002312| getTodayTotalDetailSteps = 1514888700000##13625##282557##32208##29341##202858244",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-7:7:36:404|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514847960000##1088##170075##31610##25171##162100071",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-9:56:13:395|HiH_HiBroadcastUtil|30002312|sendSyncFailedBroadcast",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-17:44:14:390|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=421048",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-19:15:45:310|Step_LSC|30002312|onStandStepChanged 19306",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-13:29:35:38|Step_LSC|30002312|onStandStepChanged 21294",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:4:20:798|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=210",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201812-8:24:36:434|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=111000",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-14:24:3:18|Step_ExtSDM|30002312|calculateCaloriesWithCache totalCalories=104455",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-20:12:38:365|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=210",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-8:52:24:159|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=30",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-12:26:22:477|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514521500000##1404##1232278##83501##95202##293387433",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-23:27:12:412|Step_ExtSDM|30002312|calculateAltitudeWithCache totalAltitude=540",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171228-20:5:30:302|HiH_HiAppUtil|30002312|getBinderPackageName packageName = com.huawei.health",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171226-22:5:29:293|Step_StandReportReceiver|30002312|REPORT : 4930 3520 151535 210",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171225-20:36:33:980|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514205300000##9519##845692##45591##60231##104644652",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171229-19:4:53:992|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514545380000##3481##1336495##83501##100712##317298948",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171224-11:26:53:364|Step_LSC|30002312|onStandStepChanged 4601",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "201811-20:3:35:428|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514808120000##5895##130818##31610##19177##122259095",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171231-14:51:40:499|Step_SPUtils|30002312|setTodayTotalDetailSteps=1514703000000##7628##43331##31610##10265##17144166",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171230-10:15:28:385|Step_LSC|30002312|onStandStepChanged 630",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "20171227-20:27:32:237|Step_StandReportReceiver|30002312|REPORT : 6515 4651 172675 150",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    }
+  ],
+  "templates_metadata": [
+    {
+      "template_id": "T000",
+      "pattern": "[TIMESTAMP] [MODULE] 30002312 [MESSAGE]",
+      "match_count": 212390,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "MODULE",
+        "3": "MESSAGE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "improvements": [
+    "varint_full",
+    "pattern_rle",
+    "zstd_dict"
+  ],
+  "results": [
+    {
+      "dataset": "Apache",
+      "sample_size": 5000,
+      "original_size": 493943,
+      "logsim_size": 32687,
+      "gzip_size": 32938,
+      "logsim_ratio": 15.11,
+      "gzip_ratio": 15.15,
+      "gap_percent": 99.8,
+      "templates": 16,
+      "compression_time": 0.23
+    },
+    {
+      "dataset": "HealthApp",
+      "sample_size": 5000,
+      "original_size": 474150,
+      "logsim_size": 41335,
+      "gzip_size": 39422,
+      "logsim_ratio": 11.47,
+      "gzip_ratio": 12.15,
+      "gap_percent": 94.4,
+      "templates": 1,
+      "compression_time": 0.1
+    },
+    {
+      "dataset": "Zookeeper",
+      "sample_size": 5000,
+      "original_size": 651586,
+      "logsim_size": 25290,
+      "gzip_size": 22669,
+      "logsim_ratio": 25.76,
+      "gzip_ratio": 28.96,
+      "gap_percent": 89.0,
+      "templates": 9,
+      "compression_time": 0.3
+    },
+    {
+      "dataset": "Proxifier",
+      "sample_size": 5000,
+      "original_size": 583216,
+      "logsim_size": 38113,
+      "gzip_size": 31760,
+      "logsim_ratio": 15.3,
+      "gzip_ratio": 18.52,
+      "gap_percent": 82.6,
+      "templates": 14,
+      "compression_time": 0.32
+    }
+  ],
+  "summary": {
+    "avg_logsim_ratio": 16.91,
+    "avg_gzip_ratio": 18.7,
+    "gap_percent": 90.5
+  }
+}

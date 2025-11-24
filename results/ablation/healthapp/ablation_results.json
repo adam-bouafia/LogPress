@@ -1,0 +1,13 @@
+{
+  "dataset": "HealthApp",
+  "total_logs": 5000,
+  "original_size_bytes": 479152,
+  "configurations": [
+    {
+      "name": "Baseline (Gzip)",
+      "compressed_size": 39427,
+      "compression_ratio": 12.15,
+      "time_seconds": 0.0128
+    }
+  ]
+}

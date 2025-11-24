@@ -1,0 +1,13 @@
+{
+  "dataset": "Apache",
+  "total_logs": 5000,
+  "original_size_bytes": 498943,
+  "configurations": [
+    {
+      "name": "Baseline (Gzip)",
+      "compressed_size": 32938,
+      "compression_ratio": 15.15,
+      "time_seconds": 0.0085
+    }
+  ]
+}

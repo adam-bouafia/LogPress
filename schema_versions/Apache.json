@@ -1,0 +1,42 @@
+{
+  "source_name": "Apache",
+  "versions": [
+    {
+      "version": 1,
+      "timestamp": "2025-11-23T23:03:38.825130",
+      "template": "[TIMESTAMP] [SEVERITY] MESSAGE",
+      "fields": [
+        "timestamp",
+        "severity",
+        "message"
+      ],
+      "field_types": {
+        "timestamp": "TIMESTAMP",
+        "severity": "SEVERITY",
+        "message": "MESSAGE"
+      },
+      "sample_count": 1000,
+      "template_hash": "050f0130a3cca91c"
+    },
+    {
+      "version": 2,
+      "timestamp": "2025-11-23T23:03:38.825374",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] MESSAGE",
+      "fields": [
+        "timestamp",
+        "severity",
+        "client_ip",
+        "message"
+      ],
+      "field_types": {
+        "timestamp": "TIMESTAMP",
+        "severity": "SEVERITY",
+        "client_ip": "IP_ADDRESS",
+        "message": "MESSAGE"
+      },
+      "sample_count": 500,
+      "template_hash": "192b3cf701c92ff2"
+    }
+  ],
+  "current_version": 2
+}

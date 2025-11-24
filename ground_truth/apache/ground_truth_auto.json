@@ -1,0 +1,5194 @@
+{
+  "dataset": "Apache",
+  "total_logs": 51978,
+  "total_annotations": 500,
+  "templates": 19,
+  "method": "auto_generated",
+  "annotations": [
+    {
+      "log": "[Thu Jun 09 06:07:19 2005] [notice] jk2_init() Found child 2330 in scoreboard slot 0",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:19 2005] [notice] jk2_init() Found child 2337 in scoreboard slot 7",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:19 2005] [notice] jk2_init() Found child 2332 in scoreboard slot 2",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:19 2005] [notice] jk2_init() Found child 2331 in scoreboard slot 1",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:19 2005] [notice] jk2_init() Found child 2333 in scoreboard slot 3",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:19 2005] [notice] jk2_init() Found child 2335 in scoreboard slot 5",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:19 2005] [notice] jk2_init() Found child 2334 in scoreboard slot 4",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:19 2005] [notice] jk2_init() Found child 2336 in scoreboard slot 6",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 19:23:32 2005] [notice] jk2_init() Found child 4056 in scoreboard slot 8",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [notice] jk2_init() Found child 2337 in scoreboard slot 1",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [notice] jk2_init() Found child 2338 in scoreboard slot 2",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [notice] jk2_init() Found child 2339 in scoreboard slot 3",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [notice] jk2_init() Found child 2342 in scoreboard slot 6",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [notice] jk2_init() Found child 2343 in scoreboard slot 7",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [notice] jk2_init() Found child 2340 in scoreboard slot 4",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [notice] jk2_init() Found child 2341 in scoreboard slot 5",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [notice] jk2_init() Found child 2336 in scoreboard slot 0",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:06 2005] [notice] jk2_init() Found child 4214 in scoreboard slot 12",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [notice] jk2_init() Found child 4219 in scoreboard slot 17",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [notice] jk2_init() Found child 4224 in scoreboard slot 22",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [notice] jk2_init() Found child 4229 in scoreboard slot 27",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [notice] jk2_init() Found child 4230 in scoreboard slot 28",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [notice] jk2_init() Found child 4235 in scoreboard slot 33",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [notice] jk2_init() Found child 4240 in scoreboard slot 38",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [notice] jk2_init() Found child 4239 in scoreboard slot 37",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:09 2005] [notice] jk2_init() Found child 4245 in scoreboard slot 43",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "template_id": "T007",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 17 04:03:46 2005] [error] mod_jk child workerEnv in error state 1",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 18 07:35:44 2005] [error] mod_jk child workerEnv in error state 1",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 18 11:25:21 2005] [error] mod_jk child workerEnv in error state 1",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 18 11:25:22 2005] [error] mod_jk child workerEnv in error state 1",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 04:09:10 2005] [error] mod_jk child workerEnv in error state 2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 04:09:11 2005] [error] mod_jk child workerEnv in error state 2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 12:05:56 2005] [error] mod_jk child workerEnv in error state 2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 12:05:58 2005] [error] mod_jk child workerEnv in error state 2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Jun 21 22:16:01 2005] [error] mod_jk child workerEnv in error state 2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 04:04:32 2005] [error] mod_jk child workerEnv in error state 3",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 04:04:33 2005] [error] mod_jk child workerEnv in error state 3",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 04:04:33 2005] [error] mod_jk child workerEnv in error state 3",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 13:00:21 2005] [error] mod_jk child workerEnv in error state 3",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 14:44:38 2005] [error] mod_jk child workerEnv in error state 2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 26 04:04:29 2005] [error] mod_jk child workerEnv in error state 4",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 26 19:44:33 2005] [error] mod_jk child workerEnv in error state 4",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Mon Jun 27 04:02:55 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Jun 28 07:13:29 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Jun 28 07:13:30 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Jun 28 14:00:37 2005] [error] mod_jk child workerEnv in error state 4",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Jun 28 14:00:41 2005] [error] mod_jk child workerEnv in error state 2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 03 04:08:02 2005] [error] mod_jk child workerEnv in error state 6",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 03 04:08:02 2005] [error] mod_jk child workerEnv in error state 6",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 07 10:24:01 2005] [error] mod_jk child workerEnv in error state 6",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jul 09 13:07:16 2005] [error] mod_jk child workerEnv in error state 6",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 10 04:04:45 2005] [error] mod_jk child workerEnv in error state 7",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "template_id": "T015",
+      "confidence": 0.625,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 19:23:32 2005] [error] jk2_init() Can't find child 4057 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 19:23:32 2005] [error] jk2_init() Can't find child 4058 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:04 2005] [error] jk2_init() Can't find child 4210 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:05 2005] [error] jk2_init() Can't find child 4211 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:05 2005] [error] jk2_init() Can't find child 4212 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:06 2005] [error] jk2_init() Can't find child 4213 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:06 2005] [error] jk2_init() Can't find child 4215 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:06 2005] [error] jk2_init() Can't find child 4216 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] jk2_init() Can't find child 4217 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] jk2_init() Can't find child 4218 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] jk2_init() Can't find child 4220 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] jk2_init() Can't find child 4221 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] jk2_init() Can't find child 4222 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] jk2_init() Can't find child 4223 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4225 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4226 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4227 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4228 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4231 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4232 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4233 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4234 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4236 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4237 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] jk2_init() Can't find child 4238 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:09 2005] [error] jk2_init() Can't find child 4241 in scoreboard",
+      "template": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "template_id": "T012",
+      "confidence": 0.6666666666666666,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 19:23:32 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 19:23:32 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:04 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:05 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:05 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:06 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:06 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:06 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:09 2005] [error] mod_jk child init 1 -2",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "template_id": "T013",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:20 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:39 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Mon Jun 13 04:18:48 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Mon Jul 11 17:35:29 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Jul 27 14:42:52 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 02 04:06:51 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 09 04:12:43 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 16 04:15:26 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 13 04:15:48 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 04:47:56 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 04:51:36 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 04:58:00 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 12:34:15 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 12:36:29 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 12:40:40 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 12:48:06 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 18:15:51 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 18:21:20 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 15 18:28:23 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 16 00:43:01 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 16 05:03:13 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 16 15:33:12 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 16 19:50:30 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 16 20:22:30 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 04:13:08 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 05:07:56 2005] [error] mod_jk child init 1 0",
+      "template": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "template_id": "T009",
+      "confidence": 0.7142857142857143,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:05 2005] [error] env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:05 2005] [error] env.createBean2(): Factory error creating vm: ( vm, )",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:05 2005] [error] env.createBean2(): Factory error creating worker.jni:onStartup ( worker.jni, onStartup)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:05 2005] [error] env.createBean2(): Factory error creating worker.jni:onShutdown ( worker.jni, onShutdown)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:27 2005] [error] env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:27 2005] [error] env.createBean2(): Factory error creating vm: ( vm, )",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:27 2005] [error] env.createBean2(): Factory error creating worker.jni:onStartup ( worker.jni, onStartup)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:27 2005] [error] env.createBean2(): Factory error creating worker.jni:onShutdown ( worker.jni, onShutdown)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 12 04:04:29 2005] [error] env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 12 04:04:29 2005] [error] env.createBean2(): Factory error creating vm: ( vm, )",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 12 04:04:29 2005] [error] env.createBean2(): Factory error creating worker.jni:onStartup ( worker.jni, onStartup)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 12 04:04:29 2005] [error] env.createBean2(): Factory error creating worker.jni:onShutdown ( worker.jni, onShutdown)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 17 04:03:42 2005] [error] env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 17 04:03:42 2005] [error] env.createBean2(): Factory error creating vm: ( vm, )",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 17 04:03:42 2005] [error] env.createBean2(): Factory error creating worker.jni:onStartup ( worker.jni, onStartup)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 17 04:03:42 2005] [error] env.createBean2(): Factory error creating worker.jni:onShutdown ( worker.jni, onShutdown)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 04:09:06 2005] [error] env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 04:09:06 2005] [error] env.createBean2(): Factory error creating vm: ( vm, )",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 04:09:06 2005] [error] env.createBean2(): Factory error creating worker.jni:onStartup ( worker.jni, onStartup)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 04:09:06 2005] [error] env.createBean2(): Factory error creating worker.jni:onShutdown ( worker.jni, onShutdown)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 04:04:30 2005] [error] env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 04:04:30 2005] [error] env.createBean2(): Factory error creating vm: ( vm, )",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 04:04:30 2005] [error] env.createBean2(): Factory error creating worker.jni:onStartup ( worker.jni, onStartup)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 04:04:30 2005] [error] env.createBean2(): Factory error creating worker.jni:onShutdown ( worker.jni, onShutdown)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 26 04:04:27 2005] [error] env.createBean2(): Factory error creating channel.jni:jni ( channel.jni, jni)",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 26 04:04:27 2005] [error] env.createBean2(): Factory error creating vm: ( vm, )",
+      "template": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "template_id": "T005",
+      "confidence": 0.4444444444444444,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 18801 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 18802 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 18803 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 18804 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 18805 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 18806 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 18807 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 18808 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 29765 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 29766 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 29767 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 29768 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:45 2005] [warn] child process 707 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 18801 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 18802 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 18803 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 18804 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 18805 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 18806 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 18807 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 18808 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 29765 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 29766 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 29767 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 29768 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:08:46 2005] [warn] child process 707 still did not exit, sending a SIGTERM",
+      "template": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "template_id": "T017",
+      "confidence": 0.75,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:31 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:31 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:31 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:31 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:33 2005] [error] [client 218.144.240.75] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "template_id": "T016",
+      "confidence": 0.7,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Jun 09 06:07:16 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:35 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 12 04:04:32 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 17 04:03:45 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 19 04:09:09 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 25 04:04:32 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jun 26 04:04:29 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Mon Jun 27 04:02:54 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 03 04:08:01 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 10 04:04:44 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 17 04:08:21 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 24 04:20:46 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Jul 27 14:42:48 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 31 04:08:58 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 07 04:03:59 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 14 04:03:52 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 21 04:03:48 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 28 04:10:38 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Sep 04 04:04:11 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Sep 11 04:03:52 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Sep 18 04:07:25 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Mon Sep 19 05:58:29 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Sep 25 04:12:26 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 28 09:12:05 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 02 04:06:50 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 09 04:12:38 2005] [notice] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "template_id": "T006",
+      "confidence": 0.8666666666666667,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 27 11:55:15 2006] [error] [client 202.143.128.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template_id": "T018",
+      "confidence": 0.7857142857142857,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 27 11:55:15 2006] [error] [client 202.143.128.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template_id": "T018",
+      "confidence": 0.7857142857142857,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 27 11:55:15 2006] [error] [client 202.143.128.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template_id": "T018",
+      "confidence": 0.7857142857142857,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 27 11:55:15 2006] [error] [client 202.143.128.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template_id": "T018",
+      "confidence": 0.7857142857142857,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 27 11:55:15 2006] [error] [client 202.143.128.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template_id": "T018",
+      "confidence": 0.7857142857142857,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 27 11:55:15 2006] [error] [client 202.143.128.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template_id": "T018",
+      "confidence": 0.7857142857142857,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 27 11:55:16 2006] [error] [client 202.143.128.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template_id": "T018",
+      "confidence": 0.7857142857142857,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 27 11:55:16 2006] [error] [client 202.143.128.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "template_id": "T018",
+      "confidence": 0.7857142857142857,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      },
+      "verified": true
+    },
+    {
+      "log": "[Thu Sep 22 13:45:48 2005] [error] [client 220.115.237.191] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 22:01:08 2005] [notice] jk2_init() Found child 24739 in scoreboard slot 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Dec 05 04:06:43 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 14 04:03:45 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 12:32:20 2005] [error] [client 80.55.121.106] File does not exist: /var/www/html/b2evo",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 10 04:04:39 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 09:41:04 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 23:19:18 2005] [notice] jk2_init() Found child 5884 in scoreboard slot 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 10 04:04:39 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 22 03:25:39 2006] [error] [client 211.105.222.91] File does not exist: /var/www/html/ip1.cgi",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 20 01:44:21 2006] [error] [client 222.44.93.121] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jan 14 12:05:07 2006] [error] [client 82.66.245.30] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 20 00:56:10 2006] [error] [client 216.127.92.9] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Feb 15 23:53:25 2006] [error] [client 67.41.177.235] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 28 20:47:53 2005] [notice] jk2_init() Found child 32025 in scoreboard slot 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Jan 25 01:20:12 2006] [error] [client 69.64.38.143] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jan 14 12:23:50 2006] [error] [client 24.7.41.192] File does not exist: /var/www/html/blogs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Feb 08 21:05:05 2006] [error] [client 61.84.135.157] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 22 08:28:27 2006] [error] [client 62.175.253.180] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 13:42:36 2005] [notice] jk2_init() Found child 22460 in scoreboard slot 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 07 06:51:48 2005] [error] [client 82.53.83.190] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 23:28:29 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 13 11:28:11 2006] [error] [client 206.161.193.98] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Nov 19 19:18:26 2005] [error] [client 83.211.241.186] script not found or unable to stat: /var/www/cgi-bin/awstats",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 13 02:01:44 2006] [error] [client 218.112.66.53] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 22 08:28:33 2006] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 09:36:51 2005] [notice] jk2_init() Found child 24882 in scoreboard slot 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Aug 30 13:57:40 2005] [error] [client 222.79.31.128] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Feb 09 17:14:44 2006] [error] [client 221.221.17.210] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:37 2005] [error] [client 218.144.240.75] script not found or unable to stat: /var/www/cgi-bin/stats",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 20 05:00:03 2006] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 09 10:26:50 2006] [error] [client 82.179.164.139] File does not exist: /var/www/html/blogs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Feb 17 23:31:48 2006] [error] [client 64.214.80.6] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 04 04:33:38 2006] [error] [client 203.186.238.129] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Feb 15 16:52:01 2006] [error] [client 64.6.73.199] File does not exist: /var/www/html/cvs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Jan 24 08:23:37 2006] [error] [client 202.141.25.89] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Aug 15 14:58:03 2005] [error] [client 63.245.76.106] request failed: URI too long (longer than 8190)",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 20 03:30:54 2006] [error] [client 209.139.229.78] File does not exist: /var/www/html/sumthin",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 25 03:48:40 2006] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 11:32:27 2005] [error] config.update(): Can't create vm:",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Aug 03 06:39:26 2005] [error] [client 63.24.5.74] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 02 04:06:48 2005] [error] env.createBean2(): Factory error creating vm: ( vm, )",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 11:57:32 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jan 21 19:21:08 2006] [error] [client 66.225.203.226] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 09 10:26:58 2006] [error] [client 82.179.164.139] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 16:16:41 2005] [notice] jk2_init() Found child 22864 in scoreboard slot 3",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 03 16:16:55 2005] [error] [client 212.45.53.176] File does not exist: /var/www/html/xmlsrv",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 09 10:11:15 2005] [error] [client 203.59.115.27] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 16 03:48:34 2006] [error] [client 219.254.35.101] File does not exist: /var/www/html/blogs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Dec 05 13:53:35 2005] [error] mod_jk child workerEnv in error state 8",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Dec 06 02:32:39 2005] [notice] jk2_init() Found child 7773 in scoreboard slot 10",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Jan 24 12:52:16 2006] [error] [client 211.99.203.228] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Nov 05 06:30:54 2005] [error] [client 207.148.210.30] File does not exist: /var/www/html/phpmyadmin",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Feb 15 16:52:02 2006] [error] [client 64.6.73.199] File does not exist: /var/www/html/articles",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 03:20:57 2006] [error] [client 81.29.195.58] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 09:17:01 2005] [error] [client 210.245.233.251] File does not exist: /var/www/html/html",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Feb 19 13:44:53 2006] [error] [client 62.94.206.86] File does not exist: /var/www/html/phpgroupware",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:09 2005] [error] [client 202.133.98.6] script not found or unable to stat: /var/www/cgi-bin/stats",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Dec 06 09:15:34 2005] [notice] jk2_init() Found child 9416 in scoreboard slot 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Jan 25 01:24:16 2006] [error] [client 193.124.133.216] File does not exist: /var/www/html/blogs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 20 08:19:32 2006] [error] [client 64.236.104.1] File does not exist: /var/www/html/blogs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 08 16:35:47 2006] [error] [client 61.134.40.151] File does not exist: /var/www/html/blogs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 01:03:53 2005] [error] [client 69.152.48.26] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 22 21:45:44 2006] [error] [client 64.182.1.110] script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 10:28:16 2005] [notice] jk2_init() Found child 5925 in scoreboard slot 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 14 05:17:17 2005] [error] [client 210.203.199.78] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 17 04:08:19 2005] [error] config.update(): Can't create vm:",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Nov 19 03:30:21 2005] [error] [client 200.24.17.195] File does not exist: /var/www/html/awstats/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 00:23:49 2005] [notice] jk2_init() Found child 15707 in scoreboard slot 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 10 10:17:28 2005] [error] [client 64.34.162.99] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Jan 25 01:24:16 2006] [error] [client 193.124.133.216] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 10 10:17:26 2005] [error] [client 64.34.162.99] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 25 00:08:42 2006] [error] [client 83.19.168.2] File does not exist: /var/www/html/cvs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 15 10:51:46 2006] [error] [client 61.152.90.96] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Nov 19 16:10:50 2005] [notice] jk2_init() Found child 14512 in scoreboard slot 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 09 10:21:49 2006] [error] [client 68.96.18.125] File does not exist: /var/www/html/phpgroupware",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 11:32:35 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Feb 16 00:54:35 2006] [error] [client 213.39.178.230] File does not exist: /var/www/html/phpgroupware",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Nov 19 02:15:55 2005] [notice] jk2_init() Found child 12065 in scoreboard slot 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 06 03:46:59 2005] [error] [client 70.184.219.98] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 04 04:19:39 2005] [error] mod_jk child workerEnv in error state 6",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 09 06:18:00 2005] [error] [client 24.72.50.113] script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 22 14:20:49 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 28 13:41:12 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Jan 24 00:41:47 2006] [error] [client 209.250.116.251] File does not exist: /var/www/html/mambo",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 09:53:45 2006] [error] [client 80.68.92.54] File does not exist: /var/www/html/phpgroupware",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 15:55:27 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 16 03:48:35 2006] [error] [client 219.254.35.101] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 25 04:02:20 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Aug 27 01:05:12 2005] [notice] jk2_init() Found child 21135 in scoreboard slot 9",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 03:38:59 2005] [notice] jk2_init() Found child 16189 in scoreboard slot 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 28 20:28:50 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 24 18:24:56 2005] [error] [client 63.126.133.101] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 23:12:05 2005] [notice] jk2_init() Found child 5852 in scoreboard slot 6",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 20:35:38 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jan 21 19:21:06 2006] [error] [client 66.225.203.226] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 23 16:10:39 2005] [notice] jk2_init() Found child 5833 in scoreboard slot 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Dec 05 07:55:00 2005] [notice] jk2_init() Found child 5035 in scoreboard slot 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 25 04:02:14 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 25 03:48:37 2006] [error] [client 216.180.251.58] File does not exist: /var/www/html/WebCalendar",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 27 05:40:54 2006] [error] [client 212.34.140.103] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 08:40:47 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 09:17:05 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 11:36:05 2005] [notice] jk2_init() Found child 25245 in scoreboard slot 9",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 30 07:10:59 2005] [error] mod_jk child workerEnv in error state 5",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 22 08:28:23 2006] [error] [client 62.175.253.180] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 20 05:37:29 2006] [error] [client 81.219.87.4] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 04 19:46:20 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 07 03:39:27 2005] [error] [client 220.231.23.61] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 04 03:34:14 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 23 14:17:35 2006] [error] [client 85.178.97.34] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 20 10:37:59 2006] [error] [client 200.99.135.130] File does not exist: /var/www/html/xmlsrv",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jul 10 04:04:39 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:07 2005] [error] [client 202.133.98.6] script not found or unable to stat: /var/www/cgi-bin/awstats",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 17:46:45 2005] [error] mod_jk child workerEnv in error state 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 04 06:12:31 2005] [notice] jk2_init() Found child 32424 in scoreboard slot 10",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 22 10:40:36 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Dec 06 04:52:09 2005] [notice] jk2_init() Found child 8772 in scoreboard slot 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 15 02:35:44 2006] [error] [client 210.245.188.28] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Nov 25 14:40:17 2005] [error] [client 222.79.111.237] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Jan 26 12:20:09 2006] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 30 09:47:29 2005] [error] [client 63.242.19.218] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Nov 18 23:46:54 2005] [error] mod_jk child init 1 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Dec 05 10:43:48 2005] [notice] jk2_init() Found child 5484 in scoreboard slot 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 10 10:17:26 2005] [error] [client 64.34.162.99] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Jan 10 05:02:55 2006] [error] [client 163.117.142.142] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 20 00:56:05 2006] [error] jk2_init() Can't find child 5464 in scoreboard",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Feb 15 16:51:58 2006] [error] [client 64.6.73.199] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 21:46:59 2005] [error] mod_jk child workerEnv in error state 3",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jan 21 19:21:01 2006] [error] [client 66.225.203.226] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 07 21:50:40 2005] [error] [client 61.63.147.172] File does not exist: /var/www/html/sumthin",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jan 21 19:12:41 2006] [error] [client 219.48.96.72] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 04 06:51:26 2005] [error] mod_jk child workerEnv in error state 9",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 12:31:11 2005] [error] jk2_init() Can't find child 6137 in scoreboard",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 23:18:12 2005] [notice] jk2_init() Found child 5877 in scoreboard slot 9",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 20 08:19:38 2006] [error] [client 64.236.104.1] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 16 01:08:41 2006] [error] [client 66.34.225.128] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Dec 06 00:27:37 2005] [error] mod_jk child workerEnv in error state 6",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Dec 05 19:26:54 2005] [notice] jk2_init() Found child 6826 in scoreboard slot 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Feb 16 01:00:26 2006] [error] [client 81.114.87.11] File does not exist: /var/www/html/cvs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 21 04:16:25 2005] [notice] jk2_init() Found child 27151 in scoreboard slot 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Jan 19 12:41:10 2006] [error] [client 212.14.10.200] File does not exist: /var/www/html/awstats/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 07 04:03:45 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 21 12:11:07 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Dec 05 21:25:37 2005] [error] mod_jk child workerEnv in error state 6",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Sep 11 04:03:47 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 23 04:03:40 2005] [notice] mod_jk2 Shutting down",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 28 11:23:20 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Nov 19 03:30:15 2005] [error] [client 200.24.17.195] script not found or unable to stat: /var/www/cgi-bin/awstats",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Sep 11 04:03:53 2005] [error] jk2_init() Can't find child 17078 in scoreboard",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 21:03:57 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 14 17:00:38 2005] [error] [client 80.92.67.10] File does not exist: /var/www/html/awstats/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Jan 26 12:20:10 2006] [warn] child process 3070 still did not exit, sending a SIGTERM",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 09 06:18:14 2005] [error] [client 24.72.50.113] File does not exist: /var/www/html/xmlsrv",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 21 01:53:35 2005] [error] mod_jk child workerEnv in error state 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jan 14 12:05:08 2006] [error] [client 82.66.245.30] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Sep 11 07:24:05 2005] [error] [client 61.163.120.54] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 20 10:54:51 2006] [error] [client 212.37.101.68] File does not exist: /var/www/html/xmlsrv",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Nov 25 23:21:31 2005] [error] [client 218.75.19.122] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 05:34:19 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 25 00:08:56 2006] [error] [client 83.19.168.2] File does not exist: /var/www/html/blogs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Sep 23 12:38:25 2005] [error] [client 70.30.81.184] File does not exist: /var/www/html/phpmyadmin",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 14 00:17:53 2005] [error] [client 213.203.171.98] File does not exist: /var/www/html/phpgroupware",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 25 03:48:39 2006] [error] [client 216.180.251.58] File does not exist: /var/www/html/webcalendar",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Dec 01 20:31:23 2005] [error] [client 24.68.226.119] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 20 05:37:19 2006] [error] [client 81.219.87.4] script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Aug 02 01:42:42 2005] [error] [client 63.81.121.10] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 04:27:58 2006] [error] [client 81.166.103.93] script not found or unable to stat: /var/www/cgi-bin/awstats",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 10 10:17:17 2005] [error] jk2_init() Can't find child 31593 in scoreboard",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Dec 01 18:28:13 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 10 21:03:17 2005] [error] [client 61.142.136.20] File does not exist: /var/www/html/scripts/..\\xc1\\x1c..",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jan 20 05:37:19 2006] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jun 17 04:54:59 2005] [error] [client 194.106.165.14] File does not exist: /var/www/html/scripts/..\\xc1\\x1c..",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Feb 10 17:40:41 2006] [error] [client 144.202.242.108] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 08 16:36:02 2006] [error] [client 61.134.40.151] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 01:01:55 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 20 05:00:03 2006] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 28 22:35:46 2005] [notice] jk2_init() Found child 32297 in scoreboard slot 8",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Aug 25 06:23:50 2005] [error] [client 200.168.190.201] script not found or unable to stat: /var/www/cgi-bin/openwebmail",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 06:12:12 2005] [error] [client 210.245.233.251] Invalid URI in request GET  HTTP/1.1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 04:28:01 2006] [error] [client 81.166.103.93] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Nov 19 19:18:26 2005] [error] [client 83.211.241.186] script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Dec 05 22:10:53 2005] [notice] jk2_init() Found child 7145 in scoreboard slot 7",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 02:35:59 2005] [notice] jk2_init() Found child 22319 in scoreboard slot 9",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 21 08:42:14 2005] [notice] jk2_init() Found child 28206 in scoreboard slot 1",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 22 05:43:21 2005] [error] [client 200.94.105.213] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 21 05:55:57 2005] [notice] jk2_init() Found child 27716 in scoreboard slot 3",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 14:36:29 2005] [error] [client 219.239.227.58] script not found or unable to stat: /var/www/cgi-bin/awstats",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 16:16:48 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 23 11:24:00 2006] [error] [client 82.177.96.6] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Oct 21 09:52:53 2005] [error] [client 24.25.151.166] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 16 03:48:30 2006] [error] mod_jk child init 1 -2",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 08 08:46:28 2006] [error] [client 61.234.149.52] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jan 14 12:05:10 2006] [error] [client 82.66.245.30] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 14:09:16 2006] [error] [client 212.3.249.71] File does not exist: /var/www/html/phpgroupware",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 23:42:14 2005] [notice] jk2_init() Found child 25192 in scoreboard slot 0",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 23 19:10:44 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 15 10:51:35 2006] [error] [client 61.152.90.96] script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 09:17:01 2005] [error] uriMap.mapUri() uri must start with /",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:32 2005] [error] [client 218.144.240.75] File does not exist: /var/www/html/awstats/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 09 04:44:11 2005] [error] [client 85.214.16.149] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Feb 15 16:51:53 2006] [error] [client 64.6.73.199] File does not exist: /var/www/html/articles",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Jan 18 02:06:51 2006] [error] [client 132.208.20.23] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Feb 15 10:32:59 2006] [error] [client 82.231.38.27] script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Sep 09 18:21:41 2005] [error] [client 65.69.55.52] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Sep 14 18:58:44 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 15 10:51:35 2006] [error] [client 61.152.90.96] File does not exist: /var/www/html/awstats/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 09:53:40 2006] [error] [client 80.68.92.54] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Jan 25 01:24:10 2006] [error] [client 193.124.133.216] script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Jul 21 03:37:31 2005] [error] [client 218.144.240.75] File does not exist: /var/www/html/bin",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Feb 16 01:00:50 2006] [error] [client 81.114.87.11] File does not exist: /var/www/html/xmlsrv",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Oct 25 10:06:18 2005] [warn] child process 17482 still did not exit, sending a SIGTERM",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Jan 25 01:20:02 2006] [error] [client 69.64.38.143] script not found or unable to stat: /var/www/cgi-bin/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Jan 24 12:52:19 2006] [error] [client 211.99.203.228] File does not exist: /var/www/html/drupal",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 04 04:37:22 2005] [notice] jk2_init() Found child 30358 in scoreboard slot 6",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 20 19:48:29 2006] [error] [client 209.137.246.36] File does not exist: /var/www/html/cvs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 01:32:21 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 09 10:26:45 2006] [error] [client 82.179.164.139] File does not exist: /var/www/html/awstats/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 03:20:50 2006] [error] [client 81.29.195.58] File does not exist: /var/www/html/blog",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 09 06:18:12 2005] [error] [client 24.72.50.113] File does not exist: /var/www/html/xmlrpc",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 23 21:30:50 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 21:46:53 2005] [error] [client 220.194.61.230] File does not exist: /var/www/html/xmlsrv",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Feb 12 02:18:22 2006] [error] [client 217.117.141.166] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Jan 25 01:24:20 2006] [error] [client 193.124.133.216] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Dec 02 21:16:45 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Fri Jul 08 05:37:38 2005] [error] [client 65.48.136.204] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 23 18:40:38 2005] [error] mod_jk child workerEnv in error state 4",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 22 08:28:20 2006] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 18:50:48 2005] [error] mod_jk child workerEnv in error state 3",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Jan 31 23:53:15 2006] [error] [client 151.36.65.82] File does not exist: /var/www/html/xmlsrv",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Jan 17 00:58:06 2006] [error] [client 84.72.250.195] File does not exist: /var/www/html/phpmyadmin",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 21 03:22:34 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Dec 03 08:37:44 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 20 05:38:37 2005] [notice] jk2_init() Found child 21394 in scoreboard slot 5",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Jan 22 02:44:34 2006] [error] [client 203.172.129.2] File does not exist: /var/www/html/awstats/awstats.pl",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Thu Nov 17 12:31:57 2005] [error] [client 80.55.121.106] File does not exist: /var/www/html/blogs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 30 07:49:16 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 04 05:12:28 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 30 11:53:58 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Oct 25 10:06:18 2005] [warn] child process 17476 still did not exit, sending a SIGTERM",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Dec 04 20:22:12 2005] [notice] jk2_init() Found child 1936 in scoreboard slot 8",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 08 04:09:50 2005] [notice] jk2_init() Found child 24613 in scoreboard slot 18",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Oct 16 04:14:44 2005] [error] config.update(): Can't create vm:",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Feb 20 19:48:32 2006] [error] [client 209.137.246.36] File does not exist: /var/www/html/cvs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Wed Nov 09 06:18:10 2005] [error] [client 24.72.50.113] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Jun 11 03:03:08 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jan 09 10:21:50 2006] [error] [client 68.96.18.125] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 09:53:46 2006] [error] [client 80.68.92.54] File does not exist: /var/www/html/wordpress",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Nov 21 03:29:35 2005] [error] mod_jk child workerEnv in error state 6",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sat Feb 11 09:53:40 2006] [error] [client 80.68.92.54] File does not exist: /var/www/html/phpgroupware",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Aug 02 20:33:30 2005] [error] [client 61.53.194.36] Directory index forbidden by rule: /var/www/html/",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Feb 21 06:06:58 2006] [error] [client 69.95.94.130] File does not exist: /var/www/html/cvs",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Nov 06 04:06:14 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Dec 06 12:20:36 2005] [warn] child process 29815 still did not exit, sending a SIGTERM",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Sep 25 04:12:28 2005] [error] jk2_init() Can't find child 18808 in scoreboard",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Sun Aug 28 20:51:36 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Mon Jul 11 17:35:38 2005] [error] [client 220.130.50.230] File does not exist: /var/www/html/sumthin",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    },
+    {
+      "log": "[Tue Nov 29 04:13:26 2005] [notice] workerEnv.init() ok /etc/httpd/conf/workers2.properties",
+      "template": "<UNMATCHED>",
+      "template_id": "unknown",
+      "confidence": 0.0,
+      "field_types": {},
+      "verified": true
+    }
+  ],
+  "templates_metadata": [
+    {
+      "template_id": "T011",
+      "pattern": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] [FIELD] [FIELD] [FIELD] [FIELD] [MESSAGE]",
+      "match_count": 20862,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS",
+        "7": "MESSAGE"
+      }
+    },
+    {
+      "template_id": "T008",
+      "pattern": "[TIMESTAMP] [SEVERITY] [FIELD] [STATUS] [FIELD]",
+      "match_count": 7044,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "3": "STATUS"
+      }
+    },
+    {
+      "template_id": "T010",
+      "pattern": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD]",
+      "match_count": 6786,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      }
+    },
+    {
+      "template_id": "T007",
+      "pattern": "[TIMESTAMP] [SEVERITY] jk2_init() Found child [MESSAGE] in scoreboard slot [MESSAGE]",
+      "match_count": 6335,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE",
+        "9": "MESSAGE"
+      }
+    },
+    {
+      "template_id": "T015",
+      "pattern": "[TIMESTAMP] [SEVERITY] mod_jk child workerEnv in [SEVERITY] state [MESSAGE]",
+      "match_count": 4349,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "SEVERITY",
+        "8": "MESSAGE"
+      }
+    },
+    {
+      "template_id": "T014",
+      "pattern": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD] [MESSAGE]",
+      "match_count": 3340,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS",
+        "10": "MESSAGE"
+      }
+    },
+    {
+      "template_id": "T012",
+      "pattern": "[TIMESTAMP] [SEVERITY] jk2_init() Can't find child [MESSAGE] in scoreboard",
+      "match_count": 971,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "6": "MESSAGE"
+      }
+    },
+    {
+      "template_id": "T013",
+      "pattern": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 -2",
+      "match_count": 971,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      }
+    },
+    {
+      "template_id": "T009",
+      "pattern": "[TIMESTAMP] [SEVERITY] mod_jk child init 1 0",
+      "match_count": 288,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      }
+    },
+    {
+      "template_id": "T001",
+      "pattern": "[TIMESTAMP] [SEVERITY] [FIELD] [FIELD] [FIELD] [MESSAGE]",
+      "match_count": 233,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "5": "MESSAGE"
+      }
+    },
+    {
+      "template_id": "T005",
+      "pattern": "[TIMESTAMP] [SEVERITY] env.createBean2(): Factory [SEVERITY] creating [HOST] ( [FIELD] [MESSAGE]",
+      "match_count": 180,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "SEVERITY",
+        "6": "HOST",
+        "9": "MESSAGE"
+      }
+    },
+    {
+      "template_id": "T017",
+      "pattern": "[TIMESTAMP] [SEVERITY] child process [MESSAGE] still did not exit, sending a SIGTERM",
+      "match_count": 168,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "4": "MESSAGE"
+      }
+    },
+    {
+      "template_id": "T016",
+      "pattern": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] attempt to invoke directory as script: /var/www/cgi-bin/",
+      "match_count": 92,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      }
+    },
+    {
+      "template_id": "T003",
+      "pattern": "[TIMESTAMP] [SEVERITY] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD]",
+      "match_count": 90,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      }
+    },
+    {
+      "template_id": "T004",
+      "pattern": "[TIMESTAMP] [SEVERITY] [FIELD] [FIELD]",
+      "match_count": 90,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      }
+    },
+    {
+      "template_id": "T000",
+      "pattern": "[TIMESTAMP] [SEVERITY] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD]",
+      "match_count": 80,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      }
+    },
+    {
+      "template_id": "T002",
+      "pattern": "[TIMESTAMP] [SEVERITY] [FIELD] [FIELD] [FIELD] [FIELD] [FIELD]",
+      "match_count": 45,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      }
+    },
+    {
+      "template_id": "T006",
+      "pattern": "[TIMESTAMP] [SEVERITY] mod_python: Creating 32 session mutexes based on 150 max processes and 0 max threads.",
+      "match_count": 45,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY"
+      }
+    },
+    {
+      "template_id": "T018",
+      "pattern": "[TIMESTAMP] [SEVERITY] [IP_ADDRESS] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /",
+      "match_count": 8,
+      "field_types": {
+        "0": "TIMESTAMP",
+        "1": "SEVERITY",
+        "2": "IP_ADDRESS"
+      }
+    }
+  ]
+}

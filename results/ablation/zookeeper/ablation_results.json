@@ -1,0 +1,13 @@
+{
+  "dataset": "Zookeeper",
+  "total_logs": 5000,
+  "original_size_bytes": 657571,
+  "configurations": [
+    {
+      "name": "Baseline (Gzip)",
+      "compressed_size": 22673,
+      "compression_ratio": 29.0,
+      "time_seconds": 0.0164
+    }
+  ]
+}

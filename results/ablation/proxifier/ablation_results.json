@@ -1,0 +1,13 @@
+{
+  "dataset": "Proxifier",
+  "total_logs": 5000,
+  "original_size_bytes": 588241,
+  "configurations": [
+    {
+      "name": "Baseline (Gzip)",
+      "compressed_size": 31764,
+      "compression_ratio": 18.52,
+      "time_seconds": 0.0126
+    }
+  ]
+}

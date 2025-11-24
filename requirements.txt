@@ -1,0 +1,21 @@
+# Core dependencies
+regex>=2023.0.0           # Advanced regex patterns with Unicode support
+python-dateutil>=2.8.0    # Timestamp parsing (multiple formats)
+numpy>=1.24.0             # Numerical operations for compression
+pandas>=2.0.0             # Data manipulation for evaluation
+
+# Compression codecs
+zstandard>=0.21.0         # Zstandard compression (baseline comparison)
+python-snappy>=0.6.0      # Snappy compression (fast codec)
+lz4>=4.3.0                # LZ4 compression (alternative baseline)
+msgpack>=1.0.0            # MessagePack binary serialization (replaces JSON)
+
+# Testing & benchmarks
+pytest>=7.4.0             # Unit testing framework
+pytest-benchmark>=4.0.0   # Performance benchmarking
+
+# Log parser comparisons (Drain, Spell, etc.)
+git+https://github.com/logpai/logparser.git  # Drain, Spell, and other log parsers
+
+# Memory profiling
+memory-profiler>=0.61.0   # Memory usage profiling
