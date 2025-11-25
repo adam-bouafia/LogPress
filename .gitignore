@@ -3,38 +3,46 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+*.egg
+*.egg-info/
+dist/
+build/
 .Python
 venv/
 env/
+ENV/
 
-# Project specific
+# Compressed files (runtime generated)
 compressed/*.lsc
-!archive/*.lsc
-logsim/tests/__pycache__/
-
-# Thesis/Research artifacts
-thesis_latex/
-docs/THESIS_ROADMAP.md
-*.aux
-*.log
-*.out
-*.toc
-*.bbl
-*.blg
-*.synctex.gz
-*.pdf
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
 
 # Temporary files
 *.tmp
 *.bak
 *~
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Research/Thesis artifacts (not for GitHub)
+thesis_latex/
+docs/THESIS_*.md
+*.aux
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.pdf

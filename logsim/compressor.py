@@ -33,8 +33,6 @@ from .varint import (
     encode_varint, decode_varint
 )
 from .bwt import bwt_transform, bwt_inverse
-from .preprocessor import OttenPreprocessor  # Otten's binary encoding
-from .template_dictionary import TemplateDictionary  # Otten's word dictionaries
 
 # Load universal Zstandard dictionary (trained from all datasets)
 _UNIVERSAL_DICT = None
@@ -266,9 +264,6 @@ class CompressedLog:
     # Trained Zstd dictionary for messages
     zstd_dict: Optional[bytes] = None
     
-    # Otten's template dictionaries (word-based encoding)
-    template_dicts_serialized: Optional[Dict[str, Dict]] = None
-    
     # Varint-encoded columnar storage (stored as bytes)
     timestamps_varint: bytes = b''  # Zigzag + varint encoded deltas
     timestamp_base: int = 0
@@ -311,15 +306,9 @@ class SemanticCompressor:
     Storage format: Columnar with indexes for fast queries
     """
     
-    def __init__(self, min_support: int = 3, enable_otten: bool = False):
+    def __init__(self, min_support: int = 3):
         self.generator = TemplateGenerator(min_support=min_support)
         self.compressed_data = None
-        self.enable_otten = enable_otten  # Otten's preprocessing techniques
-        
-        # Initialize Otten's preprocessors
-        if self.enable_otten:
-            self.preprocessor = OttenPreprocessor()
-            self.template_dicts: Dict[str, TemplateDictionary] = {}  # template_id → dictionary
         
     def compress(self, log_lines: List[str], verbose: bool = True) -> Tuple[CompressedLog, CompressionStats]:
         """
@@ -339,21 +328,23 @@ class SemanticCompressor:
         
         # Step 1: Extract schemas
         if verbose:
-            print(f"  [1/4] Extracting schemas...")
+            print(f"  [1/6] Extracting schemas (Custom Log Alignment Algorithm)...")
         templates = self.generator.extract_schemas(log_lines)
         
         if not templates:
             raise ValueError("No templates extracted - cannot compress")
         
         if verbose:
-            print(f"  ✓ Found {len(templates)} templates")
+            print(f"     ✓ Algorithm: Custom position-by-position alignment (template_generator.py)")
+            print(f"     ✓ NOT Drain3 - LogSim uses custom schema extraction")
+            print(f"     ✓ Found {len(templates)} templates")
         
         # Step 2: Match logs to templates and extract fields
         if verbose:
-            print(f"  [2/4] Matching logs to templates...")
+            print(f"  [2/6] Token Pool Deduplication (Global Template Optimization)...")
         
         compressed = CompressedLog()
-        compressed.version = '3.3'  # Current format with Otten's preprocessing
+        compressed.version = '3.4'
         compressed.original_count = len(log_lines)
         compressed.compressed_at = datetime.now().isoformat()
         
@@ -368,10 +359,11 @@ class SemanticCompressor:
             pool_chars = sum(len(token) for token in token_pool) + len(token_pool) - 1  # Include spaces
             ref_bytes = sum(len(ref) for ref in compressed.template_token_refs)
             savings = total_pattern_chars - (pool_chars + ref_bytes)
+            print(f"     ✓ Algorithm: Global token pool deduplication")
             if savings > 0:
-                print(f"     Token pool: {len(token_pool)} unique tokens, saved {savings} bytes ({savings*100//max(total_pattern_chars,1)}% reduction)")
+                print(f"     ✓ Token pool: {len(token_pool)} unique tokens, saved {savings} bytes ({savings*100//max(total_pattern_chars,1)}% reduction)")
             elif savings < 0:
-                print(f"     Token pool: {len(token_pool)} unique tokens, added {abs(savings)} bytes overhead")
+                print(f"     ✓ Token pool: {len(token_pool)} unique tokens, added {abs(savings)} bytes overhead")
         
         # Store templates (patterns reconstructed from token pool)
         compressed.templates = [
@@ -401,41 +393,9 @@ class SemanticCompressor:
         
         matched_count = 0
         
-        # Step 3: Build template dictionaries (Otten's word-based encoding)
-        if self.enable_otten and verbose:
-            print(f"  [3/7] Building per-template word dictionaries (Otten technique)...")
-        
-        if self.enable_otten:
-            # First pass: collect all messages per template to build dictionaries
-            template_messages = defaultdict(list)
-            
-            for log_line in log_lines:
-                result = self.generator.match_log_to_template(log_line)
-                if result:
-                    template, fields = result
-                    # Collect MESSAGE fields for dictionary building
-                    for field_name, field_value in fields.items():
-                        if field_name.upper() not in ('TIMESTAMP', 'SEVERITY', 'STATUS', 'IP_ADDRESS', 'HOST'):
-                            template_messages[template.template_id].append(field_value)
-            
-            # Build dictionaries for each template
-            for template_id, messages in template_messages.items():
-                if len(messages) >= 2:  # Need at least 2 messages
-                    template_dict = TemplateDictionary(template_id)
-                    template_dict.build_from_messages(messages, min_freq=2)
-                    self.template_dicts[template_id] = template_dict
-                    
-                    if verbose:
-                        stats = template_dict.get_stats()
-                        if stats['num_words'] > 0:
-                            print(f"     Template {template_id}: {stats['num_words']} words, "
-                                  f"avg_len={stats['avg_word_length']:.1f}, "
-                                  f"utilization={stats['utilization']:.1f}%")
-        
-        # Step 4: Process each log and collect fields
+        # Step 3: Process each log and collect fields
         if verbose:
-            step_num = "4/7" if self.enable_otten else "3/6"
-            print(f"  [{step_num}] Matching and collecting fields...")
+            print(f"  [3/6] Matching and collecting fields...")
         
         for log_line in log_lines:
             result = self.generator.match_log_to_template(log_line)
@@ -461,13 +421,8 @@ class SemanticCompressor:
             
             for field_name, field_value in fields.items():
                 if field_name.upper() == 'TIMESTAMP':
-                    # Otten Phase 1: Binary timestamp encoding (15+ bytes → 4 bytes)
-                    if self.enable_otten:
-                        # Convert to binary, then parse to get epoch seconds
-                        binary_ts = self.preprocessor.encode_timestamp_binary(field_value)
-                        ts = self.preprocessor.decode_timestamp_binary(binary_ts)
-                    else:
-                        ts = self._parse_timestamp(field_value)
+                    # Parse timestamp and apply delta encoding
+                    ts = self._parse_timestamp(field_value)
                     
                     # Delta encoding for timestamps
                     if timestamp_base is None:
@@ -486,52 +441,24 @@ class SemanticCompressor:
                     field_indices.append(len(severities_list) - 1)
                     
                 elif field_name.upper() in ('IP_ADDRESS', 'HOST'):
-                    # Otten Phase 1: Binary IP encoding (15 bytes → 4 bytes)
-                    if self.enable_otten:
-                        # Store binary IP in dictionary instead of string
-                        binary_ip = self.preprocessor.encode_ip_binary(field_value)
-                        ip_id = self._get_or_create_id(binary_ip, ip_map)
-                    else:
-                        # Dictionary encoding for IPs (original string)
-                        ip_id = self._get_or_create_id(field_value, ip_map)
+                    # Dictionary encoding for IPs
+                    ip_id = self._get_or_create_id(field_value, ip_map)
                     
                     ips_list.append(ip_id)
                     field_indices.append(len(ips_list) - 1)
                     
                 else:
-                    # Otten Phase 2: Word dictionary encoding for messages
-                    if self.enable_otten and template.template_id in self.template_dicts:
-                        template_dict = self.template_dicts[template.template_id]
-                        encoded_msg = template_dict.encode_message(field_value)
-                        msg_id = self._get_or_create_id(encoded_msg, message_map)
-                    else:
-                        # Default: dictionary encoding for messages (original)
-                        msg_id = self._get_or_create_id(field_value, message_map)
+                    # Dictionary encoding for messages
+                    msg_id = self._get_or_create_id(field_value, message_map)
                     
                     messages_list.append(msg_id)
                     field_indices.append(len(messages_list) - 1)
             
             log_index.append((template_idx, field_indices))
         
-        # Step 5: Store template dictionaries in compressed data (for decompression)
-        if self.enable_otten:
-            # Serialize template dictionaries for decompression
-            compressed.template_dicts_serialized = {
-                template_id: {
-                    'word_to_code': dict(td.word_to_code),
-                    'code_to_word': dict(td.code_to_word)
-                }
-                for template_id, td in self.template_dicts.items()
-            }
-            
-            if verbose:
-                total_dict_words = sum(len(td.word_to_code) for td in self.template_dicts.values())
-                print(f"     Otten preprocessing: {len(self.template_dicts)} template dicts, {total_dict_words} total words")
-        
-        # Step 6: Apply varint encoding to all integer arrays
+        # Step 4: Apply varint encoding to all integer arrays
         if verbose:
-            step_num = "6/7" if self.enable_otten else "4/6"
-            print(f"  [{step_num}] Applying varint compression...")
+            print(f"  [4/6] Columnar Encoding (Delta + Zigzag + Varint)...")
         
         # Timestamps: zigzag + varint (handles negative deltas)
         if timestamps_list:
@@ -543,7 +470,10 @@ class SemanticCompressor:
             if verbose:
                 original_size = len(timestamps_list) * 4
                 varint_size = len(compressed.timestamps_varint)
-                print(f"     Timestamps: {original_size} → {varint_size} bytes ({original_size/varint_size:.1f}x)")
+                print(f"     ✓ Delta encoding: Store timestamp differences (not absolute values)")
+                print(f"     ✓ Zigzag encoding: Map signed deltas to unsigned (varint.py)")
+                print(f"     ✓ Varint encoding: Protocol Buffer style variable-length integers")
+                print(f"     ✓ Timestamps: {original_size} → {varint_size} bytes ({original_size/varint_size:.1f}x)")
         
         # Severities: varint encoding
         if severities_list:
@@ -562,7 +492,7 @@ class SemanticCompressor:
         
         # Step 5: RLE compress log_index template IDs with pattern detection
         if verbose:
-            print(f"  [5/6] RLE compressing log index (with pattern detection)...")
+            print(f"  [5/6] RLE v2 Compression (Pattern Detection)...")
         
         template_ids = [idx[0] for idx in log_index]
         # Apply zigzag encoding to handle negative template IDs (-1 for unmatched)
@@ -582,11 +512,13 @@ class SemanticCompressor:
         if verbose:
             original_index_size = len(template_ids) * 4 + len(all_field_indices) * 4
             compressed_index_size = len(compressed.log_index_templates_rle) + len(compressed.log_index_fields_varint)
-            print(f"     Log index: {original_index_size} → {compressed_index_size} bytes ({original_index_size/compressed_index_size:.1f}x)")
+            print(f"     ✓ Algorithm: RLE v2 with repeating pattern detection")
+            print(f"     ✓ Example: [1,2,3,1,2,3,1,2,3] → pattern=[1,2,3] repeat=3")
+            print(f"     ✓ Log index: {original_index_size} → {compressed_index_size} bytes ({original_index_size/compressed_index_size:.1f}x)")
         
         # Step 6: Convert dictionaries to lists and train Zstd dictionary
         if verbose:
-            print(f"  [6/6] Optimizing dictionaries and training Zstd dictionary...")
+            print(f"  [6/6] Dictionary Encoding + MessagePack + Zstandard-15...")
         
         compressed.severity_list = [val for val, idx in sorted(severity_map.items(), key=lambda x: x[1])] if severity_map else []
         compressed.ip_list = [val for val, idx in sorted(ip_map.items(), key=lambda x: x[1])] if ip_map else []
@@ -699,10 +631,10 @@ class SemanticCompressor:
         size += len(compressed.ip_addresses_varint)
         size += len(compressed.messages_varint)
         
-        # Dictionaries as lists (handle both strings and bytes)
+        # Dictionaries as lists
         size += len(json.dumps(compressed.severity_list).encode('utf-8'))
         
-        # IP list might contain bytes (Otten's binary encoding)
+        # IP list (dictionary encoding)
         ip_list_size = 0
         for ip in compressed.ip_list:
             if isinstance(ip, bytes):
@@ -711,7 +643,7 @@ class SemanticCompressor:
                 ip_list_size += len(str(ip).encode('utf-8'))
         size += ip_list_size
         
-        # Message list might contain bytes (Otten's word encoding)
+        # Message list (dictionary encoding)
         message_list_size = 0
         for msg in compressed.message_list:
             if isinstance(msg, bytes):
@@ -750,9 +682,6 @@ class SemanticCompressor:
             'token_pool': cd.token_pool,
             'template_token_refs': cd.template_token_refs,
             'zstd_dict': cd.zstd_dict,
-            
-            # v3.3: Otten's template dictionaries (word-based encoding)
-            'template_dicts_serialized': cd.template_dicts_serialized,
             
             # Varint-encoded fields (already bytes)
             'timestamps_varint': cd.timestamps_varint,
@@ -883,20 +812,14 @@ class SemanticCompressor:
         compressed.version = data.get('version', '1.0')
         compressed.templates = data['templates']
         
-        # Check version for backwards compatibility
-        if compressed.version in ['2.0', '3.0', '3.1', '3.2', '3.3']:
-            # v3.0+: Load token pool and Zstd dictionary
-            if compressed.version in ['3.0', '3.1', '3.2', '3.3']:
-                compressed.token_pool = data.get('token_pool', [])
-                compressed.template_token_refs = data.get('template_token_refs', [])
-                compressed.zstd_dict = data.get('zstd_dict', None)
-                
-                # v3.3+: Load Otten's template dictionaries
-                if compressed.version == '3.3':
-                    compressed.template_dicts_serialized = data.get('template_dicts_serialized', None)
-                
-                # Reconstruct template patterns from token pool
-                if compressed.token_pool and compressed.template_token_refs:
+        # v3.0+: Load token pool and reconstruct patterns
+        if compressed.version in ['3.0', '3.1', '3.2', '3.3', '3.4']:
+            compressed.token_pool = data.get('token_pool', [])
+            compressed.template_token_refs = data.get('template_token_refs', [])
+            compressed.zstd_dict = data.get('zstd_dict', None)
+            
+            # Reconstruct template patterns from token pool
+            if compressed.token_pool and compressed.template_token_refs:
                     # Decode varint-encoded token refs (decode all varints in each bytes)
                     decoded_refs = []
                     for ref_bytes in compressed.template_token_refs:
@@ -946,13 +869,12 @@ class SemanticCompressor:
         
         return compressed
     
-    def decompress(self, compressed: Optional[CompressedLog] = None, enable_otten: bool = False) -> List[str]:
+    def decompress(self, compressed: Optional[CompressedLog] = None) -> List[str]:
         """
         Decompress back to original log format
         
         Args:
             compressed: CompressedLog object (uses self.compressed_data if None)
-            enable_otten: Enable Otten's preprocessing decoding (default: False)
             
         Returns:
             List of reconstructed log strings
@@ -963,23 +885,21 @@ class SemanticCompressor:
         if not compressed:
             raise ValueError("No compressed data available")
         
-        # Initialize Otten preprocessors if needed
-        if enable_otten:
-            preprocessor = OttenPreprocessor()
-            
-            # Reconstruct template dictionaries from serialized form
-            template_dicts = {}
-            if compressed.template_dicts_serialized:
-                for template_id, dict_data in compressed.template_dicts_serialized.items():
-                    template_dict = TemplateDictionary(template_id)
-                    # Restore mappings (convert string keys back to integers)
-                    template_dict.word_to_code = {
-                        word: int(code) for word, code in dict_data['word_to_code'].items()
-                    }
-                    template_dict.code_to_word = {
-                        int(code): word for code, word in dict_data['code_to_word'].items()
-                    }
-                    template_dicts[template_id] = template_dict
+        # Reconstruct template patterns from token pool if not already done
+        if compressed.token_pool and compressed.template_token_refs:
+            for i, ref_bytes in enumerate(compressed.template_token_refs):
+                if i < len(compressed.templates) and 'pattern' not in compressed.templates[i]:
+                    # Decode varint-encoded token refs
+                    token_ids = []
+                    offset = 0
+                    while offset < len(ref_bytes):
+                        value, bytes_read = decode_varint(ref_bytes, offset)
+                        token_ids.append(value)
+                        offset += bytes_read
+                    
+                    # Reconstruct pattern from token pool
+                    pattern = [compressed.token_pool[tid] for tid in token_ids]
+                    compressed.templates[i]['pattern'] = pattern
         
         # Decode varint/RLE data first
         timestamps = []
@@ -1026,70 +946,42 @@ class SemanticCompressor:
             # Get template
             template_data = compressed.templates[template_idx]
             pattern = template_data['pattern']
+            field_types = template_data['field_types']  # Maps pattern position → field type
             
-            # Reconstruct fields by iterating through pattern and field_indices in parallel
-            # field_indices contains one entry per extracted field (in order of extraction)
+            # Reconstruct log by iterating through pattern
             reconstructed = []
-            field_idx = 0
+            field_idx = 0  # Index into field_indices array
             
-            for part in pattern:
+            for pos, part in enumerate(pattern):
                 if part.startswith('[') and part.endswith(']'):
-                    # Variable field - get from decoded data
-                    if field_idx >= len(field_indices):
-                        # No more field data - skip this placeholder or use empty
-                        field_idx += 1
-                        continue
+                    # Variable field - check if this position has a field
+                    if pos in field_types and field_idx < len(field_indices):
+                        field_type_str = field_types[pos]
+                        actual_idx = field_indices[field_idx]
                         
-                    field_type = part[1:-1].upper()
-                    actual_idx = field_indices[field_idx]
-                    
-                    if field_type == 'TIMESTAMP':
-                        if actual_idx < len(timestamps):
-                            delta = timestamps[actual_idx]
-                            current_ts += delta
-                            # Otten decoding: timestamp is already in epoch seconds
-                            if enable_otten:
-                                # Format as human-readable
-                                from datetime import datetime
-                                dt = datetime.fromtimestamp(current_ts)
-                                reconstructed.append(dt.strftime('%Y-%m-%d %H:%M:%S'))
-                            else:
+                        # Look up value in appropriate array based on field type
+                        if field_type_str == 'timestamp':
+                            if actual_idx < len(timestamps):
+                                delta = timestamps[actual_idx]
+                                current_ts += delta
                                 reconstructed.append(str(current_ts))
-                    elif field_type in ('SEVERITY', 'STATUS'):
-                        if actual_idx < len(severities):
-                            sev_id = severities[actual_idx]
-                            if sev_id < len(compressed.severity_list):
-                                reconstructed.append(compressed.severity_list[sev_id])
-                    elif field_type in ('IP_ADDRESS', 'HOST'):
-                        if actual_idx < len(ip_addresses):
-                            ip_id = ip_addresses[actual_idx]
-                            if ip_id < len(compressed.ip_list):
-                                ip_value = compressed.ip_list[ip_id]
-                                # Otten decoding: IP might be binary (bytes) or string
-                                if enable_otten and isinstance(ip_value, bytes):
-                                    decoded_ip = preprocessor.decode_ip_binary(ip_value)
-                                    reconstructed.append(decoded_ip)
-                                else:
-                                    reconstructed.append(ip_value)
-                    else:  # MESSAGE
-                        if actual_idx < len(messages):
-                            msg_id = messages[actual_idx]
-                            if msg_id < len(compressed.message_list):
-                                msg_value = compressed.message_list[msg_id]
-                                
-                                # Otten decoding: Message might be encoded with template dictionary
-                                if enable_otten and template_data.get('id') in template_dicts:
-                                    template_dict = template_dicts[template_data['id']]
-                                    if isinstance(msg_value, bytes):
-                                        decoded_msg = template_dict.decode_message(msg_value)
-                                        reconstructed.append(decoded_msg)
-                                    else:
-                                        # Already decoded or not encoded
-                                        reconstructed.append(msg_value)
-                                else:
-                                    reconstructed.append(msg_value)
-                    
-                    field_idx += 1
+                        elif field_type_str in ('severity', 'status'):
+                            if actual_idx < len(severities):
+                                sev_id = severities[actual_idx]
+                                if sev_id < len(compressed.severity_list):
+                                    reconstructed.append(compressed.severity_list[sev_id])
+                        elif field_type_str in ('ip_address', 'host'):
+                            if actual_idx < len(ip_addresses):
+                                ip_id = ip_addresses[actual_idx]
+                                if ip_id < len(compressed.ip_list):
+                                    reconstructed.append(compressed.ip_list[ip_id])
+                        else:  # message or other types
+                            if actual_idx < len(messages):
+                                msg_id = messages[actual_idx]
+                                if msg_id < len(compressed.message_list):
+                                    reconstructed.append(compressed.message_list[msg_id])
+                        
+                        field_idx += 1
                 else:
                     # Constant part - use as-is
                     reconstructed.append(part)
