@@ -94,9 +94,41 @@ docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc -m
 ```
 
-### Pre-built Docker Image
 
-We publish pre-built Docker images to the GitHub Container Registry (GHCR). Use the following commands to pull and run the latest image:
+### Pre-built Docker Image (GHCR & Docker Hub)
+
+We publish pre-built Docker images to the GitHub Container Registry (GHCR) and mirror to Docker Hub. There are two ways to run LogPress with Docker:
+
+1) From a local clone (recommended for development):
+
+```bash
+# Clone repository and run with docker-compose
+git clone https://github.com/adam-bouafia/LogPress.git
+cd LogPress
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive
+```
+
+2) Use pre-built images from GHCR or Docker Hub (recommended for quick start):
+
+```bash
+# Pull the image from GHCR
+docker pull ghcr.io/adam-bouafia/logpress:latest
+
+# Or pull from Docker Hub mirror
+docker pull adambouafia/logpress:latest
+
+# Run the CLI (example: show version)
+docker run --rm ghcr.io/adam-bouafia/logpress:latest python -m logpress --version
+
+# Run a compress command using the GHCR image
+docker run --rm \
+  -v "$(pwd)/data:/app/data:ro" \
+  -v "$(pwd)/evaluation:/app/evaluation:rw" \
+  ghcr.io/adam-bouafia/logpress:latest \
+  compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc -m
+```
+
+If you prefer Docker Hub, images are mirrored to Docker Hub as `adambouafia/logpress:latest` and to specific version tags such as `adambouafia/logpress:1.0.1`.
 
 ```bash
 # Pull the image from GHCR

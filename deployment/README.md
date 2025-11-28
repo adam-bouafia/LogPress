@@ -121,7 +121,7 @@ docker pull ghcr.io/adam-bouafia/logpress:latest
 docker run --rm ghcr.io/adam-bouafia/logpress:latest python -m logpress --version
 ```
 
-If you'd like a Docker Hub mirror, you can tag and push the image to Docker Hub with the `adambouafia/logpress:latest` tag. This requires Docker Hub credentials.
+If you'd like a Docker Hub mirror, you can tag and push the image to Docker Hub with the `adambouafia/logpress:latest` tag. This requires Docker Hub credentials and the `DOCKERHUB_TOKEN` secret in CI.
 
 ```bash
 docker tag ghcr.io/adam-bouafia/logpress:latest adambouafia/logpress:latest
