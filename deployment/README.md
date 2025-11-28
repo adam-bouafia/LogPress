@@ -109,6 +109,26 @@ docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   python /app/evaluation/run_full_evaluation.py
 ```
 
+### Image Availability
+
+Pre-built images are available on GHCR:
+
+```bash
+# Pull the GHCR image
+docker pull ghcr.io/adam-bouafia/logpress:latest
+
+# Run basic check
+docker run --rm ghcr.io/adam-bouafia/logpress:latest python -m logpress --version
+```
+
+If you'd like a Docker Hub mirror, you can tag and push the image to Docker Hub with the `adambouafia/logpress:latest` tag. This requires Docker Hub credentials.
+
+```bash
+docker tag ghcr.io/adam-bouafia/logpress:latest adambouafia/logpress:latest
+docker login --username <docker-hub-username>
+docker push adambouafia/logpress:latest
+```
+
 ### logpress-query (Query Service)
 
 **Dedicated query service**:

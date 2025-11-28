@@ -94,6 +94,34 @@ docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc -m
 ```
 
+### Pre-built Docker Image
+
+We publish pre-built Docker images to the GitHub Container Registry (GHCR). Use the following commands to pull and run the latest image:
+
+```bash
+# Pull the image from GHCR
+docker pull ghcr.io/adam-bouafia/logpress:latest
+
+# Run the CLI (example: show version)
+docker run --rm ghcr.io/adam-bouafia/logpress:latest python -m logpress --version
+
+# Run a compress command using the GHCR image
+docker run --rm \
+  -v "$(pwd)/data:/app/data:ro" \
+  -v "$(pwd)/evaluation:/app/evaluation:rw" \
+  ghcr.io/adam-bouafia/logpress:latest \
+  compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc -m
+```
+
+If you prefer Docker Hub, you or the CI workflow can mirror the image to Docker Hub with the `adambouafia/logpress:latest` tag. For example:
+
+```bash
+# (Optional) Tag and push to Docker Hub (requires Docker Hub credentials)
+docker tag ghcr.io/adam-bouafia/logpress:latest adambouafia/logpress:latest
+docker login --username <docker-hub-username>
+docker push adambouafia/logpress:latest
+```
+
 ## 📁 Project Structure (MCP Architecture)
 
 ```
