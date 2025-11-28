@@ -1,0 +1,81 @@
+version: "3.8"
+
+services:
+  # Interactive CLI with bash script
+  logsim-interactive-bash:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    image: logsim:latest
+    container_name: logsim-interactive-bash
+    tty: true
+    stdin_open: true
+    volumes:
+      # Mount data directory (read-only)
+      - ../data:/app/data:ro
+      # Mount evaluation directory (read-write for outputs)
+      - ../evaluation:/app/evaluation
+      # Mount scripts directory
+      - ../scripts:/app/scripts:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TERM=xterm-256color
+    command: ["bash", "scripts/logsim-interactive.sh"]
+
+  # Interactive CLI with Python rich
+  logsim-interactive:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    image: logsim:latest
+    container_name: logsim-interactive
+    tty: true
+    stdin_open: true
+    volumes:
+      # Mount data directory (read-only)
+      - ../data:/app/data:ro
+      # Mount evaluation directory (read-write for outputs)
+      - ../evaluation:/app/evaluation
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TERM=xterm-256color
+    command: ["python", "-m", "logsim.cli.interactive"]
+
+  # Original compression service
+  logsim:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    image: logsim:latest
+    container_name: logsim-compress
+    volumes:
+      # Mount datasets directory
+      - ../data/datasets:/app/data/datasets:ro
+      # Mount output directories
+      - ../evaluation/compressed:/app/evaluation/compressed
+      - ../evaluation/results:/app/evaluation/results
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+    command: python evaluation/run_full_evaluation.py
+
+  # Query service
+  logsim-query:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    image: logsim:latest
+    container_name: logsim-query
+    volumes:
+      - ../evaluation/compressed:/app/evaluation/compressed:ro
+      - ../data/datasets:/app/data/datasets:ro
+      - ../evaluation/results:/app/evaluation/results
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python evaluation/run_query_benchmarks.py
+    depends_on:
+      - logsim
+
+networks:
+  default:
+    name: logsim-network

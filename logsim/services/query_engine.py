@@ -14,7 +14,8 @@ from dataclasses import dataclass
 from pathlib import Path
 import time
 
-from .compressor import CompressedLog, SemanticCompressor
+from logsim.services.compressor import CompressedLog, SemanticCompressor
+from logsim.context.encoding.varint import decode_varint_list
 
 
 @dataclass
@@ -49,28 +50,55 @@ class QueryEngine:
         self.compressed = SemanticCompressor.load(filepath)
         print(f"✓ Loaded {self.compressed.original_count} compressed logs")
         print(f"  • Templates: {len(self.compressed.templates)}")
-        print(f"  • Dictionaries: severity={len(self.compressed.severity_dict)}, "
-              f"ip={len(self.compressed.ip_dict)}, message={len(self.compressed.message_dict)}")
+        # Use severity_list, ip_list, message_list (not _dict)
+        sev_count = len(self.compressed.severity_list) if hasattr(self.compressed, 'severity_list') else 0
+        ip_count = len(self.compressed.ip_list) if hasattr(self.compressed, 'ip_list') else 0
+        msg_count = len(self.compressed.message_list) if hasattr(self.compressed, 'message_list') else 0
+        print(f"  • Dictionaries: severity={sev_count}, ip={ip_count}, message={msg_count}")
     
-    def query_by_severity(self, severity: str) -> QueryResult:
+    def _reconstruct_logs(self, indices: List[int]) -> List[str]:
         """
-        Query logs by severity level
+        Reconstruct log lines from matched indices
         
-        Uses dictionary lookup - very fast!
+        Args:
+            indices: List of log entry indices to reconstruct
+        
+        Returns:
+            List of reconstructed log strings
+        """
+        if not self.compressed:
+            return []
+        
+        # Use the compressor's decompress method
+        # Pass the compressed data we loaded
+        compressor = SemanticCompressor()
+        all_logs = compressor.decompress(self.compressed)
+        
+        # Return only matched indices
+        return [all_logs[i] for i in indices if i < len(all_logs)]
+    
+    def query_by_severity(self, severities: List[str]) -> QueryResult:
+        """
+        Query logs by severity level(s)
+        
+        Args:
+            severities: List of severity values to match (e.g., ['ERROR', 'error'])
+        
+        Uses dictionary lookup - fast!
         """
         if not self.compressed:
             raise ValueError("No compressed data loaded")
         
         start_time = time.time()
         
-        # Find severity ID in dictionary
-        severity_id = None
-        for dict_id, dict_value in self.compressed.severity_dict.items():
-            if dict_value.upper() == severity.upper():
-                severity_id = dict_id
-                break
+        # Find severity IDs in list
+        severity_ids = set()
+        for sev_value in severities:
+            for idx, dict_value in enumerate(self.compressed.severity_list):
+                if dict_value.upper() == sev_value.upper():
+                    severity_ids.add(idx)
         
-        if severity_id is None:
+        if not severity_ids:
             # Severity not found
             return QueryResult(
                 matched_count=0,
@@ -79,20 +107,28 @@ class QueryEngine:
                 scanned_count=self.compressed.original_count
             )
         
+        # Decode severities from varint
+        severities_decoded = decode_varint_list(
+            self.compressed.severities_varint, 
+            self.compressed.severity_count
+        )
+        
         # Scan severity column
         matched_indices = []
-        for i, sev_id in enumerate(self.compressed.severities):
-            if sev_id == severity_id:
+        for i, sev_id in enumerate(severities_decoded):
+            if sev_id in severity_ids:
                 matched_indices.append(i)
+        
+        # Reconstruct matched logs
+        matched_logs = self._reconstruct_logs(matched_indices)
         
         execution_time = time.time() - start_time
         
-        # Decompress only matched logs (simplified - just count for now)
         return QueryResult(
             matched_count=len(matched_indices),
-            matched_logs=[],  # Would reconstruct here
+            matched_logs=matched_logs,
             execution_time=execution_time,
-            scanned_count=len(self.compressed.severities)
+            scanned_count=len(severities_decoded)
         )
     
     def query_by_ip(self, ip_address: str) -> QueryResult:
@@ -102,11 +138,11 @@ class QueryEngine:
         
         start_time = time.time()
         
-        # Find IP ID in dictionary
+        # Find IP ID in list
         ip_id = None
-        for dict_id, dict_value in self.compressed.ip_dict.items():
+        for idx, dict_value in enumerate(self.compressed.ip_list):
             if dict_value == ip_address:
-                ip_id = dict_id
+                ip_id = idx
                 break
         
         if ip_id is None:
@@ -117,19 +153,28 @@ class QueryEngine:
                 scanned_count=self.compressed.original_count
             )
         
+        # Decode IP addresses from varint
+        ip_addresses_decoded = decode_varint_list(
+            self.compressed.ip_addresses_varint,
+            self.compressed.ip_count
+        )
+        
         # Scan IP column
         matched_indices = []
-        for i, ip_id_val in enumerate(self.compressed.ip_addresses):
+        for i, ip_id_val in enumerate(ip_addresses_decoded):
             if ip_id_val == ip_id:
                 matched_indices.append(i)
+        
+        # Reconstruct matched logs
+        matched_logs = self._reconstruct_logs(matched_indices)
         
         execution_time = time.time() - start_time
         
         return QueryResult(
             matched_count=len(matched_indices),
-            matched_logs=[],
+            matched_logs=matched_logs,
             execution_time=execution_time,
-            scanned_count=len(self.compressed.ip_addresses)
+            scanned_count=len(ip_addresses_decoded)
         )
     
     def count_all(self) -> QueryResult:

@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+.env
+.cache/
+
+# Keep datasets but ignore OpenStack (not used)
+datasets/OpenStack/
+
+# Keep only production compressed files
+compressed/*test*
+compressed/*benchmark*
+compressed/*bwt*
+compressed/*nobwt*
+compressed/*universal*
+
+# Documentation (keep README)
+docs/
+*.tex
+*.pdf
+papers/
+Context-Engineering-Intro/
+
+# Temporary evaluation files
+debug_*.py
+*_prompt.md

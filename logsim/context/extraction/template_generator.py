@@ -20,8 +20,8 @@ from dataclasses import dataclass, field as dataclass_field
 from collections import Counter, defaultdict
 import re
 
-from .tokenizer import LogTokenizer, Token, TokenType
-from .semantic_types import SemanticTypeRecognizer, SemanticType, SemanticMatch
+from logsim.context.tokenization.tokenizer import LogTokenizer, Token, TokenType
+from logsim.context.classification.semantic_types import SemanticTypeRecognizer, SemanticType, SemanticMatch
 
 
 @dataclass

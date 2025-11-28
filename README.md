@@ -1,230 +1,395 @@
-# LogSim: Semantic Log Compression with Automatic Schema Extraction
+# LogSim - Semantic Log Compression System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](logsim/tests/)
+[![Coverage](https://img.shields.io/badge/coverage-42%25-yellow.svg)](htmlcov/index.html)
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-LogSim is a high-performance log compression system that automatically extracts schemas from unstructured logs and applies semantic-aware compression techniques. It achieves **11.47x average compression** while maintaining the ability to query specific fields without full decompression.
+**Master's Thesis Research Project**: Automatic schema extraction from unstructured system logs using constraint-based parsing and semantic-aware compression.
 
-## Features
+## 🎯 Research Goals
 
-- **Automatic Schema Extraction**: No configuration required - discovers log templates automatically
-- **Semantic-Aware Compression**: Different compression strategies for timestamps, IPs, severity levels, and messages
-- **Queryable Format**: Columnar storage enables selective field access without full decompression
-- **High Performance**: Processes 1.26-2.57 MB/s with 11.47x compression ratio
-- **Lossless**: Perfect reconstruction of original logs
+- **Automatic Schema Discovery**: Extract implicit log schemas without manual annotation
+- **Semantic-Aware Compression**: Achieve 8-30× compression while maintaining queryability
+- **No ML Models**: Pure constraint-based approach using pattern matching and heuristics
+- **Real-World Validation**: Tested on 5 diverse log sources (497K+ entries)
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Installation
 
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/adam-bouafia/LogSim.git
 cd LogSim
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+pip install -e .
 ```
 
-### Basic Usage
-
-**Compress logs:**
-
-```python
-from logsim.compressor import SemanticCompressor
-from pathlib import Path
-
-# Load your log file
-with open('your_logs.log', 'r') as f:
-    logs = [line.strip() for line in f if line.strip()]
-
-# Compress
-compressor = SemanticCompressor(min_support=3)
-compressed, stats = compressor.compress(logs, verbose=True)
-
-# Save compressed data
-compressor.save(Path('compressed_logs.lsc'))
-
-print(f"Compression ratio: {stats.compression_ratio:.2f}x")
-print(f"Original: {stats.original_size/1024:.2f} KB")
-print(f"Compressed: {stats.compressed_size/1024:.2f} KB")
-```
-
-**Decompress logs:**
-
-```python
-from logsim.compressor import SemanticCompressor
-
-# Load compressed data
-compressor = SemanticCompressor()
-compressed = compressor.load(Path('compressed_logs.lsc'))
-
-# Decompress
-original_logs = compressor.decompress(compressed)
-```
-
-**Query without full decompression:**
-
-```python
-from logsim.query_engine import QueryEngine
-from pathlib import Path
-
-# Query specific fields
-engine = QueryEngine(Path('compressed_logs.lsc'))
-
-# Get all ERROR severity logs
-errors = engine.query(severity='ERROR')
-
-# Get logs in time range
-recent = engine.query(
-    timestamp_start='2025-01-01 00:00:00',
-    timestamp_end='2025-01-31 23:59:59'
-)
-
-# Combined filters
-critical = engine.query(severity='ERROR', contains='database')
-```
-
-## Benchmarks
-
-Performance on real-world log datasets (360K total logs, 36.52 MB):
-
-| Dataset | Logs | Original | Compressed | Ratio | vs gzip-9 | Speed |
-|---------|------|----------|------------|-------|-----------|-------|
-| Apache | 51,978 | 4.75 MB | 584.24 KB | **8.32x** | 39.2% | 1.26 MB/s |
-| HealthApp | 212,394 | 19.53 MB | 1870.52 KB | **10.69x** | 97.9% | 2.57 MB/s |
-| Proxifier | 21,320 | 2.40 MB | 196.98 KB | **12.49x** | 79.6% | 1.29 MB/s |
-| Zookeeper | 74,273 | 9.84 MB | 609.86 KB | **16.53x** | 63.9% | 1.27 MB/s |
-| **Average** | **359,965** | **36.52 MB** | **3.18 MB** | **11.47x** | **79.9%** | **1.60 MB/s** |
-
-**Key Metrics:**
-- Average compression ratio: **11.47x** (79.9% of gzip-9 efficiency)
-- Compression speed: **1.60 MB/s** average
-- Template extraction: **77 templates** across all datasets
-- Match rate: **100%** (all logs successfully matched)
-
-## How It Works
-
-LogSim uses a 6-stage pipeline:
-
-### 1. Tokenization
-FSM-based tokenizer with context-aware boundary detection (`logsim/tokenizer.py`)
-
-### 2. Template Extraction
-Custom log alignment algorithm that discovers patterns by position-by-position comparison (`logsim/template_generator.py`)
-
-### 3. Semantic Classification
-Pattern-based field type detection: TIMESTAMP, SEVERITY, IP_ADDRESS, HOST, PROCESS_ID, MESSAGE (`logsim/semantic_types.py`)
-
-### 4. Columnar Encoding
-Different strategies per field type:
-- **Delta Encoding**: Timestamps (store differences)
-- **Zigzag Encoding**: Signed integers
-- **Varint Encoding**: Protocol Buffer style compression
-- **Dictionary Encoding**: Low-cardinality fields (severity, status)
-- **RLE v2**: Pattern detection for repeated sequences
-- **Token Pool**: Global template deduplication
-
-### 5. Binary Serialization
-- **MessagePack**: Efficient binary format
-- **Zstandard Level 15**: Final compression pass
-
-### 6. Query Engine
-Selective decompression with columnar field access (`logsim/query_engine.py`)
-
-## Evaluation
-
-Run comprehensive evaluation on all datasets:
+### Interactive Mode (Recommended)
 
 ```bash
-python run_full_evaluation.py
+# Beautiful terminal UI with dataset auto-discovery
+python -m logsim.cli.interactive
 ```
 
-Results will be saved to `results/full_evaluation_results.md`.
+**Features**:
+- 🔍 Auto-discovers datasets in `data/datasets/`
+- 📊 Real-time compression progress
+- 🎨 Rich terminal UI with tables and progress bars
+- ⚡ Query compressed logs interactively
 
-## Project Structure
+### Command-Line Usage
+
+```bash
+# Compress logs
+python -m logsim compress \
+  -i data/datasets/Apache/Apache_full.log \
+  -o evaluation/compressed/apache.lsc \
+  --min-support 3 \
+  -m
+
+# Query compressed logs
+python -m logsim query \
+  -c evaluation/compressed/apache.lsc \
+  --severity ERROR \
+  --limit 20
+
+# Run full evaluation
+python evaluation/run_full_evaluation.py
+```
+
+### Docker Usage
+
+```bash
+# Interactive mode (Python rich UI)
+docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive
+
+# Bash menu (alternative)
+docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive-bash
+
+# Run specific command
+docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+  compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc -m
+```
+
+## 📁 Project Structure (MCP Architecture)
 
 ```
 LogSim/
-├── logsim/                 # Core implementation
-│   ├── compressor.py       # Main compression logic
-│   ├── tokenizer.py        # FSM-based tokenization
-│   ├── template_generator.py  # Schema extraction
-│   ├── semantic_types.py   # Field type detection
-│   ├── query_engine.py     # Selective decompression
-│   ├── varint.py           # Variable-length encoding
-│   ├── bwt.py              # Burrows-Wheeler Transform
-│   └── gorilla_compression.py  # Time-series compression
-├── datasets/               # Sample log datasets
-│   ├── Apache/
-│   ├── HealthApp/
-│   ├── Proxifier/
-│   └── Zookeeper/
-├── ground_truth/           # Manual annotations for evaluation
-├── results/                # Evaluation results
-├── docs/                   # Additional documentation
-│   ├── API.md              # API reference
-│   └── SETUP.md            # Detailed setup guide
-├── run_full_evaluation.py  # Benchmark script
-└── requirements.txt        # Python dependencies
+├── logsim/                  # Core Python package (Model-Context-Protocol)
+│   ├── models/             # Data structures (Token, LogTemplate, CompressedLog)
+│   ├── protocols/          # Abstract interfaces (EncoderProtocol, CompressorProtocol)
+│   ├── context/           # Business logic
+│   │   ├── tokenization/  # Smart log tokenization (FSM-based)
+│   │   ├── extraction/    # Template generation (log alignment algorithm)
+│   │   ├── classification/# Semantic type recognition (pattern-based)
+│   │   └── encoding/      # Compression codecs (delta, dictionary, varint)
+│   ├── services/          # High-level orchestration
+│   │   ├── compressor.py  # 6-stage compression pipeline
+│   │   ├── query_engine.py# Queryable decompression
+│   │   └── evaluator.py   # Accuracy metrics vs ground truth
+│   ├── cli/              # User interfaces
+│   │   ├── interactive.py # Rich terminal UI
+│   │   └── commands.py    # Click-based CLI
+│   └── tests/            # Test suite (25 tests, 100% passing)
+│       ├── unit/         # Component testing
+│       ├── integration/  # Workflow testing
+│       ├── e2e/          # End-to-end testing
+│       └── performance/  # Benchmarks
+│
+├── data/                  # Input data
+│   ├── datasets/         # 5 real-world log sources (497K entries)
+│   │   ├── Apache/       # Web server logs (52K lines)
+│   │   ├── HealthApp/    # Android health tracking (212K lines)
+│   │   ├── Zookeeper/    # Distributed coordination (74K lines)
+│   │   ├── OpenStack/    # Cloud infrastructure (137K lines)
+│   │   └── Proxifier/    # Network proxy (21K lines)
+│   └── ground_truth/     # Manual annotations for validation
+│
+├── evaluation/           # Outputs & results
+│   ├── compressed/       # .lsc compressed files
+│   ├── results/          # Evaluation metrics (JSON/Markdown)
+│   └── schema_versions/  # Schema evolution tracking
+│
+├── deployment/          # Infrastructure
+│   ├── Dockerfile       # Container image
+│   ├── docker-compose.yml# Service orchestration
+│   └── Makefile         # Build automation
+│
+├── documentation/       # Project documentation
+│   ├── README.md        # Documentation index
+│   ├── TESTING.md       # Test strategy
+│   ├── MCP_ARCHITECTURE.md # System design
+│   └── API.md           # Python API reference
+│
+└── scripts/            # Automation scripts
+    ├── logsim-interactive.sh  # Bash interactive menu
+    ├── run-tests.sh           # Test suite runner
+    └── run-pre-production-tests.sh # Validation
 ```
 
-## Supported Log Formats
+See individual README files in each directory for detailed information.
 
-LogSim automatically handles diverse log formats:
+## 🔬 Research Methodology
 
-- **Apache**: `[Thu Jun 09 06:07:04 2005] [notice] LDAP: Built with OpenLDAP`
-- **HealthApp**: `20171223-22:15:29:606|Step_LSC|30002312|onStandStepChanged 3579`
-- **Zookeeper**: `2015-07-29 17:41:41,536 - INFO [main:QuorumPeerConfig@101] - Reading configuration`
-- **Proxifier**: `[10.30 16:49:06] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 0 bytes`
+### 1. Schema Extraction Pipeline
 
-## Requirements
+**6-Stage Process**:
+1. **Tokenization**: FSM-based parser handles diverse log formats
+2. **Semantic Classification**: Pattern-based field type detection (timestamp, IP, severity, etc.)
+3. **Field Grouping**: Identify related fields (ip+port, user+action)
+4. **Template Generation**: Log alignment algorithm extracts schemas
+5. **Schema Versioning**: Track format evolution over time
+6. **Validation**: Compare against manual ground truth (precision/recall)
 
-- Python 3.8+
-- Dependencies listed in `requirements.txt`:
-  - `msgpack` - Binary serialization
-  - `zstandard` - Zstandard compression
-  - `regex` - Advanced pattern matching
-  - `python-dateutil` - Timestamp parsing
-  - `numpy` - Numerical operations
-
-## Documentation
-
-- [API Reference](docs/API.md) - Detailed API documentation
-- [Setup Guide](docs/SETUP.md) - Installation and configuration
-- [Evaluation Results](results/full_evaluation_results.md) - Detailed benchmark data
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Citation
-
-If you use LogSim in your research, please cite:
-
-```bibtex
-@software{logsim2025,
-  author = {Adam Bouafia},
-  title = {LogSim: Semantic Log Compression with Automatic Schema Extraction},
-  year = {2025},
-  url = {https://github.com/adam-bouafia/LogSim}
-}
+**Example**:
+```
+Raw Logs:
+  [Thu Jun 09 06:07:04 2005] [notice] LDAP: Built with OpenLDAP
+  [Thu Jun 09 06:07:05 2005] [notice] LDAP: SSL support unavailable
+  
+Extracted Template:
+  [TIMESTAMP] [SEVERITY] LDAP: [MESSAGE]
 ```
 
-## Acknowledgments
+### 2. Semantic-Aware Compression
 
-This project implements techniques inspired by research in log parsing, columnar compression, and semantic preprocessing. See the related work section in our documentation for detailed references.
+**Category-Specific Codecs**:
+- **Timestamps**: Delta encoding (8-10× compression)
+- **Severity/Status**: Dictionary encoding (5-7× compression)
+- **Metrics**: Gorilla time-series compression (3-5× compression)
+- **Messages**: Token pool with references (variable)
+- **Stack traces**: Reference tracking (store once, reuse pointer)
 
-## Contact
+**Queryable Index**: Columnar storage enables filtering without full decompression.
 
-- Author: Adam Bouafia
-- GitHub: [@adam-bouafia](https://github.com/adam-bouafia)
-- Issues: [GitHub Issues](https://github.com/adam-bouafia/LogSim/issues)
+### 3. Evaluation Metrics
+
+**Accuracy** (vs manual annotations):
+- Precision: % of extracted fields that are correct
+- Recall: % of actual fields that were found
+- F1-Score: Harmonic mean
+- **Target**: >90% accuracy
+
+**Compression Performance**:
+- Compression ratio vs gzip baseline
+- Query latency overhead
+- **Target**: >10× compression, <2× query slowdown
+
+## 🧪 Testing
+
+### Run Complete Test Suite
+
+```bash
+# All tests with coverage
+bash scripts/run-tests.sh
+
+# View coverage report
+firefox htmlcov/index.html
+```
+
+### Pre-Production Validation
+
+```bash
+# Validate before deployment
+bash scripts/run-pre-production-tests.sh
+```
+
+**Test Status**: ✅ 25/25 tests passing (100%)
+- Unit tests: 9 tests
+- Integration tests: 8 tests
+- E2E tests: 3 tests
+- Performance benchmarks: 5 tests
+
+### Performance Benchmarks
+
+```bash
+# Run benchmarks
+python -m pytest logsim/tests/performance/ --benchmark-only
+
+# Expected results:
+# - Compression: >500 ops/sec
+# - Template extraction: >900 ops/sec
+# - Linear scalability: 100 → 10,000 logs
+```
+
+## 📚 Documentation
+
+- [Documentation Index](documentation/README.md) - Complete documentation overview
+- [Testing Guide](documentation/TESTING.md) - Test strategy and commands
+- [MCP Architecture](documentation/MCP_ARCHITECTURE.md) - System design details
+- [API Reference](documentation/API.md) - Python API usage
+- [Docker Guide](deployment/README.md) - Container deployment
+
+## 🎓 Research Context
+
+**Master's Thesis**: Automatic Schema Extraction from Unstructured System Logs  
+**Duration**: 26 weeks (4 phases)  
+**Target Venues**: VLDB, SIGMOD, IEEE BigData  
+**Novel Contribution**: Semantic-aware compression adapting to log content types
+
+### Related Work
+- **Log Parsing**: Drain, Spell, LogPai
+- **Schema Inference**: Lakehouse formats (Parquet, ORC)
+- **Compression**: Generic (gzip, zstd) vs specialized (LogShrink)
+
+### Key Differentiators
+- ✅ No ML models (constraint-based approach)
+- ✅ Semantic awareness (field-type-specific compression)
+- ✅ Query preservation (columnar indexes)
+- ✅ Schema evolution tracking
+- ✅ Lossless compression (exact reconstruction)
+
+## 🛠️ Development
+
+### Setup Development Environment
+
+```bash
+# Install test dependencies
+pip install pytest pytest-cov pytest-benchmark pytest-mock
+
+# Run tests on file changes (watch mode)
+pip install pytest-watch
+ptw logsim/tests/ -- -v
+```
+
+### Contribution Workflow
+
+1. Create feature branch: `git checkout -b feature/new-encoder`
+2. Make changes and add tests
+3. Run validation: `bash scripts/run-pre-production-tests.sh`
+4. Submit PR (GitHub Actions runs full test suite)
+
+### Adding New Semantic Type Patterns
+
+```python
+# logsim/context/classification/semantic_types.py
+
+def recognize_custom_field(token: str) -> Tuple[str, float]:
+    """
+    Add pattern for new field type.
+    
+    Returns:
+        (field_type, confidence_score)
+    """
+    if re.match(r'^[A-Z]{3}-\d{4}$', token):
+        return ('ERROR_CODE', 0.95)  # High confidence
+    return ('UNKNOWN', 0.0)
+```
+
+### Adding New Compression Codecs
+
+```python
+# logsim/context/encoding/custom_encoder.py
+
+from logsim.protocols import EncoderProtocol
+
+class CustomEncoder(EncoderProtocol):
+    def encode(self, values: List[Any]) -> bytes:
+        # Your encoding logic
+        pass
+    
+    def decode(self, data: bytes) -> List[Any]:
+        # Your decoding logic
+        pass
+```
+
+## 📦 Dependencies
+
+### Core Libraries
+```
+msgpack>=1.0.0          # Serialization
+zstandard>=0.21.0       # Compression baseline
+python-dateutil>=2.8.0  # Timestamp parsing
+regex>=2023.0.0         # Advanced pattern matching
+rich>=13.0.0            # Terminal UI
+click>=8.1.0            # CLI framework
+```
+
+### Testing
+```
+pytest>=7.4.0           # Test framework
+pytest-cov>=4.1.0       # Coverage reporting
+pytest-benchmark>=4.0.0 # Performance testing
+pytest-mock>=3.12.0     # Mocking utilities
+```
+
+### Optional Tools
+```bash
+# Baseline comparison
+gzip --version
+
+# Command-line benchmarking
+cargo install hyperfine
+
+# Memory profiling
+pip install memory-profiler
+```
+
+## 🐳 Docker Deployment
+
+### Build & Run
+
+```bash
+# Build all services
+docker-compose -f deployment/docker-compose.yml build
+
+# Run interactive CLI
+docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive
+
+# Run compression
+docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+  compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc
+```
+
+### Environment Variables
+
+```bash
+# Set in docker-compose.yml
+PYTHONUNBUFFERED=1      # Real-time output
+TERM=xterm-256color     # Colored terminal
+MIN_SUPPORT=3           # Template extraction threshold
+ZSTD_LEVEL=15           # Compression level (1-22)
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Please see CONTRIBUTING.md for guidelines.
+
+### Areas for Contribution
+- [ ] Additional semantic type patterns
+- [ ] New compression codecs
+- [ ] Query optimization
+- [ ] Schema visualization
+- [ ] Performance improvements
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+
+## 🔗 Links
+
+- [Project Documentation](documentation/README.md)
+- [Test Results](evaluation/results/)
+- [Research Roadmap](PROJECT.md)
+- [GitHub Repository](https://github.com/adam-bouafia/LogSim)
+
+## 📞 Contact
+
+- **Author**: Adam Bouafia
+- **Repository**: https://github.com/adam-bouafia/LogSim
+- **Linkedin**: https://www.linkedin.com/in/adam-bouafia 
+
+---
+
+**Status**: ✅ Production Ready | 🧪 All Tests Passing (25/25) | 📊 Coverage: 42%
+
+Built with ❤️ for research in log analysis and semantic compression.

@@ -20,9 +20,10 @@ from datetime import datetime
 from dataclasses import dataclass
 from typing import List, Dict
 
-sys.path.insert(0, str(Path(__file__).parent))
+# Add parent directory to path
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from logsim.compressor import SemanticCompressor
+from logsim.services.compressor import SemanticCompressor
 
 
 @dataclass
@@ -95,7 +96,7 @@ def analyze_dataset(dataset_name: str, log_file: Path, sample_size: int = None) 
     print()
     
     # Save to file
-    output_path = Path(f"compressed/{dataset_name.lower()}_full.lsc")
+    output_path = Path(f"evaluation/compressed/{dataset_name.lower()}_full.lsc")
     compressor.save(output_path, verbose=False)
     compressed_bytes = output_path.stat().st_size
     compression_ratio = original_bytes / compressed_bytes
@@ -170,13 +171,41 @@ def main():
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print()
     
-    datasets = [
-        ("Apache", Path("datasets/Apache/Apache_full.log"), None),
-        ("HealthApp", Path("datasets/HealthApp/HealthApp_full.log"), None),
-        ("OpenStack", Path("datasets/OpenStack/OpenStack_full.log"), None),
-        ("Proxifier", Path("datasets/Proxifier/Proxifier_full.log"), None),
-        ("Zookeeper", Path("datasets/Zookeeper/Zookeeper_full.log"), None),
-    ]
+    # Auto-discover all available datasets
+    dataset_dir = Path("data/datasets")
+    datasets = []
+    
+    # Check each dataset folder
+    for folder_name in ["Apache", "BGL", "HDFS", "HPC", "HealthApp", "Linux", "Mac", "OpenStack", "Proxifier", "Zookeeper"]:
+        folder = dataset_dir / folder_name
+        if not folder.exists():
+            continue
+        
+        # Try different naming patterns
+        log_file = None
+        for pattern in [f"{folder_name}_full.log", f"{folder_name}.log", f"{folder_name.lower()}.log"]:
+            candidate = folder / pattern
+            if candidate.exists():
+                log_file = candidate
+                break
+        
+        if log_file:
+            # Use sample_size for very large datasets to speed up evaluation
+            sample_size = None
+            if folder_name in ["HDFS", "BGL"]:  # Very large datasets
+                sample_size = 100000  # 100K logs for testing
+            
+            datasets.append((folder_name, log_file, sample_size))
+    
+    if not datasets:
+        print("❌ No datasets found! Check data/datasets/ directory")
+        return
+    
+    print(f"Found {len(datasets)} datasets:")
+    for name, path, sample in datasets:
+        sample_str = f" (sampling {sample:,} logs)" if sample else ""
+        print(f"  • {name}{sample_str}")
+    print()
     
     results: List[DatasetResult] = []
     
@@ -277,8 +306,8 @@ def main():
     print()
     
     # Save results
-    results_file = Path("results/full_evaluation_results.md")
-    results_file.parent.mkdir(exist_ok=True)
+    results_file = Path("evaluation/results/full_evaluation_results.md")
+    results_file.parent.mkdir(exist_ok=True, parents=True)
     
     with open(results_file, 'w') as f:
         f.write(f"# LogSim Full Evaluation Results\n\n")

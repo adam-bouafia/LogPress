@@ -24,15 +24,14 @@ from pathlib import Path
 from datetime import datetime
 import time
 
-from .template_generator import TemplateGenerator, LogTemplate
-from .gorilla_compression import GorillaTimestampCompressor
-from .semantic_types import SemanticType
-from .bwt import bwt_transform, bwt_inverse
-from .varint import (
+from logsim.context.extraction.template_generator import TemplateGenerator, LogTemplate
+from logsim.context.encoding.gorilla import GorillaTimestampCompressor
+from logsim.context.classification.semantic_types import SemanticType
+from logsim.context.encoding.bwt import bwt_transform, bwt_inverse
+from logsim.context.encoding.varint import (
     encode_varint_list, decode_varint_list,
     encode_varint, decode_varint
 )
-from .bwt import bwt_transform, bwt_inverse
 
 # Load universal Zstandard dictionary (trained from all datasets)
 _UNIVERSAL_DICT = None
@@ -304,11 +303,33 @@ class SemanticCompressor:
     5. PROCESS_ID/USER_ID: Dictionary encoding
     
     Storage format: Columnar with indexes for fast queries
+    
+    Ablation study flags:
+    - enable_delta: Use delta encoding for timestamps (default: True)
+    - enable_dictionary: Use dictionary encoding (default: True)
+    - enable_varint: Use varint encoding (default: True)
+    - enable_rle: Use RLE v2 compression (default: True)
+    - enable_token_pool: Use global token deduplication (default: True)
+    - enable_zstd: Use Zstandard post-compression (default: True)
     """
     
-    def __init__(self, min_support: int = 3):
+    def __init__(self, min_support: int = 3, 
+                 enable_delta: bool = True,
+                 enable_dictionary: bool = True,
+                 enable_varint: bool = True,
+                 enable_rle: bool = True,
+                 enable_token_pool: bool = True,
+                 enable_zstd: bool = True):
         self.generator = TemplateGenerator(min_support=min_support)
         self.compressed_data = None
+        
+        # Ablation study flags
+        self.enable_delta = enable_delta
+        self.enable_dictionary = enable_dictionary
+        self.enable_varint = enable_varint
+        self.enable_rle = enable_rle
+        self.enable_token_pool = enable_token_pool
+        self.enable_zstd = enable_zstd
         
     def compress(self, log_lines: List[str], verbose: bool = True) -> Tuple[CompressedLog, CompressionStats]:
         """
@@ -1038,3 +1059,7 @@ if __name__ == "__main__":
         print(f"  • LogSim:   {actual_file_size:,} bytes ({len(original_data)/actual_file_size:.2f}x)")
         print(f"  • gzip -9:  {len(gzipped):,} bytes ({len(original_data)/len(gzipped):.2f}x)")
         print(f"  • LogSim advantage: {len(gzipped)/actual_file_size:.2f}x better than gzip")
+
+
+if __name__ == "__main__":
+    main()

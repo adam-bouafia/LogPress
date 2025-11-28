@@ -14,8 +14,5 @@ msgpack>=1.0.0            # MessagePack binary serialization (replaces JSON)
 pytest>=7.4.0             # Unit testing framework
 pytest-benchmark>=4.0.0   # Performance benchmarking
 
-# Log parser comparisons (Drain, Spell, etc.)
-git+https://github.com/logpai/logparser.git  # Drain, Spell, and other log parsers
-
-# Memory profiling
-memory-profiler>=0.61.0   # Memory usage profiling
+# Interactive CLI
+rich>=13.0.0              # Rich terminal UI with colors, tables, progress bars
