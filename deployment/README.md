@@ -13,6 +13,39 @@ deployment/
 
 ## Quick Start
 
+### Installation
+
+Preferred: Install from PyPI
+
+```bash
+# Install from PyPI (recommended)
+pip install LogPress
+```
+
+Alternative: Docker (no Python setup required)
+
+```bash
+# Build and run using docker-compose
+docker-compose -f deployment/docker-compose.yml build
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive
+```
+
+From source (developer mode)
+
+```bash
+# Clone repository
+git clone https://github.com/adam-bouafia/LogPress.git
+cd LogPress
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+pip install -e .
+```
+
 ### Build and Run
 
 ```bash

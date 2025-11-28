@@ -21,7 +21,7 @@ if requirements_file.exists():
 
 setup(
     name="LogPress",
-    version="1.0.0",
+    version="1.0.1",
     author="Adam Bouafia",
     author_email="adam.bouafia@example.com",
     description="Automatic Schema Extraction & Semantic-Aware Compression for System Logs",

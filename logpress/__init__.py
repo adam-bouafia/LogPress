@@ -18,7 +18,7 @@ Example usage:
     >>> print(f"Compression ratio: {stats.compression_ratio:.2f}×")
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Adam Bouafia"
 __license__ = "MIT"
 
