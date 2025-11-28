@@ -1,9 +1,9 @@
 #!/bin/bash
-# Run complete test suite for LogSim
+# Run complete test suite for logpress
 
 set -e
 
-echo "🧪 Running LogSim Test Suite"
+echo "🧪 Running logpress Test Suite"
 echo "============================="
 
 # Colors
@@ -27,23 +27,23 @@ pip install -q pytest pytest-cov pytest-benchmark pytest-mock
 # Run unit tests
 echo ""
 echo -e "${YELLOW}Running unit tests...${NC}"
-python -m pytest logsim/tests/unit/ -v --tb=short
+python -m pytest logpress/tests/unit/ -v --tb=short
 
 # Run integration tests
 echo ""
 echo -e "${YELLOW}Running integration tests...${NC}"
-python -m pytest logsim/tests/integration/ -v --tb=short
+python -m pytest logpress/tests/integration/ -v --tb=short
 
 # Run end-to-end tests
 echo ""
 echo -e "${YELLOW}Running end-to-end tests...${NC}"
-python -m pytest logsim/tests/e2e/ -v --tb=short
+python -m pytest logpress/tests/e2e/ -v --tb=short
 
 # Run with coverage
 echo ""
 echo -e "${YELLOW}Generating coverage report...${NC}"
-python -m pytest logsim/tests/ \
-    --cov=logsim \
+python -m pytest logpress/tests/ \
+    --cov=logpress \
     --cov-report=html \
     --cov-report=term-missing \
     --tb=short
@@ -52,7 +52,7 @@ python -m pytest logsim/tests/ \
 if [ "$1" == "--benchmark" ]; then
     echo ""
     echo -e "${YELLOW}Running performance benchmarks...${NC}"
-    python -m pytest logsim/tests/performance/ \
+    python -m pytest logpress/tests/performance/ \
         --benchmark-only \
         --benchmark-autosave
 fi

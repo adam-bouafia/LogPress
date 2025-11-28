@@ -3,7 +3,7 @@
 
 ## Structure
 
-- `compression/` - LogSim compression benchmarks (vs Gzip)
+- `compression/` - logpress compression benchmarks (vs Gzip)
 - `accuracy/` - Schema extraction accuracy evaluations
 - `comparison/` - Drain/Spell comparison results
 - `ablation/` - Component contribution analysis

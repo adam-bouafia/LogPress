@@ -1,4 +1,4 @@
-# LogSim - Semantic Log Compression System
+# logpress - Semantic Log Compression System
 # Production Docker Image
 
 FROM python:3.11-slim
@@ -23,12 +23,12 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY logsim/ logsim/
+COPY logpress/ logpress/
 COPY setup.py .
 COPY evaluation/ evaluation/
 COPY scripts/ scripts/
 
-# Install LogSim package in editable mode
+# Install logpress package in editable mode
 RUN pip install -e .
 
 # Make scripts executable
@@ -41,4 +41,4 @@ RUN mkdir -p /app/data /app/evaluation/compressed /app/evaluation/results
 ENV PYTHONPATH=/app
 
 # Default command - interactive CLI
-CMD ["python", "-m", "logsim.cli.interactive"]
+CMD ["python", "-m", "logpress.cli.interactive"]

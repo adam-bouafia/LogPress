@@ -5,7 +5,7 @@
       {
         "query_name": "count_all",
         "query_description": "SELECT COUNT(*)",
-        "logsim_time_ms": 0.007461004618865748,
+        "logpress_time_ms": 0.007461004618865748,
         "baseline_time_ms": 0.0017129981036608417,
         "speedup": 0.2295934919178831,
         "rows_matched": 51978,
@@ -14,7 +14,7 @@
       {
         "query_name": "severity_error",
         "query_description": "SELECT * WHERE severity='error' OR severity='ERROR'",
-        "logsim_time_ms": 876.8998230079887,
+        "logpress_time_ms": 876.8998230079887,
         "baseline_time_ms": 14.41754233383108,
         "speedup": 0.0164414930366564,
         "rows_matched": 38055,
@@ -23,7 +23,7 @@
       {
         "query_name": "ip_filter",
         "query_description": "SELECT * WHERE ip='204.100.200.22'",
-        "logsim_time_ms": 0.3901086699139948,
+        "logpress_time_ms": 0.3901086699139948,
         "baseline_time_ms": 6.028505667927675,
         "speedup": 15.453400892773667,
         "rows_matched": 0,
@@ -32,7 +32,7 @@
       {
         "query_name": "combined_filter",
         "query_description": "SELECT * WHERE severity contains 'notice'",
-        "logsim_time_ms": 808.6638913324956,
+        "logpress_time_ms": 808.6638913324956,
         "baseline_time_ms": 14.435164334524112,
         "speedup": 0.017850635460844207,
         "rows_matched": 13755,
@@ -43,7 +43,7 @@
       {
         "query_name": "count_all",
         "query_description": "SELECT COUNT(*)",
-        "logsim_time_ms": 0.002400663409692546,
+        "logpress_time_ms": 0.002400663409692546,
         "baseline_time_ms": 0.00046333298087120056,
         "speedup": 0.19300205893109348,
         "rows_matched": 433490,
@@ -54,7 +54,7 @@
       {
         "query_name": "count_all",
         "query_description": "SELECT COUNT(*)",
-        "logsim_time_ms": 0.002682005288079381,
+        "logpress_time_ms": 0.002682005288079381,
         "baseline_time_ms": 0.0004783360054716468,
         "speedup": 0.17835013510140743,
         "rows_matched": 212394,
@@ -65,7 +65,7 @@
       {
         "query_name": "count_all",
         "query_description": "SELECT COUNT(*)",
-        "logsim_time_ms": 0.002562999725341797,
+        "logpress_time_ms": 0.002562999725341797,
         "baseline_time_ms": 0.000530664692632854,
         "speedup": 0.20704828306686046,
         "rows_matched": 25567,
@@ -76,7 +76,7 @@
       {
         "query_name": "count_all",
         "query_description": "SELECT COUNT(*)",
-        "logsim_time_ms": 0.002436339855194092,
+        "logpress_time_ms": 0.002436339855194092,
         "baseline_time_ms": 0.00042933485625932616,
         "speedup": 0.176221250637105,
         "rows_matched": 116735,
@@ -87,7 +87,7 @@
       {
         "query_name": "count_all",
         "query_description": "SELECT COUNT(*)",
-        "logsim_time_ms": 0.0021123366119960942,
+        "logpress_time_ms": 0.0021123366119960942,
         "baseline_time_ms": 0.0004886727159221967,
         "speedup": 0.23134225537113415,
         "rows_matched": 137074,
@@ -98,7 +98,7 @@
       {
         "query_name": "count_all",
         "query_description": "SELECT COUNT(*)",
-        "logsim_time_ms": 0.0037049903767183423,
+        "logpress_time_ms": 0.0037049903767183423,
         "baseline_time_ms": 0.00055333172592024,
         "speedup": 0.14934768235763896,
         "rows_matched": 21320,
@@ -109,7 +109,7 @@
       {
         "query_name": "count_all",
         "query_description": "SELECT COUNT(*)",
-        "logsim_time_ms": 0.0023463314088682332,
+        "logpress_time_ms": 0.0023463314088682332,
         "baseline_time_ms": 0.0005150019812087218,
         "speedup": 0.21949242944206931,
         "rows_matched": 74273,
@@ -118,7 +118,7 @@
       {
         "query_name": "severity_error",
         "query_description": "SELECT * WHERE severity='error' OR severity='ERROR'",
-        "logsim_time_ms": 1208.605144667672,
+        "logpress_time_ms": 1208.605144667672,
         "baseline_time_ms": 30.03472433677719,
         "speedup": 0.024850733483379128,
         "rows_matched": 11005,
@@ -127,7 +127,7 @@
       {
         "query_name": "ip_filter",
         "query_description": "SELECT * WHERE ip='0.0.0.0'",
-        "logsim_time_ms": 1.134704672343408,
+        "logpress_time_ms": 1.134704672343408,
         "baseline_time_ms": 8.874588665397217,
         "speedup": 7.821055893838255,
         "rows_matched": 0,
@@ -136,7 +136,7 @@
       {
         "query_name": "combined_filter",
         "query_description": "SELECT * WHERE severity contains 'connection'",
-        "logsim_time_ms": 1151.1260976646251,
+        "logpress_time_ms": 1151.1260976646251,
         "baseline_time_ms": 24.13762466070087,
         "speedup": 0.0209687059564288,
         "rows_matched": 8,

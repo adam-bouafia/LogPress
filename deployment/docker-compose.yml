@@ -2,12 +2,12 @@ version: "3.8"
 
 services:
   # Interactive CLI with bash script
-  logsim-interactive-bash:
+  logpress-interactive-bash:
     build:
       context: ..
       dockerfile: deployment/Dockerfile
-    image: logsim:latest
-    container_name: logsim-interactive-bash
+    image: logpress:latest
+    container_name: logpress-interactive-bash
     tty: true
     stdin_open: true
     volumes:
@@ -20,15 +20,15 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - TERM=xterm-256color
-    command: ["bash", "scripts/logsim-interactive.sh"]
+    command: ["bash", "scripts/logpress-interactive.sh"]
 
   # Interactive CLI with Python rich
-  logsim-interactive:
+  logpress-interactive:
     build:
       context: ..
       dockerfile: deployment/Dockerfile
-    image: logsim:latest
-    container_name: logsim-interactive
+    image: logpress:latest
+    container_name: logpress-interactive
     tty: true
     stdin_open: true
     volumes:
@@ -39,15 +39,15 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - TERM=xterm-256color
-    command: ["python", "-m", "logsim.cli.interactive"]
+    command: ["python", "-m", "logpress.cli.interactive"]
 
   # Original compression service
-  logsim:
+  logpress:
     build:
       context: ..
       dockerfile: deployment/Dockerfile
-    image: logsim:latest
-    container_name: logsim-compress
+    image: logpress:latest
+    container_name: logpress-compress
     volumes:
       # Mount datasets directory
       - ../data/datasets:/app/data/datasets:ro
@@ -60,12 +60,12 @@ services:
     command: python evaluation/run_full_evaluation.py
 
   # Query service
-  logsim-query:
+  logpress-query:
     build:
       context: ..
       dockerfile: deployment/Dockerfile
-    image: logsim:latest
-    container_name: logsim-query
+    image: logpress:latest
+    container_name: logpress-query
     volumes:
       - ../evaluation/compressed:/app/evaluation/compressed:ro
       - ../data/datasets:/app/data/datasets:ro
@@ -74,8 +74,8 @@ services:
       - PYTHONUNBUFFERED=1
     command: python evaluation/run_query_benchmarks.py
     depends_on:
-      - logsim
+      - logpress
 
 networks:
   default:
-    name: logsim-network
+    name: logpress-network

@@ -98,7 +98,7 @@ Extracted template:
 ## Code Organization (Planned)
 
 ```
-logsim/
+logpress/
 ├── tokenizer.py           # Smart log tokenization (handles varied formats)
 ├── semantic_types.py      # Pattern library with confidence scoring
 ├── field_grouping.py      # Identify related fields (ip+port, user+action)
@@ -162,15 +162,15 @@ f1 = 2 * (precision * recall) / (precision + recall) = 2 * (0.75 * 1.0) / (0.75 
 
 ```bash
 # Run schema extraction on test set
-python logsim/evaluator.py --dataset datasets/Apache/Apache_full.log --ground-truth annotations/apache_ground_truth.json
+python logpress/evaluator.py --dataset datasets/Apache/Apache_full.log --ground-truth annotations/apache_ground_truth.json
 
 # Compression benchmark
-python logsim/compressor.py --input datasets/Apache/Apache_full.log --output compressed/apache.bin --measure
+python logpress/compressor.py --input datasets/Apache/Apache_full.log --output compressed/apache.bin --measure
 gzip -k datasets/Apache/Apache_full.log
 ls -lh datasets/Apache/Apache_full.log* compressed/apache.bin
 
 # Query performance test
-python logsim/query_engine.py --compressed compressed/apache.bin --query "SELECT COUNT(*) WHERE severity='ERROR' AND timestamp > '2005-06-09 06:00:00'"
+python logpress/query_engine.py --compressed compressed/apache.bin --query "SELECT COUNT(*) WHERE severity='ERROR' AND timestamp > '2005-06-09 06:00:00'"
 ```
 
 ## Important Constraints

@@ -2,7 +2,7 @@
 """
 Comprehensive Benchmarking Script
 
-Compares LogSim against:
+Compares logpress against:
 1. Generic compression tools (gzip, bzip2, xz, zstd, lz4)
 2. Log compression tools (logreduce)
 3. Query performance (selective vs full decompression)
@@ -31,8 +31,8 @@ from collections import defaultdict
 import shutil
 import tempfile
 
-from logsim.services.compressor import SemanticCompressor
-from logsim.services.query_engine import QueryEngine
+from logpress.services.compressor import SemanticCompressor
+from logpress.services.query_engine import QueryEngine
 
 # Try to import logreduce (optional)
 try:
@@ -203,9 +203,9 @@ def measure_logreduce_compression(log_file, dataset_name):
         return None
 
 
-def measure_logsim_compression(log_file, dataset_name):
-    """Measure LogSim compression performance"""
-    print(f"  Testing LogSim...", end=' ', flush=True)
+def measure_logpress_compression(log_file, dataset_name):
+    """Measure logpress compression performance"""
+    print(f"  Testing logpress...", end=' ', flush=True)
     
     # Load logs
     logs = []
@@ -249,10 +249,10 @@ def measure_logsim_compression(log_file, dataset_name):
 
 def benchmark_queries(compressed_file, original_file, dataset_name):
     """
-    Benchmark query performance: LogSim vs grep baseline
+    Benchmark query performance: logpress vs grep baseline
     
     Returns:
-        dict mapping query_name to {logsim_ms, baseline_ms, speedup}
+        dict mapping query_name to {logpress_ms, baseline_ms, speedup}
     """
     print(f"  Benchmarking queries...")
     
@@ -264,7 +264,7 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
     # Count all logs (no decompression needed - metadata only)
     start = time.time()
     total_logs = compressed_data.original_count
-    logsim_count_time = (time.time() - start) * 1000  # ms
+    logpress_count_time = (time.time() - start) * 1000  # ms
     
     # Baseline: wc -l
     start = time.time()
@@ -274,9 +274,9 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
     
     results = {
         'count_all': {
-            'logsim_ms': logsim_count_time,
+            'logpress_ms': logpress_count_time,
             'baseline_ms': baseline_count_time,
-            'speedup': baseline_count_time / logsim_count_time if logsim_count_time > 0 else 0
+            'speedup': baseline_count_time / logpress_count_time if logpress_count_time > 0 else 0
         }
     }
     
@@ -284,7 +284,7 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
     try:
         start = time.time()
         error_logs = engine.query_by_severity(compressed_data, 'ERROR')
-        logsim_severity_time = (time.time() - start) * 1000  # ms
+        logpress_severity_time = (time.time() - start) * 1000  # ms
         
         # Baseline: grep -c "ERROR"
         start = time.time()
@@ -293,12 +293,12 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
         baseline_severity_time = (time.time() - start) * 1000  # ms
         
         results['severity_error'] = {
-            'logsim_ms': logsim_severity_time,
+            'logpress_ms': logpress_severity_time,
             'baseline_ms': baseline_severity_time,
-            'speedup': baseline_severity_time / logsim_severity_time if logsim_severity_time > 0 else 0,
+            'speedup': baseline_severity_time / logpress_severity_time if logpress_severity_time > 0 else 0,
             'results_count': len(error_logs)
         }
-        print(f"    ✓ Severity query: {baseline_severity_time/logsim_severity_time:.2f}× speedup")
+        print(f"    ✓ Severity query: {baseline_severity_time/logpress_severity_time:.2f}× speedup")
     except Exception as e:
         print(f"    ⚠ Severity query skipped: {e}")
     
@@ -317,7 +317,7 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
         
         start = time.time()
         ip_logs = engine.query_by_ip(compressed_data, test_ip)
-        logsim_ip_time = (time.time() - start) * 1000  # ms
+        logpress_ip_time = (time.time() - start) * 1000  # ms
         
         # Baseline: grep -c "IP"
         start = time.time()
@@ -326,13 +326,13 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
         baseline_ip_time = (time.time() - start) * 1000  # ms
         
         results['ip_filter'] = {
-            'logsim_ms': logsim_ip_time,
+            'logpress_ms': logpress_ip_time,
             'baseline_ms': baseline_ip_time,
-            'speedup': baseline_ip_time / logsim_ip_time if logsim_ip_time > 0 else 0,
+            'speedup': baseline_ip_time / logpress_ip_time if logpress_ip_time > 0 else 0,
             'results_count': len(ip_logs),
             'test_ip': test_ip
         }
-        print(f"    ✓ IP query: {baseline_ip_time/logsim_ip_time:.2f}× speedup")
+        print(f"    ✓ IP query: {baseline_ip_time/logpress_ip_time:.2f}× speedup")
     except Exception as e:
         print(f"    ⚠ IP query skipped: {e}")
     
@@ -384,11 +384,11 @@ def main():
         if logreduce_result:
             result['tools']['logreduce'] = logreduce_result
         
-        # Test LogSim
-        logsim_result = measure_logsim_compression(ds['path'], ds['name'])
-        result['tools']['logsim'] = logsim_result
+        # Test logpress
+        logpress_result = measure_logpress_compression(ds['path'], ds['name'])
+        result['tools']['logpress'] = logpress_result
         
-        # Benchmark queries (if LogSim compression succeeded)
+        # Benchmark queries (if logpress compression succeeded)
         compressed_file = Path('evaluation/compressed') / f"{ds['name']}.lsc"
         if compressed_file.exists():
             query_results = benchmark_queries(compressed_file, ds['path'], ds['name'])
@@ -420,7 +420,7 @@ def main():
         # Compression comparison table
         f.write("## Compression Ratio Comparison\n\n")
         f.write("**Note**: LogReducer uses lossy compression (cannot reconstruct exact logs). All other tools are lossless.\n\n")
-        f.write("| Dataset | gzip-9 | bzip2-9 | xz-9 | zstd-15 | lz4-9 | logreduce | **LogSim** | Best Lossless |\n")
+        f.write("| Dataset | gzip-9 | bzip2-9 | xz-9 | zstd-15 | lz4-9 | logreduce | **logpress** | Best Lossless |\n")
         f.write("|---------|--------|---------|------|---------|-------|-----------|------------|---------------|\n")
         
         for r in all_results:
@@ -428,7 +428,7 @@ def main():
             row = [r['dataset']]
             ratios = []
             
-            for tool_name in ['gzip9', 'bzip29', 'xz9', 'zstd15', 'lz49', 'logreduce', 'logsim']:
+            for tool_name in ['gzip9', 'bzip29', 'xz9', 'zstd15', 'lz49', 'logreduce', 'logpress']:
                 if tool_name in tools:
                     ratio = tools[tool_name]['ratio']
                     lossy_marker = " ⚠️" if tools[tool_name].get('lossy', False) else ""
@@ -445,14 +445,14 @@ def main():
         
         # Speed comparison table
         f.write("\n## Compression Speed Comparison (MB/s)\n\n")
-        f.write("| Dataset | gzip-9 | bzip2-9 | xz-9 | zstd-15 | lz4-9 | logreduce | **LogSim** |\n")
+        f.write("| Dataset | gzip-9 | bzip2-9 | xz-9 | zstd-15 | lz4-9 | logreduce | **logpress** |\n")
         f.write("|---------|--------|---------|------|---------|-------|-----------|------------|\n")
         
         for r in all_results:
             tools = r['tools']
             row = [r['dataset']]
             
-            for tool_name in ['gzip9', 'bzip29', 'xz9', 'zstd15', 'lz49', 'logreduce', 'logsim']:
+            for tool_name in ['gzip9', 'bzip29', 'xz9', 'zstd15', 'lz49', 'logreduce', 'logpress']:
                 if tool_name in tools:
                     speed = tools[tool_name]['speed_mbps']
                     row.append(f"{speed:.1f}")
@@ -463,18 +463,18 @@ def main():
         
         # Query performance
         f.write("\n## Query Performance\n\n")
-        f.write("Comparison: LogSim selective decompression vs grep on uncompressed logs\n\n")
+        f.write("Comparison: logpress selective decompression vs grep on uncompressed logs\n\n")
         
         for r in all_results:
             if 'queries' not in r:
                 continue
             
             f.write(f"### {r['dataset']}\n\n")
-            f.write("| Query | LogSim (ms) | Baseline (ms) | Speedup |\n")
+            f.write("| Query | logpress (ms) | Baseline (ms) | Speedup |\n")
             f.write("|-------|-------------|---------------|----------|\n")
             
             for query_name, query_result in r['queries'].items():
-                f.write(f"| {query_name} | {query_result['logsim_ms']:.2f} | "
+                f.write(f"| {query_name} | {query_result['logpress_ms']:.2f} | "
                        f"{query_result['baseline_ms']:.2f} | "
                        f"{query_result['speedup']:.2f}× |\n")
             f.write("\n")

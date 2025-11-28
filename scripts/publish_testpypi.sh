@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "📤 Publishing LogSim to TestPyPI..."
+echo "📤 Publishing logpress to TestPyPI..."
 echo ""
 echo "⚠️  This will publish to TEST PyPI (test.pypi.org)"
 echo ""
@@ -17,9 +17,9 @@ twine upload --repository testpypi dist/* --config-file .pypirc
 
 echo ""
 echo "✅ Published to TestPyPI!"
-echo "🔗 View at: https://test.pypi.org/project/logsim/"
+echo "🔗 View at: https://test.pypi.org/project/logpress/"
 echo ""
 echo "📦 Test installation with:"
-echo "   pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ logsim"
+echo "   pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ logpress"
 echo ""
 echo "   # The --extra-index-url is needed for dependencies"

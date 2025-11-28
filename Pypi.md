@@ -1,9 +1,9 @@
-Yes! You can absolutely turn LogSim into a PyPI package. Here's a comprehensive guide:
+Yes! You can absolutely turn logpress into a PyPI package. Here's a comprehensive guide:
 
-## ✅ YES - LogSim is Ready for PyPI!
+## ✅ YES - logpress is Ready for PyPI!
 
 Your project has all the prerequisites:
-- ✅ Well-structured Python package (logsim)
+- ✅ Well-structured Python package (logpress)
 - ✅ Clear entry points (CLI commands)
 - ✅ Dependencies defined
 - ✅ Test suite (25 passing tests)
@@ -20,7 +20,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "logsim"
+name = "logpress"
 version = "0.1.0"
 description = "Semantic-aware log compression with automatic schema extraction"
 readme = "README.md"
@@ -62,28 +62,28 @@ benchmarks = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/adam-bouafia/LogSim"
-Documentation = "https://github.com/adam-bouafia/LogSim#readme"
-Repository = "https://github.com/adam-bouafia/LogSim"
-Issues = "https://github.com/adam-bouafia/LogSim/issues"
-Changelog = "https://github.com/adam-bouafia/LogSim/releases"
+Homepage = "https://github.com/adam-bouafia/logpress"
+Documentation = "https://github.com/adam-bouafia/logpress#readme"
+Repository = "https://github.com/adam-bouafia/logpress"
+Issues = "https://github.com/adam-bouafia/logpress/issues"
+Changelog = "https://github.com/adam-bouafia/logpress/releases"
 
 [project.scripts]
-logsim = "logsim.cli.commands:cli"
-logsim-interactive = "logsim.cli.interactive:main"
+logpress = "logpress.cli.commands:cli"
+logpress-interactive = "logpress.cli.interactive:main"
 
 [tool.setuptools]
-packages = ["logsim"]
+packages = ["logpress"]
 
 [tool.setuptools.package-data]
-logsim = ["py.typed"]
+logpress = ["py.typed"]
 ```
 
 ### Step 2: Add Package Metadata Files
 
 ```python
 """
-LogSim - Semantic Log Compression System
+logpress - Semantic Log Compression System
 
 Automatic schema extraction from unstructured system logs with 
 semantic-aware compression and queryable storage.
@@ -94,10 +94,10 @@ __author__ = "Your Name"
 __license__ = "MIT"
 
 # Public API
-from logsim.services.compressor import SemanticCompressor
-from logsim.services.query_engine import QueryEngine
-from logsim.services.evaluator import SchemaEvaluator
-from logsim.models import Token, LogTemplate, CompressedLog
+from logpress.services.compressor import SemanticCompressor
+from logpress.services.query_engine import QueryEngine
+from logpress.services.evaluator import SchemaEvaluator
+from logpress.models import Token, LogTemplate, CompressedLog
 
 __all__ = [
     "SemanticCompressor",
@@ -113,8 +113,8 @@ __all__ = [
 include README.md
 include LICENSE
 include requirements.txt
-recursive-include logsim *.py
-recursive-include logsim/tests *.py
+recursive-include logpress *.py
+recursive-include logpress/tests *.py
 recursive-exclude * __pycache__
 recursive-exclude * *.pyc
 recursive-exclude * *.pyo
@@ -156,27 +156,27 @@ Add installation section to your README.md:
 
 ```bash
 # Install latest stable version
-pip install logsim
+pip install logpress
 
 # Install with development dependencies
-pip install logsim[dev]
+pip install logpress[dev]
 
 # Install with benchmark tools
-pip install logsim[benchmarks]
+pip install logpress[benchmarks]
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/adam-bouafia/LogSim.git
-cd LogSim
+git clone https://github.com/adam-bouafia/logpress.git
+cd logpress
 pip install -e .
 ```
 
 ## Quick Start
 
 ```python
-from logsim import SemanticCompressor, QueryEngine
+from logpress import SemanticCompressor, QueryEngine
 
 # Compress logs
 compressor = SemanticCompressor(min_support=3)
@@ -195,13 +195,13 @@ errors = engine.query_by_severity("ERROR", limit=20)
 
 ```bash
 # Interactive mode
-logsim-interactive
+logpress-interactive
 
 # Compress logs
-logsim compress -i input.log -o output.lsc --min-support 3
+logpress compress -i input.log -o output.lsc --min-support 3
 
 # Query compressed logs
-logsim query -c output.lsc --severity ERROR --limit 20
+logpress query -c output.lsc --severity ERROR --limit 20
 ```
 ```
 
@@ -211,7 +211,7 @@ logsim query -c output.lsc --severity ERROR --limit 20
 #!/bin/bash
 set -e
 
-echo "🔨 Building LogSim Python package..."
+echo "🔨 Building logpress Python package..."
 
 # Clean previous builds
 rm -rf build/ dist/ *.egg-info
@@ -235,8 +235,8 @@ echo "🧪 Testing installation..."
 python -m venv test_env
 source test_env/bin/activate
 pip install dist/*.whl
-logsim --help
-logsim-interactive --version
+logpress --help
+logpress-interactive --version
 deactivate
 rm -rf test_env
 
@@ -258,10 +258,10 @@ python -m build
 twine upload --repository testpypi dist/*
 
 echo "✅ Published to TestPyPI!"
-echo "🔗 View at: https://test.pypi.org/project/logsim/"
+echo "🔗 View at: https://test.pypi.org/project/logpress/"
 echo ""
 echo "Test installation with:"
-echo "pip install --index-url https://test.pypi.org/simple/ logsim"
+echo "pip install --index-url https://test.pypi.org/simple/ logpress"
 ```
 
 ### Step 6: Publish to PyPI (Production)
@@ -285,10 +285,10 @@ python -m build
 twine upload dist/*
 
 echo "✅ Published to PyPI!"
-echo "🔗 View at: https://pypi.org/project/logsim/"
+echo "🔗 View at: https://pypi.org/project/logpress/"
 echo ""
 echo "Users can now install with:"
-echo "pip install logsim"
+echo "pip install logpress"
 ```
 
 ### Step 7: Add GitHub Actions for Automated Publishing
@@ -372,8 +372,8 @@ bash scripts/build_package.sh
 bash scripts/publish_testpypi.sh
 
 # Install from TestPyPI and verify
-pip install --index-url https://test.pypi.org/simple/ logsim
-logsim --help
+pip install --index-url https://test.pypi.org/simple/ logpress
+logpress --help
 ```
 
 ### 4. Publish to PyPI
@@ -387,20 +387,20 @@ bash scripts/publish_pypi.sh
 
 ```bash
 # Install from PyPI
-pip install logsim
+pip install logpress
 
 # Test commands
-logsim --version
-logsim-interactive
-logsim compress --help
+logpress --version
+logpress-interactive
+logpress compress --help
 ```
 
 ## Benefits of PyPI Package
 
 ### For Users
-- ✅ `pip install logsim` (no git clone needed)
+- ✅ `pip install logpress` (no git clone needed)
 - ✅ Automatic dependency management
-- ✅ Version pinning (`pip install logsim==0.1.0`)
+- ✅ Version pinning (`pip install logpress==0.1.0`)
 - ✅ Works in any Python environment
 
 ### For Your Thesis
@@ -420,11 +420,11 @@ Once published, users can do:
 
 ```bash
 # Install
-pip install logsim
+pip install logpress
 
 # Use as library
 python << EOF
-from logsim import SemanticCompressor, QueryEngine
+from logpress import SemanticCompressor, QueryEngine
 
 compressor = SemanticCompressor()
 compressed, stats = compressor.compress(logs)
@@ -432,8 +432,8 @@ print(f"Compressed {stats.compression_ratio:.2f}×")
 EOF
 
 # Use CLI
-logsim compress -i app.log -o app.lsc
-logsim query -c app.lsc --severity ERROR
+logpress compress -i app.log -o app.lsc
+logpress query -c app.lsc --severity ERROR
 ```
 
 ## Recommended Version Strategy

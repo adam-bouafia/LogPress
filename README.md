@@ -1,6 +1,6 @@
-# LogSim - Semantic Log Compression System
+# LogPress - Semantic Log Compression System
 
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](logsim/tests/)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](logpress/tests/)
 [![Coverage](https://img.shields.io/badge/coverage-42%25-yellow.svg)](htmlcov/index.html)
 [![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -19,8 +19,8 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/adam-bouafia/LogSim.git
-cd LogSim
+git clone https://github.com/adam-bouafia/LogPress.git
+cd LogPress
 
 # Create virtual environment
 python -m venv venv
@@ -35,7 +35,7 @@ pip install -e .
 
 ```bash
 # Beautiful terminal UI with dataset auto-discovery
-python -m logsim.cli.interactive
+python -m logpress.cli.interactive
 ```
 
 **Features**:
@@ -48,14 +48,14 @@ python -m logsim.cli.interactive
 
 ```bash
 # Compress logs
-python -m logsim compress \
+python -m logpress compress \
   -i data/datasets/Apache/Apache_full.log \
   -o evaluation/compressed/apache.lsc \
   --min-support 3 \
   -m
 
 # Query compressed logs
-python -m logsim query \
+python -m logpress query \
   -c evaluation/compressed/apache.lsc \
   --severity ERROR \
   --limit 20
@@ -68,24 +68,24 @@ python evaluation/run_full_evaluation.py
 
 ```bash
 # Interactive mode (Python rich UI)
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive
 
 # Bash menu (alternative)
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive-bash
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive-bash
 
 # Run specific command
-docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc -m
 ```
 
 ## 📁 Project Structure (MCP Architecture)
 
 ```
-LogSim/
-├── logsim/                  # Core Python package (Model-Context-Protocol)
+LogPress/
+├── logpress/                  # Core Python package (Model-Context-Protocol)
 │   ├── models/             # Data structures (Token, LogTemplate, CompressedLog)
 │   ├── protocols/          # Abstract interfaces (EncoderProtocol, CompressorProtocol)
-│   ├── context/           # Business logic
+│   ├── context/           # Business logpress
 │   │   ├── tokenization/  # Smart log tokenization (FSM-based)
 │   │   ├── extraction/    # Template generation (log alignment algorithm)
 │   │   ├── classification/# Semantic type recognition (pattern-based)
@@ -129,7 +129,7 @@ LogSim/
 │   └── API.md           # Python API reference
 │
 └── scripts/            # Automation scripts
-    ├── logsim-interactive.sh  # Bash interactive menu
+    ├── logpress-interactive.sh  # Bash interactive menu
     ├── run-tests.sh           # Test suite runner
     └── run-pre-production-tests.sh # Validation
 ```
@@ -211,7 +211,7 @@ bash scripts/run-pre-production-tests.sh
 
 ```bash
 # Run benchmarks
-python -m pytest logsim/tests/performance/ --benchmark-only
+python -m pytest logpress/tests/performance/ --benchmark-only
 
 # Expected results:
 # - Compression: >500 ops/sec
@@ -256,7 +256,7 @@ pip install pytest pytest-cov pytest-benchmark pytest-mock
 
 # Run tests on file changes (watch mode)
 pip install pytest-watch
-ptw logsim/tests/ -- -v
+ptw logpress/tests/ -- -v
 ```
 
 ### Contribution Workflow
@@ -269,7 +269,7 @@ ptw logsim/tests/ -- -v
 ### Adding New Semantic Type Patterns
 
 ```python
-# logsim/context/classification/semantic_types.py
+# logpress/context/classification/semantic_types.py
 
 def recognize_custom_field(token: str) -> Tuple[str, float]:
     """
@@ -286,17 +286,17 @@ def recognize_custom_field(token: str) -> Tuple[str, float]:
 ### Adding New Compression Codecs
 
 ```python
-# logsim/context/encoding/custom_encoder.py
+# logpress/context/encoding/custom_encoder.py
 
-from logsim.protocols import EncoderProtocol
+from logpress.protocols import EncoderProtocol
 
 class CustomEncoder(EncoderProtocol):
     def encode(self, values: List[Any]) -> bytes:
-        # Your encoding logic
+        # Your encoding logpress
         pass
     
     def decode(self, data: bytes) -> List[Any]:
-        # Your decoding logic
+        # Your decoding logpress
         pass
 ```
 
@@ -341,10 +341,10 @@ pip install memory-profiler
 docker-compose -f deployment/docker-compose.yml build
 
 # Run interactive CLI
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive
 
 # Run compression
-docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc
 ```
 
@@ -379,12 +379,12 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - [Project Documentation](documentation/README.md)
 - [Test Results](evaluation/results/)
 - [Research Roadmap](PROJECT.md)
-- [GitHub Repository](https://github.com/adam-bouafia/LogSim)
+- [GitHub Repository](https://github.com/adam-bouafia/logpress)
 
 ## 📞 Contact
 
 - **Author**: Adam Bouafia
-- **Repository**: https://github.com/adam-bouafia/LogSim
+- **Repository**: https://github.com/adam-bouafia/logpress
 - **Linkedin**: https://www.linkedin.com/in/adam-bouafia 
 
 ---

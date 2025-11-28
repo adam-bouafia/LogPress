@@ -1,5 +1,5 @@
 """
-LogSim - Semantic Log Compression System
+logpress - Semantic Log Compression System
 Setup configuration for package installation
 """
 from setuptools import setup, find_packages
@@ -20,20 +20,23 @@ if requirements_file.exists():
     ]
 
 setup(
-    name="logsim",
+    name="LogPress",
     version="1.0.0",
     author="Adam Bouafia",
     author_email="adam.bouafia@example.com",
     description="Automatic Schema Extraction & Semantic-Aware Compression for System Logs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/adam-bouafia/LogSim",
+    url="https://github.com/adam-bouafia/logpress",
     project_urls={
-        "Bug Tracker": "https://github.com/adam-bouafia/LogSim/issues",
-        "Documentation": "https://github.com/adam-bouafia/LogSim#readme",
-        "Source Code": "https://github.com/adam-bouafia/LogSim",
+        "Bug Tracker": "https://github.com/adam-bouafia/logpress/issues",
+        "Documentation": "https://github.com/adam-bouafia/logpress#readme",
+        "Source Code": "https://github.com/adam-bouafia/logpress",
     },
-    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*"]),
+    # Only include the packages under 'logpress' namespace. Historically this
+    # repository included a legacy 'logsim' package namespace; we only want
+    # packages for 'logpress' in new releases.
+    packages=find_packages(include=["logpress", "logpress.*"]),
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
@@ -59,7 +62,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "logsim=logsim.__main__:cli",
+            "logpress=logpress.__main__:cli",
         ],
     },
     include_package_data=True,

@@ -1,12 +1,12 @@
 # Scripts Directory
 
-Automation scripts for LogSim testing, deployment, and interactive usage.
+Automation scripts for logpress testing, deployment, and interactive usage.
 
 ## Structure
 
 ```
 scripts/
-├── logsim-interactive.sh       # Bash interactive menu (450+ lines)
+├── logpress-interactive.sh       # Bash interactive menu (450+ lines)
 ├── run-tests.sh                # Test suite runner
 ├── run-pre-production-tests.sh # Pre-deployment validation
 └── migrate_to_mcp.sh          # MCP architecture migration (historical)
@@ -14,7 +14,7 @@ scripts/
 
 ## Scripts Overview
 
-### logsim-interactive.sh
+### logpress-interactive.sh
 
 **Bash interactive CLI** with colored menus and dataset auto-discovery.
 
@@ -30,19 +30,19 @@ scripts/
 **Usage**:
 ```bash
 # Make executable (if needed)
-chmod +x scripts/logsim-interactive.sh
+chmod +x scripts/logpress-interactive.sh
 
 # Run directly
-bash scripts/logsim-interactive.sh
+bash scripts/logpress-interactive.sh
 
 # Or from Docker
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive-bash
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive-bash
 ```
 
 **Menu Structure**:
 ```
 ╔════════════════════════════════════════════════╗
-║         LogSim Interactive CLI                 ║
+║         logpress Interactive CLI                 ║
 ║    Semantic Log Compression System             ║
 ╚════════════════════════════════════════════════╝
 
@@ -96,7 +96,7 @@ firefox htmlcov/index.html
 **Output**:
 ```
 ╔════════════════════════════════════════════════╗
-║          LogSim Test Suite Runner              ║
+║          logpress Test Suite Runner              ║
 ╚════════════════════════════════════════════════╝
 
 Setting up virtual environment...
@@ -109,11 +109,11 @@ Running test suite...
 ========================= test session starts ==========================
 collected 25 items
 
-logsim/tests/unit/test_dataset_discovery.py ............ [ 36%]
-logsim/tests/integration/test_compression_workflow.py .... [ 52%]
-logsim/tests/integration/test_interactive_cli.py .... [ 68%]
-logsim/tests/e2e/test_workflows.py ... [ 80%]
-logsim/tests/performance/test_benchmarks.py ..... [100%]
+logpress/tests/unit/test_dataset_discovery.py ............ [ 36%]
+logpress/tests/integration/test_compression_workflow.py .... [ 52%]
+logpress/tests/integration/test_interactive_cli.py .... [ 68%]
+logpress/tests/e2e/test_workflows.py ... [ 80%]
+logpress/tests/performance/test_benchmarks.py ..... [100%]
 
 ========================== 25 passed in 4.48s ==========================
 
@@ -139,8 +139,8 @@ source venv/bin/activate
 pip install -q pytest pytest-cov pytest-benchmark pytest-mock
 
 # Run tests with coverage
-python -m pytest logsim/tests/ \
-  --cov=logsim \
+python -m pytest logpress/tests/ \
+  --cov=logpress \
   --cov-report=term-missing \
   --cov-report=html \
   -v
@@ -219,7 +219,7 @@ echo "====================================="
 # 1. Test dataset discovery
 echo "1️⃣  Testing dataset discovery..."
 python -c "
-from logsim.cli.interactive import InteractiveCLI
+from logpress.cli.interactive import InteractiveCLI
 cli = InteractiveCLI()
 datasets = cli.scan_datasets()
 print(f'✓ Found {len(datasets)} datasets')
@@ -228,7 +228,7 @@ print(f'✓ Found {len(datasets)} datasets')
 # 2. Test compression
 echo "2️⃣  Testing compression on sample data..."
 python -c "
-from logsim.services.compressor import SemanticCompressor
+from logpress.services.compressor import SemanticCompressor
 logs = ['[2005-06-09 06:07:04] [info] Test'] * 100
 compressor = SemanticCompressor(min_support=2)
 compressed_log, stats = compressor.compress(logs, verbose=False)
@@ -237,19 +237,19 @@ print(f'✓ Compressed {stats.log_count} logs')
 
 # 3. Test CLI commands
 echo "3️⃣  Testing CLI commands..."
-python -m logsim --help > /dev/null && echo "✓ CLI help works"
+python -m logpress --help > /dev/null && echo "✓ CLI help works"
 
 # 4. Test Docker build
 echo "4️⃣  Testing Docker build..."
 if command -v docker &> /dev/null; then
-    docker-compose -f deployment/docker-compose.yml build logsim-cli > /dev/null 2>&1
+    docker-compose -f deployment/docker-compose.yml build logpress-cli > /dev/null 2>&1
     echo "✓ Docker image builds successfully"
 fi
 
 # 5. Test interactive CLI
 echo "5️⃣  Testing interactive CLI initialization..."
 timeout 5 python -c "
-from logsim.cli.interactive import InteractiveCLI
+from logpress.cli.interactive import InteractiveCLI
 cli = InteractiveCLI()
 cli.datasets = cli.scan_datasets()
 print(f'✓ Interactive CLI initialized')
@@ -257,7 +257,7 @@ print(f'✓ Interactive CLI initialized')
 
 # 6. Run quick tests
 echo "6️⃣  Running quick test suite..."
-python -m pytest logsim/tests/unit/ -q --tb=line
+python -m pytest logpress/tests/unit/ -q --tb=line
 
 echo "✅ Pre-production validation complete!"
 ```
@@ -309,7 +309,7 @@ function print_error() {
     echo -e "${RED}✗ $1${NC}"
 }
 
-# Main script logic
+# Main script logpress
 print_header "Script Name"
 
 # Do work...
@@ -335,7 +335,7 @@ bash scripts/my-new-script.sh
 bash scripts/run-tests.sh
 
 # 2. Interactive exploration
-bash scripts/logsim-interactive.sh
+bash scripts/logpress-interactive.sh
 
 # 3. Pre-commit validation
 bash scripts/run-pre-production-tests.sh
@@ -372,14 +372,14 @@ All scripts are available inside Docker containers:
 
 ```bash
 # Run tests in container
-docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   bash /app/scripts/run-tests.sh
 
 # Run interactive bash menu
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive-bash
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive-bash
 
 # Run validation in container
-docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   bash /app/scripts/run-pre-production-tests.sh
 ```
 

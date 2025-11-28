@@ -23,7 +23,7 @@ from typing import List, Dict
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from logsim.services.compressor import SemanticCompressor
+from logpress.services.compressor import SemanticCompressor
 
 
 @dataclass
@@ -81,8 +81,8 @@ def analyze_dataset(dataset_name: str, log_file: Path, sample_size: int = None) 
     print(f"   {original_bytes:,} → {gzip_bytes:,} bytes = {gzip_ratio:.2f}x")
     print()
     
-    # LogSim compression with detailed tracking
-    print("🔧 LogSim Compression Pipeline:")
+    # logpress compression with detailed tracking
+    print("🔧 logpress Compression Pipeline:")
     print()
     
     compressor = SemanticCompressor(min_support=3)
@@ -114,7 +114,7 @@ def analyze_dataset(dataset_name: str, log_file: Path, sample_size: int = None) 
     
     # Extract technique details
     techniques = {
-        "Tokenization": "FSM-based (logsim/tokenizer.py)",
+        "Tokenization": "FSM-based (logpress/tokenizer.py)",
         "Template Extraction": f"Custom log alignment algorithm ({len(compressed.templates)} templates)",
         "Token Pool": f"Global deduplication ({len(compressed.token_pool)} unique tokens)",
         "Delta Encoding": f"Timestamps ({compressed.timestamp_count} values)",
@@ -163,7 +163,7 @@ def main():
     
     print("╔" + "═" * 78 + "╗")
     print("║" + " " * 78 + "║")
-    print("║" + "LOGSIM FULL EVALUATION".center(78) + "║")
+    print("║" + "logpress FULL EVALUATION".center(78) + "║")
     print("║" + "Automatic Schema Extraction & Semantic Compression".center(78) + "║")
     print("║" + " " * 78 + "║")
     print("╚" + "═" * 78 + "╝")
@@ -274,16 +274,16 @@ def main():
     print("=" * 80)
     print()
     print("Stage 1: Tokenization")
-    print("  • FSM-based tokenizer (logsim/tokenizer.py)")
+    print("  • FSM-based tokenizer (logpress/tokenizer.py)")
     print("  • Context-aware boundary detection")
     print()
     print("Stage 2: Template Extraction")
-    print("  • Custom log alignment algorithm (logsim/template_generator.py)")
+    print("  • Custom log alignment algorithm (logpress/template_generator.py)")
     print("  • NOT Drain3 - position-by-position alignment")
     print(f"  • Extracted {sum(r.template_count for r in results)} total templates")
     print()
     print("Stage 3: Semantic Classification")
-    print("  • Pattern-based matching (logsim/semantic_types.py)")
+    print("  • Pattern-based matching (logpress/semantic_types.py)")
     print("  • Types: TIMESTAMP, SEVERITY, IP_ADDRESS, HOST, PROCESS_ID, MESSAGE, etc.")
     print()
     print("Stage 4: Columnar Encoding")
@@ -310,7 +310,7 @@ def main():
     results_file.parent.mkdir(exist_ok=True, parents=True)
     
     with open(results_file, 'w') as f:
-        f.write(f"# LogSim Full Evaluation Results\n\n")
+        f.write(f"# logpress Full Evaluation Results\n\n")
         f.write(f"**Date**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
         f.write(f"**Total Datasets**: {len(results)}\n")
         f.write(f"**Total Logs**: {sum(r.log_count for r in results):,}\n")
@@ -339,18 +339,18 @@ def main():
         f.write("## Verified Production Pipeline\n\n")
         f.write("### Stage 1: Tokenization\n")
         f.write("- **Algorithm**: FSM-based tokenizer\n")
-        f.write("- **File**: `logsim/tokenizer.py`\n")
+        f.write("- **File**: `logpress/tokenizer.py`\n")
         f.write("- **Method**: Context-aware boundary detection\n\n")
         
         f.write("### Stage 2: Template Extraction\n")
         f.write("- **Algorithm**: Custom log alignment (NOT Drain3)\n")
-        f.write("- **File**: `logsim/template_generator.py`\n")
+        f.write("- **File**: `logpress/template_generator.py`\n")
         f.write("- **Method**: Position-by-position alignment across logs\n")
         f.write(f"- **Result**: {sum(r.template_count for r in results)} templates across all datasets\n\n")
         
         f.write("### Stage 3: Semantic Classification\n")
         f.write("- **Algorithm**: Pattern-based matching with confidence scoring\n")
-        f.write("- **File**: `logsim/semantic_types.py`\n")
+        f.write("- **File**: `logpress/semantic_types.py`\n")
         f.write("- **Types**: TIMESTAMP, SEVERITY, IP_ADDRESS, HOST, PROCESS_ID, MESSAGE, etc.\n\n")
         
         f.write("### Stage 4: Columnar Encoding\n")
@@ -366,7 +366,7 @@ def main():
         f.write("2. **Zstandard**: Level 15 compression (`zstd.compress`)\n\n")
         
         f.write("### Stage 6: Query Engine\n")
-        f.write("- **File**: `logsim/query_engine.py`\n")
+        f.write("- **File**: `logpress/query_engine.py`\n")
         f.write("- **Method**: Selective decompression (columnar field access)\n")
         f.write("- **Benefit**: Query without full decompression\n\n")
 

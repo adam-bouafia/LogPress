@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "logsim"
+name = "LogPress"
 version = "0.1.0"
 description = "Semantic-aware log compression with automatic schema extraction and queryable storage"
 readme = "README.md"
@@ -56,22 +56,22 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/adam-bouafia/LogSim"
-Documentation = "https://github.com/adam-bouafia/LogSim#readme"
-Repository = "https://github.com/adam-bouafia/LogSim"
-Issues = "https://github.com/adam-bouafia/LogSim/issues"
-Changelog = "https://github.com/adam-bouafia/LogSim/releases"
+Homepage = "https://github.com/adam-bouafia/logpress"
+Documentation = "https://github.com/adam-bouafia/logpress#readme"
+Repository = "https://github.com/adam-bouafia/logpress"
+Issues = "https://github.com/adam-bouafia/logpress/issues"
+Changelog = "https://github.com/adam-bouafia/logpress/releases"
 
 [project.scripts]
-logsim = "logsim.__main__:main"
+logpress = "logpress.__main__:cli"
 
 [tool.setuptools]
-packages = ["logsim", "logsim.cli", "logsim.context", "logsim.context.classification", 
-            "logsim.context.encoding", "logsim.context.extraction", "logsim.context.tokenization",
-            "logsim.models", "logsim.protocols", "logsim.services"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["logpress", "logpress.*"]
 
 [tool.setuptools.package-data]
-logsim = ["py.typed"]
+logpress = ["py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

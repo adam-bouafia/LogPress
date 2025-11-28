@@ -1,6 +1,6 @@
 # Deployment Directory
 
-Docker infrastructure for containerized deployment of LogSim.
+Docker infrastructure for containerized deployment of logpress.
 
 ## Structure
 
@@ -20,15 +20,15 @@ deployment/
 docker-compose -f deployment/docker-compose.yml build
 
 # Run interactive CLI
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive
 
 # Run bash menu
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive-bash
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive-bash
 ```
 
 ## Docker Services
 
-### logsim-interactive (Python Rich UI)
+### logpress-interactive (Python Rich UI)
 
 **Beautiful terminal interface** with:
 - Dataset auto-discovery
@@ -37,14 +37,14 @@ docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive-bash
 - Query builder
 
 ```bash
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive
 ```
 
 **Environment Variables**:
 - `PYTHONUNBUFFERED=1` - Real-time output
 - `TERM=xterm-256color` - Colored terminal
 
-### logsim-interactive-bash (Bash Menu)
+### logpress-interactive-bash (Bash Menu)
 
 **Alternative bash interface** with:
 - Colored menus
@@ -53,35 +53,35 @@ docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive
 - Results viewing
 
 ```bash
-docker-compose -f deployment/docker-compose.yml run --rm logsim-interactive-bash
+docker-compose -f deployment/docker-compose.yml run --rm logpress-interactive-bash
 ```
 
-**Entry Point**: `/app/scripts/logsim-interactive.sh`
+**Entry Point**: `/app/scripts/logpress-interactive.sh`
 
-### logsim-cli (Command-Line)
+### logpress-cli (Command-Line)
 
 **Direct command execution**:
 
 ```bash
 # Compress logs
-docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   compress -i /app/data/datasets/Apache/Apache_full.log -o /app/evaluation/compressed/apache.lsc -m
 
 # Query compressed logs
-docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   query -c /app/evaluation/compressed/apache.lsc --severity ERROR --limit 20
 
 # Run evaluation
-docker-compose -f deployment/docker-compose.yml run --rm logsim-cli \
+docker-compose -f deployment/docker-compose.yml run --rm logpress-cli \
   python /app/evaluation/run_full_evaluation.py
 ```
 
-### logsim-query (Query Service)
+### logpress-query (Query Service)
 
 **Dedicated query service**:
 
 ```bash
-docker-compose -f deployment/docker-compose.yml run --rm logsim-query \
+docker-compose -f deployment/docker-compose.yml run --rm logpress-query \
   -c /app/evaluation/compressed/apache.lsc --severity ERROR
 ```
 
@@ -115,7 +115,7 @@ WORKDIR /app
 volumes:
   - ../data:/app/data                    # Input datasets
   - ../evaluation:/app/evaluation        # Outputs
-  - ../logsim:/app/logsim               # Source code
+  - ../logpress:/app/logpress               # Source code
   - ../scripts:/app/scripts             # Automation scripts
 ```
 
@@ -171,7 +171,7 @@ PYTHONPATH=/app             # Python module path
 # Terminal settings
 TERM=xterm-256color         # Enable colors
 
-# LogSim settings
+# logpress settings
 MIN_SUPPORT=3               # Template extraction threshold
 ZSTD_LEVEL=15              # Compression level (1-22)
 MAX_TEMPLATES=1000         # Maximum templates to extract
@@ -185,7 +185,7 @@ ENABLE_INDEXES=true        # Enable columnar indexes
 
 ```yaml
 services:
-  logsim-cli:
+  logpress-cli:
     deploy:
       resources:
         limits:
@@ -204,14 +204,14 @@ services:
 # Optimize for size
 docker build \
   -f deployment/Dockerfile \
-  -t logsim:latest \
+  -t logpress:latest \
   --target production \
   .
 
 # Multi-stage build (smaller image)
 docker build \
   -f deployment/Dockerfile.multistage \
-  -t logsim:slim \
+  -t logpress:slim \
   .
 ```
 
@@ -219,31 +219,31 @@ docker build \
 
 ```bash
 # Tag for registry
-docker tag logsim:latest ghcr.io/adam-bouafia/logsim:latest
+docker tag logpress:latest ghcr.io/adam-bouafia/logpress:latest
 
 # Login to GitHub Container Registry
 echo $GITHUB_TOKEN | docker login ghcr.io -u adam-bouafia --password-stdin
 
 # Push image
-docker push ghcr.io/adam-bouafia/logsim:latest
+docker push ghcr.io/adam-bouafia/logpress:latest
 ```
 
 ### 3. Deploy to Server
 
 ```bash
 # Pull on production server
-docker pull ghcr.io/adam-bouafia/logsim:latest
+docker pull ghcr.io/adam-bouafia/logpress:latest
 
 # Run with docker-compose
 docker-compose -f deployment/docker-compose.prod.yml up -d
 
 # Or with docker run
 docker run -d \
-  --name logsim-service \
+  --name logpress-service \
   -v /data/logs:/app/data \
   -v /data/compressed:/app/evaluation/compressed \
   --restart unless-stopped \
-  ghcr.io/adam-bouafia/logsim:latest
+  ghcr.io/adam-bouafia/logpress:latest
 ```
 
 ## Volume Management
@@ -253,16 +253,16 @@ docker run -d \
 ```yaml
 volumes:
   # Named volumes for persistence
-  logsim-data:
+  logpress-data:
     driver: local
-  logsim-results:
+  logpress-results:
     driver: local
 
 services:
-  logsim-cli:
+  logpress-cli:
     volumes:
-      - logsim-data:/app/data
-      - logsim-results:/app/evaluation
+      - logpress-data:/app/data
+      - logpress-results:/app/evaluation
 ```
 
 ### Backup Volumes
@@ -270,13 +270,13 @@ services:
 ```bash
 # Backup compressed files
 docker run --rm \
-  -v logsim-results:/data \
+  -v logpress-results:/data \
   -v $(pwd)/backup:/backup \
   alpine tar czf /backup/results-$(date +%Y%m%d).tar.gz /data
 
 # Restore from backup
 docker run --rm \
-  -v logsim-results:/data \
+  -v logpress-results:/data \
   -v $(pwd)/backup:/backup \
   alpine tar xzf /backup/results-20241127.tar.gz -C /
 ```
@@ -287,25 +287,25 @@ docker run --rm \
 
 ```yaml
 services:
-  logsim-api:
+  logpress-api:
     ports:
       - "8080:8080"
-    command: python -m logsim.api.server --host 0.0.0.0 --port 8080
+    command: python -m logpress.api.server --host 0.0.0.0 --port 8080
 ```
 
 ### Link Services
 
 ```yaml
 services:
-  logsim-worker:
+  logpress-worker:
     depends_on:
-      - logsim-db
-      - logsim-redis
+      - logpress-db
+      - logpress-redis
     networks:
-      - logsim-network
+      - logpress-network
 
 networks:
-  logsim-network:
+  logpress-network:
     driver: bridge
 ```
 
@@ -315,9 +315,9 @@ networks:
 
 ```yaml
 services:
-  logsim-api:
+  logpress-api:
     healthcheck:
-      test: ["CMD", "python", "-c", "import logsim; print('OK')"]
+      test: ["CMD", "python", "-c", "import logpress; print('OK')"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -328,7 +328,7 @@ services:
 
 ```yaml
 services:
-  logsim-cli:
+  logpress-cli:
     logging:
       driver: "json-file"
       options:
@@ -340,13 +340,13 @@ services:
 
 ```bash
 # View container stats
-docker stats logsim-service
+docker stats logpress-service
 
 # View logs
-docker logs -f logsim-service
+docker logs -f logpress-service
 
 # Inspect container
-docker inspect logsim-service
+docker inspect logpress-service
 ```
 
 ## Troubleshooting
@@ -355,14 +355,14 @@ docker inspect logsim-service
 
 ```bash
 # Check logs
-docker-compose -f deployment/docker-compose.yml logs logsim-cli
+docker-compose -f deployment/docker-compose.yml logs logpress-cli
 
 # Inspect image
-docker run --rm -it logsim:latest bash
+docker run --rm -it logpress:latest bash
 
 # Verify volumes
 docker volume ls
-docker volume inspect logsim-data
+docker volume inspect logpress-data
 ```
 
 ### Permission Issues
@@ -371,7 +371,7 @@ docker volume inspect logsim-data
 # Run with user permissions
 docker-compose -f deployment/docker-compose.yml run \
   --user $(id -u):$(id -g) \
-  logsim-cli compress -i /app/data/datasets/Apache/Apache_full.log
+  logpress-cli compress -i /app/data/datasets/Apache/Apache_full.log
 ```
 
 ### Out of Memory
@@ -380,7 +380,7 @@ docker-compose -f deployment/docker-compose.yml run \
 # Increase memory limit
 docker-compose -f deployment/docker-compose.yml run \
   --memory 8g \
-  logsim-cli compress -i /app/data/datasets/OpenStack/OpenStack_full.log
+  logpress-cli compress -i /app/data/datasets/OpenStack/OpenStack_full.log
 ```
 
 ### Slow Performance
@@ -389,7 +389,7 @@ docker-compose -f deployment/docker-compose.yml run \
 # Use tmpfs for temporary data
 docker run --rm \
   --tmpfs /tmp:rw,size=2g \
-  logsim:latest compress -i /app/data/datasets/Apache/Apache_full.log
+  logpress:latest compress -i /app/data/datasets/Apache/Apache_full.log
 ```
 
 ## Development Mode
@@ -398,9 +398,9 @@ docker run --rm \
 
 ```yaml
 services:
-  logsim-dev:
+  logpress-dev:
     volumes:
-      - ../logsim:/app/logsim:rw  # Enable hot reload
+      - ../logpress:/app/logpress:rw  # Enable hot reload
       - ../tests:/app/tests:rw
     command: pytest /app/tests/ --watch
 ```
@@ -411,10 +411,10 @@ services:
 # Run with interactive shell
 docker-compose -f deployment/docker-compose.yml run \
   --entrypoint bash \
-  logsim-cli
+  logpress-cli
 
 # Inside container
-python -m pdb -m logsim.cli.commands compress -i /app/data/datasets/Apache/Apache_full.log
+python -m pdb -m logpress.cli.commands compress -i /app/data/datasets/Apache/Apache_full.log
 ```
 
 ## CI/CD Integration
@@ -435,16 +435,16 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Build Docker image
-        run: docker build -f deployment/Dockerfile -t logsim:${{ github.sha }} .
+        run: docker build -f deployment/Dockerfile -t logpress:${{ github.sha }} .
       
       - name: Run tests
-        run: docker run logsim:${{ github.sha }} pytest /app/logsim/tests/
+        run: docker run logpress:${{ github.sha }} pytest /app/logpress/tests/
       
       - name: Push to registry
         run: |
           echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-          docker tag logsim:${{ github.sha }} ghcr.io/adam-bouafia/logsim:latest
-          docker push ghcr.io/adam-bouafia/logsim:latest
+          docker tag logpress:${{ github.sha }} ghcr.io/adam-bouafia/logpress:latest
+          docker push ghcr.io/adam-bouafia/logpress:latest
 ```
 
 ## Security
@@ -455,10 +455,10 @@ jobs:
 # Using Trivy
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  aquasec/trivy image logsim:latest
+  aquasec/trivy image logpress:latest
 
 # Using Snyk
-snyk container test logsim:latest
+snyk container test logpress:latest
 ```
 
 ### Best Practices

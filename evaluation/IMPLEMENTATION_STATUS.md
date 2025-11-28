@@ -29,7 +29,7 @@
 
 **Implementation**: Lines 174-267 in `run_comprehensive_benchmarks.py`
 - Function: `benchmark_queries(compressed_file, original_file, dataset_name)`
-- Compares: LogSim selective decompression vs grep on uncompressed
+- Compares: logpress selective decompression vs grep on uncompressed
 - Measures: query latency (ms), speedup ratio, result counts
 
 ### C. Results Storage - ✅ DONE
@@ -54,7 +54,7 @@
 
 ### D. Interactive CLI Integration - ✅ DONE
 
-**Status**: Fully integrated into `logsim/cli/interactive.py`
+**Status**: Fully integrated into `logpress/cli/interactive.py`
 
 **Menu item**: Option [4] - "⚖️ Comprehensive benchmarks (gzip, bzip2, xz, zstd, lz4)"
 
@@ -132,11 +132,11 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
 | Tool | Compression Ratio | Speed (MB/s) | Query Support | Lossless |
 |------|------------------|--------------|---------------|----------|
 | gzip-9 | 12.4× | 50 | ❌ | ✓ |
-| LogSim | 12.2× | 180 | ✓ | ✓ |
+| logpress | 12.2× | 180 | ✓ | ✓ |
 ```
 
 ✅ **IMPLEMENTED** - Markdown output generates similar tables:
-- Compression ratio comparison (all tools vs LogSim)
+- Compression ratio comparison (all tools vs logpress)
 - Compression speed comparison (MB/s)
 - Query performance table (speedup ratios)
 
@@ -148,10 +148,10 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
 
 1. **`evaluation/run_comprehensive_benchmarks.py`** (408 lines)
    - Main benchmark script
-   - All comparison logic
+   - All comparison logpress
    - Results generation
 
-2. **`logsim/cli/interactive.py`** (637 lines)
+2. **`logpress/cli/interactive.py`** (637 lines)
    - Interactive menu integration
    - Option [4] calls comprehensive benchmarks
    - Lines 439-481: benchmark_comparison()
@@ -168,7 +168,7 @@ def benchmark_queries(compressed_file, original_file, dataset_name):
    - Format: `comprehensive_benchmarks_YYYY-MM-DD_HH-MM-SS.md`
 
 2. **`evaluation/compressed/`** - Temporary compressed files
-   - LogSim: `{dataset_name}.lsc`
+   - logpress: `{dataset_name}.lsc`
    - Generic tools: `{dataset_name}.tmp.{tool}`
 
 ---
@@ -188,7 +188,7 @@ python evaluation/run_comprehensive_benchmarks.py
 ### Interactive CLI (Menu)
 ```bash
 # Launch interactive menu
-python -m logsim
+python -m logpress
 
 # Select option [4] - Comprehensive benchmarks
 # Results automatically saved to evaluation/results/
@@ -202,7 +202,7 @@ python evaluation/test_comprehensive_benchmarks.py
 # Expected output:
 # ✅ TEST 1: Dataset Discovery - PASSED
 # ✅ TEST 2: Generic Compression - PASSED
-# ✅ TEST 3: LogSim Compression - PASSED
+# ✅ TEST 3: logpress Compression - PASSED
 # ✅ TEST 4: Query Performance - PASSED
 # ✅ TEST 5: Output Generation - PASSED
 ```
@@ -218,10 +218,10 @@ Last tested: **November 28, 2025**
 **Compression Ratios**:
 - gzip-9: 15.68× in 0.15s (50 MB/s)
 - zstd-15: 18.72× in 0.34s (180 MB/s)
-- LogSim: 12.10× in 4.29s (1.8 MB/s, 4,964 logs/s)
+- logpress: 12.10× in 4.29s (1.8 MB/s, 4,964 logs/s)
 
 **Query Performance**:
-- COUNT(*): 3,402× speedup (LogSim: 0.00ms, Baseline: 4.87ms)
+- COUNT(*): 3,402× speedup (logpress: 0.00ms, Baseline: 4.87ms)
 - Severity filter: N/A (dataset has no severity field)
 - IP filter: N/A (dataset has no IP field)
 

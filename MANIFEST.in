@@ -2,7 +2,7 @@ include README.md
 include LICENSE
 include requirements.txt
 include pyproject.toml
-recursive-include logsim *.py
+recursive-include logpress *.py
 recursive-include tests *.py
 recursive-exclude * __pycache__
 recursive-exclude * *.pyc

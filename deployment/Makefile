@@ -1,7 +1,7 @@
 .PHONY: help build run-compression run-queries clean test docker-build docker-up docker-down
 
 help:
-	@echo "LogSim - Available Commands:"
+	@echo "logpress - Available Commands:"
 	@echo ""
 	@echo "  make build          - Build Docker image"
 	@echo "  make run-compression - Run compression evaluation"
@@ -18,7 +18,7 @@ install:
 	./venv/bin/pip install -r requirements.txt
 
 build:
-	docker build -t logsim:latest .
+	docker build -t logpress:latest .
 
 docker-up:
 	docker-compose up
@@ -33,7 +33,7 @@ run-queries:
 	python run_query_benchmarks.py
 
 test:
-	pytest logsim/tests/
+	pytest logpress/tests/
 
 clean:
 	find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true

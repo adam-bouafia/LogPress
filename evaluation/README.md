@@ -1,6 +1,6 @@
 # Evaluation Directory
 
-Contains evaluation outputs, compressed files, and performance metrics for LogSim.
+Contains evaluation outputs, compressed files, and performance metrics for LogPress.
 
 ## Structure
 
@@ -27,7 +27,7 @@ evaluation/
 
 ## Compressed Files (.lsc)
 
-**LogSim Compressed** format - Binary files containing:
+**LogPress Compressed** format - Binary files containing:
 - Extracted templates
 - Columnar encoded fields
 - Queryable indexes
@@ -36,14 +36,14 @@ evaluation/
 **Example**:
 ```bash
 # Create compressed file
-python -m logsim compress \
+python -m logpress compress \
   -i data/datasets/Apache/Apache_full.log \
   -o evaluation/compressed/apache_full.lsc \
   --min-support 3 \
   -m
 
 # File structure:
-# - Magic bytes: LSC\x01 (LogSim Compressed v1)
+# - Magic bytes: LSC\x01 (LogPress Compressed v1)
 # - Metadata section (MessagePack)
 # - Template definitions
 # - Columnar data (Zstandard compressed)
@@ -149,7 +149,7 @@ Tracks schema evolution over time for datasets with format changes.
 
 **Generate**:
 ```python
-from logsim.services.schema_versioner import SchemaVersioner
+from logpress.services.schema_versioner import SchemaVersioner
 
 versioner = SchemaVersioner()
 versions = versioner.track_evolution(log_lines)
@@ -213,7 +213,7 @@ python evaluation/run_query_benchmarks.py
 
 # Compares:
 # - Full scan (uncompressed)
-# - LogSim query engine
+# - logpress query engine
 # - Reports speedup factors
 ```
 
@@ -224,7 +224,7 @@ Query Performance Benchmarks
 
 Dataset: Apache (52,437 logs)
 
-Query Type              Full Scan    LogSim      Speedup
+Query Type              Full Scan    logpress      Speedup
 ----------------------------------------------------------
 COUNT(*)                N/A          0.008ms     ∞
 Severity=ERROR          1.2s         0.5s        2.4×
@@ -241,11 +241,11 @@ Average Speedup: 5.4×
 
 ```bash
 # Interactive CLI (recommended)
-python -m logsim.cli.interactive
+python -m logpress.cli.interactive
 
 # Or command-line
 for dataset in Apache HealthApp Zookeeper OpenStack Proxifier; do
-  python -m logsim compress \
+  python -m logpress compress \
     -i "data/datasets/${dataset}/${dataset}_full.log" \
     -o "evaluation/compressed/${dataset}_full.lsc" \
     --min-support 3 \
@@ -286,7 +286,7 @@ with open('evaluation/results/apache_metrics.json') as f:
 - **Original Size**: Uncompressed log file size (bytes)
 - **Compressed Size**: .lsc file size (bytes)
 - **Compression Ratio**: Original / Compressed (e.g., 11.2× = 91% reduction)
-- **vs Gzip**: LogSim ratio / gzip ratio (baseline comparison)
+- **vs Gzip**: logpress ratio / gzip ratio (baseline comparison)
 - **Space Savings**: (1 - 1/ratio) × 100% (e.g., 11.2× = 91.1% savings)
 
 ### Template Metrics
@@ -299,8 +299,8 @@ with open('evaluation/results/apache_metrics.json') as f:
 ### Query Performance
 
 - **Full Scan**: Time to scan uncompressed logs
-- **LogSim Query**: Time using queryable indexes
-- **Speedup**: Full scan / LogSim query
+- **logpress Query**: Time using queryable indexes
+- **Speedup**: Full scan / logpress query
 - **Memory**: Peak memory usage during query
 
 ### Accuracy Metrics
@@ -329,7 +329,7 @@ for ds in datasets:
 # Plot
 plt.bar(datasets, ratios)
 plt.ylabel('Compression Ratio (×)')
-plt.title('LogSim Compression Performance')
+plt.title('logpress Compression Performance')
 plt.savefig('evaluation/results/compression_chart.png')
 ```
 

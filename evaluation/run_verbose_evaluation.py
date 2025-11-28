@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import time
 import gzip
 from datetime import datetime
-from logsim.services.compressor import SemanticCompressor
+from logpress.services.compressor import SemanticCompressor
 
 
 def evaluate_dataset(name, log_file, max_logs=None):
@@ -59,8 +59,8 @@ def evaluate_dataset(name, log_file, max_logs=None):
     print(f"   Time: {gzip_time:.3f}s")
     print()
     
-    # LogSim compression
-    print("🚀 LogSim Semantic Compression Pipeline:")
+    # logpress compression
+    print("🚀 logpress Semantic Compression Pipeline:")
     print()
     print("   Stage 1: Tokenization (FSM-based)")
     print("   Stage 2: Template Extraction (log alignment)")
@@ -119,7 +119,7 @@ def evaluate_dataset(name, log_file, max_logs=None):
     print(f"Original size:       {original_bytes:,} bytes ({original_mb:.2f} MB)")
     print()
     print(f"gzip-9:              {gzip_bytes:,} bytes ({gzip_ratio:.2f}x)")
-    print(f"LogSim:              {compressed_bytes:,} bytes ({compression_ratio:.2f}x)")
+    print(f"logpress:              {compressed_bytes:,} bytes ({compression_ratio:.2f}x)")
     print()
     print(f"Improvement:         {(compression_ratio/gzip_ratio)*100:.1f}% of gzip efficiency")
     print()
@@ -151,7 +151,7 @@ def main():
     print()
     print("╔" + "═" * 78 + "╗")
     print("║" + " " * 78 + "║")
-    print("║" + "LOGSIM VERBOSE EVALUATION".center(78) + "║")
+    print("║" + "logpress VERBOSE EVALUATION".center(78) + "║")
     print("║" + "Real-Time Progress Display".center(78) + "║")
     print("║" + " " * 78 + "║")
     print("╚" + "═" * 78 + "╝")
@@ -271,7 +271,7 @@ def main():
         # Save as Markdown for thesis/reports
         md_file = results_dir / f"evaluation_results_{timestamp}.md"
         with open(md_file, 'w') as f:
-            f.write("# LogSim Evaluation Results\n\n")
+            f.write("# logpress Evaluation Results\n\n")
             f.write(f"**Date**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
             f.write(f"**Total Datasets**: {len(results)}\n")
             f.write(f"**Total Logs**: {sum(r['logs'] for r in results):,}\n")
@@ -329,7 +329,7 @@ def main():
             json.dump(json_data, f, indent=2)
         
         with open(latest_md, 'w') as f:
-            f.write("# LogSim Evaluation Results (Latest)\n\n")
+            f.write("# logpress Evaluation Results (Latest)\n\n")
             f.write(f"**Date**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
             f.write(f"**Total Datasets**: {len(results)}\n")
             f.write(f"**Total Logs**: {sum(r['logs'] for r in results):,}\n")

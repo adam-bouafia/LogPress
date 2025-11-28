@@ -1,6 +1,6 @@
 # Data Directory
 
-Contains input datasets and ground truth annotations for LogSim validation.
+Contains input datasets and ground truth annotations for logpress validation.
 
 ## Structure
 
@@ -169,7 +169,7 @@ Manual annotations for validation, including:
 
 **Usage**:
 ```python
-from logsim.services.evaluator import SchemaEvaluator
+from logpress.services.evaluator import SchemaEvaluator
 
 evaluator = SchemaEvaluator()
 metrics = evaluator.evaluate(
@@ -203,7 +203,7 @@ metrics = evaluator.evaluate(
 
 4. **Test discovery**:
    ```bash
-   python -m logsim.cli.interactive
+   python -m logpress.cli.interactive
    # Should auto-discover new dataset
    ```
 
@@ -223,7 +223,7 @@ These datasets are sourced from publicly available log repositories:
 ### Scan Datasets Programmatically
 
 ```python
-from logsim.cli.interactive import InteractiveCLI
+from logpress.cli.interactive import InteractiveCLI
 
 cli = InteractiveCLI()
 datasets = cli.scan_datasets()
@@ -235,7 +235,7 @@ for ds in datasets:
 ### Compress a Dataset
 
 ```bash
-python -m logsim compress \
+python -m logpress compress \
   -i data/datasets/Apache/Apache_full.log \
   -o evaluation/compressed/apache.lsc \
   --min-support 3 \

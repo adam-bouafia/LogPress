@@ -1,4 +1,4 @@
-# LogSim Evaluation Results
+# logpress Evaluation Results
 
 **Date**: 2025-11-28 14:21:44
 

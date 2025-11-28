@@ -15,10 +15,10 @@ from dataclasses import dataclass
 from typing import List, Dict, Any
 from datetime import datetime
 
-# Ensure project root is on sys.path so imports like `logsim.*` work
+# Ensure project root is on sys.path so imports like `logpress.*` work
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from logsim.services.query_engine import QueryEngine
+from logpress.services.query_engine import QueryEngine
 
 
 @dataclass
@@ -26,7 +26,7 @@ class QueryBenchmark:
     """Results for a single query"""
     query_name: str
     query_description: str
-    logsim_time_ms: float
+    logpress_time_ms: float
     baseline_time_ms: float
     speedup: float
     rows_matched: int
@@ -53,15 +53,15 @@ def benchmark_query(query_engine: QueryEngine, query_name: str, query_desc: str,
     # Warm-up run
     _ = query_func(query_engine)
     
-    # LogSim query (3 runs, take average)
-    logsim_times = []
+    # logpress query (3 runs, take average)
+    logpress_times = []
     for _ in range(3):
         start = time.perf_counter()
         result = query_func(query_engine)
         end = time.perf_counter()
-        logsim_times.append((end - start) * 1000)  # Convert to ms
+        logpress_times.append((end - start) * 1000)  # Convert to ms
     
-    logsim_time = sum(logsim_times) / len(logsim_times)
+    logpress_time = sum(logpress_times) / len(logpress_times)
     rows_matched = len(result) if isinstance(result, list) else (result.matched_count if hasattr(result, 'matched_count') else 1)
     
     # Baseline (full decompression + filter)
@@ -74,9 +74,9 @@ def benchmark_query(query_engine: QueryEngine, query_name: str, query_desc: str,
     
     baseline_time = sum(baseline_times) / len(baseline_times)
     
-    speedup = baseline_time / logsim_time if logsim_time > 0 else 0
+    speedup = baseline_time / logpress_time if logpress_time > 0 else 0
     
-    print(f"    LogSim:   {logsim_time:.2f} ms ({rows_matched:,} rows)")
+    print(f"    logpress:   {logpress_time:.2f} ms ({rows_matched:,} rows)")
     print(f"    Baseline: {baseline_time:.2f} ms")
     print(f"    Speedup:  {speedup:.1f}x")
     print()
@@ -84,7 +84,7 @@ def benchmark_query(query_engine: QueryEngine, query_name: str, query_desc: str,
     return QueryBenchmark(
         query_name=query_name,
         query_description=query_desc,
-        logsim_time_ms=logsim_time,
+        logpress_time_ms=logpress_time,
         baseline_time_ms=baseline_time,
         speedup=speedup,
         rows_matched=rows_matched,
@@ -194,7 +194,7 @@ def main():
     
     print("╔" + "═" * 78 + "╗")
     print("║" + " " * 78 + "║")
-    print("║" + "LOGSIM QUERY PERFORMANCE BENCHMARKS".center(78) + "║")
+    print("║" + "logpress QUERY PERFORMANCE BENCHMARKS".center(78) + "║")
     print("║" + "Selective Decompression vs Full Decompression".center(78) + "║")
     print("║" + " " * 78 + "║")
     print("╚" + "═" * 78 + "╝")
@@ -258,14 +258,14 @@ def main():
     print("╚" + "═" * 78 + "╝")
     print()
     
-    print(f"{'Dataset':<12} | {'Query':<20} | {'LogSim (ms)':>12} | {'Baseline (ms)':>14} | {'Speedup':>8}")
+    print(f"{'Dataset':<12} | {'Query':<20} | {'logpress (ms)':>12} | {'Baseline (ms)':>14} | {'Speedup':>8}")
     print("-" * 80)
     
     for dataset_name, benchmarks in all_results.items():
         for i, bench in enumerate(benchmarks):
             ds = dataset_name if i == 0 else ""
             print(f"{ds:<12} | {bench.query_name:<20} | "
-                  f"{bench.logsim_time_ms:>12.2f} | "
+                  f"{bench.logpress_time_ms:>12.2f} | "
                   f"{bench.baseline_time_ms:>14.2f} | "
                   f"{bench.speedup:>7.1f}x")
     
@@ -294,7 +294,7 @@ def main():
             {
                 'query_name': b.query_name,
                 'query_description': b.query_description,
-                'logsim_time_ms': b.logsim_time_ms,
+                'logpress_time_ms': b.logpress_time_ms,
                 'baseline_time_ms': b.baseline_time_ms,
                 'speedup': b.speedup,
                 'rows_matched': b.rows_matched,

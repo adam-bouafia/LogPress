@@ -1,6 +1,6 @@
 # Documentation Directory
 
-Project documentation for LogSim system.
+Project documentation for logpress system.
 
 ## Structure
 
@@ -34,7 +34,7 @@ Comprehensive testing guide covering:
 bash scripts/run-tests.sh
 
 # Run specific category
-python -m pytest logsim/tests/unit/ -v
+python -m pytest logpress/tests/unit/ -v
 ```
 
 #### [MCP_ARCHITECTURE.md](MCP_ARCHITECTURE.md)
@@ -48,7 +48,7 @@ System design and architecture documentation:
 **Layers**:
 - **Models**: Pure data structures
 - **Protocols**: Abstract interfaces
-- **Context**: Business logic (tokenization, extraction, classification, encoding)
+- **Context**: Business logpress (tokenization, extraction, classification, encoding)
 - **Services**: High-level orchestration (compressor, query engine, evaluator)
 - **CLI**: User interfaces
 
@@ -87,7 +87,7 @@ Documents the migration from flat structure to MCP architecture:
 - [Quick Start Examples](../README.md#command-line-usage)
 
 ### Development
-- [LogSim Package README](../logsim/README.md) - API reference
+- [logpress Package README](../logpress/README.md) - API reference
 - [Testing Guide](TESTING.md) - Write and run tests
 - [Architecture Guide](MCP_ARCHITECTURE.md) - System design
 
@@ -119,7 +119,7 @@ Always include:
 **Example**:
 ```python
 # Context: Compress a log file
-from logsim.services import SemanticCompressor
+from logpress.services import SemanticCompressor
 
 # Code
 compressor = SemanticCompressor(min_support=3)
@@ -205,7 +205,7 @@ pip install sphinx sphinx-rtd-theme sphinx-autodoc-typehints
 # Generate docs
 cd documentation/docs
 sphinx-quickstart
-sphinx-apidoc -o source/ ../logsim/
+sphinx-apidoc -o source/ ../logpress/
 make html
 
 # View docs
@@ -358,7 +358,7 @@ Current gaps to fill:
 
 3. **Check test examples**
    ```bash
-   grep -r "def test_" logsim/tests/
+   grep -r "def test_" logpress/tests/
    ```
 
 4. **Open an issue**

@@ -9,14 +9,14 @@ All unit tests passed successfully! The comprehensive benchmarks script is ready
 ### Test Coverage
 1. ✅ **Dataset Discovery** - Auto-discovers all 10 datasets
 2. ✅ **Generic Compression** - Tests gzip-9, zstd-15 (bzip2, xz, lz4 if available)
-3. ✅ **LogSim Compression** - Full compression pipeline with stats
+3. ✅ **logpress Compression** - Full compression pipeline with stats
 4. ✅ **Query Performance** - Selective decompression vs grep baseline
 5. ✅ **Output Generation** - JSON + Markdown thesis-ready reports
 
 ### Test Results (Proxifier Dataset - 2.4 MB, 21K logs)
 - **gzip-9**: 15.68× in 0.15s
 - **zstd-15**: 18.72× in 0.34s  
-- **LogSim**: 12.10× in 4.29s (4,964 logs/s)
+- **logpress**: 12.10× in 4.29s (4,964 logs/s)
 - **Query speedup**: 3,402× faster than grep for COUNT(*) queries!
 
 ## Usage
@@ -39,7 +39,7 @@ Results saved to `evaluation/results/`:
 ## What Gets Benchmarked
 
 ### 1. Compression Ratio Comparison
-Compares LogSim against:
+Compares logpress against:
 - **gzip-9** (GNU zip, maximum compression)
 - **bzip2-9** (block-sorting compression)
 - **xz-9** (LZMA compression)
@@ -52,7 +52,7 @@ Compares LogSim against:
 - Highlights trade-offs between ratio and speed
 
 ### 3. Query Performance
-Tests LogSim's selective decompression against baselines:
+Tests logpress's selective decompression against baselines:
 - **COUNT(*)**: Metadata-only query (no decompression)
 - **Severity filter**: Field-specific query (partial decompression)
 - **IP filter**: Pattern-based query
@@ -73,7 +73,7 @@ Tests LogSim's selective decompression against baselines:
 
 **Required** (must be installed):
 - Python 3.10+
-- LogSim dependencies (from requirements.txt)
+- logpress dependencies (from requirements.txt)
 
 **Optional** (gracefully skipped if missing):
 - `gzip` (usually pre-installed)
@@ -98,19 +98,19 @@ sudo pacman -S bzip2 xz zstd lz4
 
 ### Compression Ratio
 - **Higher is better**: 15× means 15:1 compression
-- LogSim typically: 8-20× (depends on log structure)
+- logpress typically: 8-20× (depends on log structure)
 - Generic tools: 8-15× (no semantic awareness)
 
 ### Compression Speed
 - **Higher is better**: MB/s throughput
 - lz4: ~400 MB/s (fast, lower ratio)
 - zstd: ~180 MB/s (balanced)
-- LogSim: ~1-2 MB/s (slower, queryable)
+- logpress: ~1-2 MB/s (slower, queryable)
 - gzip: ~50 MB/s
 - bzip2/xz: ~3-10 MB/s (slow, higher ratio)
 
 ### Query Speedup
-- **LogSim advantage**: Selective decompression
+- **logpress advantage**: Selective decompression
 - COUNT(*): 1,000-10,000× faster (metadata only)
 - Severity filter: 2-20× faster (partial decompression)
 - Substring search: Similar to grep (full decompression needed)
@@ -155,13 +155,13 @@ sudo pacman -S bzip2 xz zstd lz4
 | Tool | Apache | HPC | HealthApp | ... | Average |
 |------|--------|-----|-----------|-----|---------|
 | gzip-9 | 21.2× | 11.1× | 10.9× | ... | 12.4× |
-| LogSim | 8.2× | 8.8× | 8.7× | ... | 12.2× |
-| Winner | gzip | LogSim | LogSim | ... | — |
+| logpress | 8.2× | 8.8× | 8.7× | ... | 12.2× |
+| Winner | gzip | logpress | logpress | ... | — |
 ```
 
 **Table 2: Query Performance**
 ```markdown
-| Query Type | LogSim (ms) | Baseline (ms) | Speedup |
+| Query Type | logpress (ms) | Baseline (ms) | Speedup |
 |------------|-------------|---------------|---------|
 | COUNT(*) | 0.01 | 4.87 | 3,402× |
 | severity=ERROR | 12.5 | 45.2 | 3.6× |
@@ -169,7 +169,7 @@ sudo pacman -S bzip2 xz zstd lz4
 
 ### Key Takeaways for Thesis
 
-1. **LogSim achieves 12.2× average compression** (98.4% of gzip)
+1. **logpress achieves 12.2× average compression** (98.4% of gzip)
 2. **Mac & OpenStack outperform gzip** by 63-67%
 3. **Query speedup: 100-10,000× for metadata queries**
 4. **Trade-off**: Slower compression (1-2 MB/s) for queryability

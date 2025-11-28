@@ -14,8 +14,8 @@ import json
 from datetime import datetime
 import shutil
 
-from logsim.services.compressor import SemanticCompressor
-from logsim.services.query_engine import QueryEngine
+from logpress.services.compressor import SemanticCompressor
+from logpress.services.query_engine import QueryEngine
 
 
 def test_dataset_discovery():
@@ -111,9 +111,9 @@ def test_generic_compression(log_file):
     return True, results
 
 
-def test_logsim_compression(log_file):
-    """Test LogSim compression"""
-    print("\nTEST 3: LogSim Compression")
+def test_logpress_compression(log_file):
+    """Test logpress compression"""
+    print("\nTEST 3: logpress Compression")
     print("-" * 60)
     
     try:
@@ -185,7 +185,7 @@ def test_query_performance(compressed_file, original_file):
         print("Query 1: Count all logs...", end=' ', flush=True)
         start = time.time()
         total_logs = compressed_data.original_count
-        logsim_time = (time.time() - start) * 1000  # ms
+        logpress_time = (time.time() - start) * 1000  # ms
         
         # Baseline: wc -l
         start = time.time()
@@ -193,15 +193,15 @@ def test_query_performance(compressed_file, original_file):
                               capture_output=True, text=True, check=True)
         baseline_time = (time.time() - start) * 1000  # ms
         
-        speedup = baseline_time / logsim_time if logsim_time > 0 else 0
-        print(f"✓ LogSim: {logsim_time:.2f}ms, Baseline: {baseline_time:.2f}ms, Speedup: {speedup:.2f}×")
+        speedup = baseline_time / logpress_time if logpress_time > 0 else 0
+        print(f"✓ logpress: {logpress_time:.2f}ms, Baseline: {baseline_time:.2f}ms, Speedup: {speedup:.2f}×")
         
         # Test 2: Severity query (if available)
         print("Query 2: Filter by severity...", end=' ', flush=True)
         try:
             start = time.time()
             error_logs = engine.query_by_severity(compressed_data, 'ERROR')
-            logsim_time = (time.time() - start) * 1000  # ms
+            logpress_time = (time.time() - start) * 1000  # ms
             
             # Baseline: grep -c "ERROR"
             start = time.time()
@@ -209,8 +209,8 @@ def test_query_performance(compressed_file, original_file):
                                   capture_output=True, check=True)
             baseline_time = (time.time() - start) * 1000  # ms
             
-            speedup = baseline_time / logsim_time if logsim_time > 0 else 0
-            print(f"✓ LogSim: {logsim_time:.2f}ms, Baseline: {baseline_time:.2f}ms, Speedup: {speedup:.2f}×")
+            speedup = baseline_time / logpress_time if logpress_time > 0 else 0
+            print(f"✓ logpress: {logpress_time:.2f}ms, Baseline: {baseline_time:.2f}ms, Speedup: {speedup:.2f}×")
         except Exception as e:
             print(f"⚠ Skipped: {e}")
         
@@ -237,7 +237,7 @@ def test_output_generation():
                 'original_bytes': 2519085,
                 'tools': {
                     'gzip9': {'ratio': 15.68, 'time': 3.2, 'speed_mbps': 0.75},
-                    'logsim': {'ratio': 12.09, 'time': 3.2, 'speed_mbps': 0.75, 
+                    'logpress': {'ratio': 12.09, 'time': 3.2, 'speed_mbps': 0.75, 
                               'logs': 21320, 'logs_per_second': 6656, 'templates': 26}
                 }
             }]
@@ -255,7 +255,7 @@ def test_output_generation():
         with open(md_file, 'w') as f:
             f.write("# Test Benchmark Results\n\n")
             f.write(f"**Date**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
-            f.write("| Dataset | gzip-9 | LogSim |\n")
+            f.write("| Dataset | gzip-9 | logpress |\n")
             f.write("|---------|--------|--------|\n")
             f.write("| Proxifier | 15.68× | 12.09× |\n")
         print(f"✓ Markdown saved to: {md_file}")
@@ -303,20 +303,20 @@ def main():
     else:
         all_passed = False
     
-    # Test 3: LogSim compression
-    result = test_logsim_compression(log_file)
+    # Test 3: logpress compression
+    result = test_logpress_compression(log_file)
     if isinstance(result, tuple):
-        success, logsim_result = result
+        success, logpress_result = result
         if not success:
             all_passed = False
             print("\n⚠ Query tests skipped due to compression failure")
         else:
             # Test 4: Query performance
-            if not test_query_performance(logsim_result['compressed_file'], log_file):
+            if not test_query_performance(logpress_result['compressed_file'], log_file):
                 all_passed = False
             
             # Cleanup test compressed file
-            logsim_result['compressed_file'].unlink()
+            logpress_result['compressed_file'].unlink()
     else:
         all_passed = False
     
