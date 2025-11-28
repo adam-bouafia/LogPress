@@ -6,7 +6,7 @@ Contains input datasets and ground truth annotations for logpress validation.
 
 ```
 data/
-├── datasets/         # Real-world log sources (497K entries)
+├── datasets/         # Real-world log sources (~1.07M entries, ~128MB total)
 │   ├── Apache/
 │   ├── HealthApp/
 │   ├── Zookeeper/
@@ -23,12 +23,15 @@ data/
 ## Datasets Overview
 
 | Dataset | Lines | Size | Format | Use Case |
-|---------|-------|------|--------|----------|
-| **Apache** | 52,437 | 4.76 MB | Syslog-style | Web server logs |
-| **HealthApp** | 212,005 | 19.21 MB | Pipe-delimited | Android health tracking |
-| **Zookeeper** | 74,380 | 9.85 MB | Java logging | Distributed coordination |
-| **OpenStack** | 137,236 | 28.35 MB | Multi-file | Cloud infrastructure |
-| **Proxifier** | 21,329 | 2.01 MB | Structured | Network proxy |
+|---------|-------:|------:|--------|----------|
+| **HPC** | 433,489 | 32 MB | Cluster system logs | High-performance computing events |
+| **HealthApp** | 212,394 | 20 MB | Pipe-delimited | Android health tracking |
+| **OpenStack** | 137,074 | 39 MB | Multi-file | Cloud infrastructure events and tracing |
+| **Mac** | 117,283 | 17 MB | macOS system logs | Application and OS messages |
+| **Zookeeper** | 74,273 | 9.9 MB | Java logging | Distributed coordination and stack traces |
+| **Apache** | 51,977 | 4.8 MB | Syslog-style | Web server access/errors |
+| **Linux** | 25,567 | 2.3 MB | Syslog-style | Linux system logs and messages |
+| **Proxifier** | 21,320 | 2.5 MB | Structured | Network proxy connection logs |
 
 ## Dataset Details
 

@@ -120,12 +120,15 @@ LogPress/
 │       └── performance/  # Benchmarks
 │
 ├── data/                  # Input data
-│   ├── datasets/         # 5 real-world log sources (497K entries)
+│   ├── datasets/         # 8 real-world log sources (~1.07M entries)
 │   │   ├── Apache/       # Web server logs (52K lines)
 │   │   ├── HealthApp/    # Android health tracking (212K lines)
-│   │   ├── Zookeeper/    # Distributed coordination (74K lines)
-│   │   ├── OpenStack/    # Cloud infrastructure (137K lines)
-│   │   └── Proxifier/    # Network proxy (21K lines)
+│   │   ├── HPC/          # High-performance computing cluster logs (433K lines)
+│   │   ├── Linux/        # Linux system logs (26K lines)
+│   │   ├── Mac/          # macOS system logs (117K lines)
+│   │   ├── OpenStack/    # Cloud infrastructure logs (137K lines)
+│   │   ├── Proxifier/    # Network proxy logs (21K lines)
+│   │   └── Zookeeper/    # Distributed coordination logs (74K lines)
 │   └── ground_truth/     # Manual annotations for validation
 │
 ├── evaluation/           # Outputs & results
