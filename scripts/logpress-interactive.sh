@@ -34,14 +34,24 @@ scan_datasets() {
         if [ -d "$dir" ]; then
             name=$(basename "$dir")
             
-            # Try multiple naming patterns
+            # Try multiple naming patterns (order matters: most specific first)
             log_file=""
+            
+            # Pattern 1: {Name}_full.log (exact case)
             if [ -f "$dir/${name}_full.log" ]; then
                 log_file="$dir/${name}_full.log"
+            # Pattern 2: {Name}.log (exact case)
             elif [ -f "$dir/${name}.log" ]; then
                 log_file="$dir/${name}.log"
-            elif [ -f "$dir/${name,,}.log" ]; then  # lowercase
+            # Pattern 3: {name}_full.log (lowercase)
+            elif [ -f "$dir/${name,,}_full.log" ]; then
+                log_file="$dir/${name,,}_full.log"
+            # Pattern 4: {name}.log (lowercase)
+            elif [ -f "$dir/${name,,}.log" ]; then
                 log_file="$dir/${name,,}.log"
+            # Pattern 5: Find first .log file in directory
+            else
+                log_file=$(find "$dir" -maxdepth 1 -name "*.log" -type f | head -n 1)
             fi
             
             if [ -n "$log_file" ] && [ -f "$log_file" ]; then
