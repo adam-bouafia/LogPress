@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "LogPress"
-version = "1.0.6"
+version = "1.0.7"
 description = "Semantic-aware log compression with automatic schema extraction and queryable storage"
 readme = "README.md"
 authors = [
