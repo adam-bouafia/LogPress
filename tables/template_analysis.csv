@@ -1,0 +1,10 @@
+Dataset,Total Logs,Templates,Logs/Template,Top Template %
+Apache,51978,1019,51.0,3.4
+Hadoop,179993,29618,6.1,2.9
+HealthApp,253395,62540,4.1,0.5
+Linux,25567,3018,8.5,21.7
+Mac,117283,19173,6.1,3.0
+OpenSSH,638947,6617,96.6,11.5
+Openstack,189386,128699,1.5,2.1
+Proxifier,21320,2123,10.0,19.7
+Zookeeper,74273,2577,28.8,14.0
