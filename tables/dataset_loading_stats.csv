@@ -1,0 +1,12 @@
+Dataset,Lines,Size (MB)
+Apache,51978,4.7
+Hadoop,179993,30.4
+HealthApp,253395,22.4
+Linux,25567,2.2
+Mac,117283,16.1
+OpenSSH,638947,67.3
+Openstack,189386,53.4
+Proxifier,21320,2.4
+Zookeeper,74273,9.9
+SSH,655147,70.0
+TOTAL,2207289,278.9
