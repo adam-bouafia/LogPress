@@ -1,6 +1,0 @@
-Method,Ratio,Time (s),Speed (x/s)
-Gzip,14.1,3.7,3.763
-Bzip2,19.0,20.1,0.942
-LZMA,19.6,45.2,0.434
-Zstd (raw),17.8,1.6,11.357
-LogPress,15.7,30.0,0.524
