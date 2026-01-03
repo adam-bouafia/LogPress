@@ -1,24 +1,24 @@
 Dataset,Rank,Count,Percentage,Template
-BGL,1,152182,18.4,KERNDTLB <*HEX*> <*TIMESTAMP*> R30-M0-N9-C : J16-U01 <*TIMESTAMP*> R30-M0-N9-C : J16-U01 RAS KERNEL FATAL data TLB error interrupt
-BGL,2,49402,6.0,- <*HEX*> <*TIMESTAMP*> R02-M1-N0-C : J12-U11 <*TIMESTAMP*> R02-M1-N0-C : J12-U11 RAS KERNEL INFO instruction cache parity error corrected
-BGL,3,5028,0.6,"- <*HEX*> <*TIMESTAMP*> R16-M1-N2-C : J17-U01 <*TIMESTAMP*> R16-M1-N2-C : J17-U01 RAS KERNEL INFO CE sym <*NUMBER*> , at <*HEX*> , mask <*HEX*>"
-BGL,4,788,0.1,"- <*HEX*> <*TIMESTAMP*> R01-M1-ND-C : J15-U11 <*TIMESTAMP*> R01-M1-ND-C : J15-U11 RAS KERNEL INFO CE sym <*NUMBER*> , at <*HEX*> , mask <*HEX*>"
-BGL,5,431,0.1,"- <*HEX*> <*TIMESTAMP*> R16-M1-N2-C : J17-U01 <*TIMESTAMP*> R16-M1-N2-C : J17-U01 RAS KERNEL INFO <*NUMBER*> ddr errors ( s ) detected and corrected on rank <*NUMBER*> , symbol <*NUMBER*> , bit <*NUMBER*>"
+BGL,1,152182,18.4,KERNDTLB <*NUMBER*> <*TIMESTAMP*> R30-M0-N9-C : J16-U01 <*TIMESTAMP*> R30-M0-N9-C : J16-U01 RAS KERNEL FATAL data TLB error interrupt
+BGL,2,49402,6.0,- <*NUMBER*> <*TIMESTAMP*> R02-M1-N0-C : J12-U11 <*TIMESTAMP*> R02-M1-N0-C : J12-U11 RAS KERNEL INFO instruction cache parity error corrected
+BGL,3,5028,0.6,"- <*NUMBER*> <*TIMESTAMP*> R16-M1-N2-C : J17-U01 <*TIMESTAMP*> R16-M1-N2-C : J17-U01 RAS KERNEL INFO CE sym <*NUMBER*> , at <*HEX*> , mask <*HEX*>"
+BGL,4,788,0.1,"- <*NUMBER*> <*TIMESTAMP*> R01-M1-ND-C : J15-U11 <*TIMESTAMP*> R01-M1-ND-C : J15-U11 RAS KERNEL INFO CE sym <*NUMBER*> , at <*HEX*> , mask <*HEX*>"
+BGL,5,431,0.1,"- <*NUMBER*> <*TIMESTAMP*> R16-M1-N2-C : J17-U01 <*TIMESTAMP*> R16-M1-N2-C : J17-U01 RAS KERNEL INFO <*NUMBER*> ddr errors ( s ) detected and corrected on rank <*NUMBER*> , symbol <*NUMBER*> , bit <*NUMBER*>"
 Apache,1,20115,38.7,[ <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> <*NUMBER*> ] [ error ] [ client <*IP_ADDRESS*> ] File does not exist : <*PATH*>
 Apache,2,6745,13.0,[ <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> <*NUMBER*> ] [ error ] [ client <*IP_ADDRESS*> ] Directory index forbidden by rule : <*PATH*>
 Apache,3,6335,12.2,[ <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> <*NUMBER*> ] [ notice ] jk2_init ( ) Found child <*NUMBER*> in scoreboard slot <*NUMBER*>
 Apache,4,5708,11.0,[ <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> <*NUMBER*> ] [ notice ] workerEnv.init ( ) ok <*PATH*>
 Apache,5,4349,8.4,[ <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> <*NUMBER*> ] [ error ] mod_jk child workerEnv in error state <*NUMBER*>
-Hadoop,1,5339,3.0,<*TIMESTAMP*> <*TIMESTAMP*> INFO [ main ] org.apache.hadoop.mapred.MapTask : Spilling map output
-Hadoop,2,5300,2.9,<*TIMESTAMP*> <*TIMESTAMP*> WARN [ LeaseRenewer : msrabi@ msra-sa-41 : <*NUMBER*> ] org.apache.hadoop.ipc.Client : Address change detected. Old : msra-sa-41 / <*IP_ADDRESS*> New : msra-sa-41 : <*NUMBER*>
-Hadoop,3,4580,2.5,<*TIMESTAMP*> <*TIMESTAMP*> INFO [ SpillThread ] org.apache.hadoop.mapred.MapTask : Finished spill <*NUMBER*>
-Hadoop,4,3841,2.1,<*TIMESTAMP*> <*TIMESTAMP*> INFO [ RMCommunicator Allocator ] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator : Reduce slow start threshold not met. completedMapsForReduceSlowstart <*NUMBER*>
-Hadoop,5,3524,2.0,<*TIMESTAMP*> <*TIMESTAMP*> INFO [ IPC Server handler <*NUMBER*> on <*NUMBER*> ] org.apache.hadoop.mapred.TaskAttemptListenerImpl : MapCompletionEvents request from attempt_1445062781478_0017_r_000000_0. startIndex <*NUMBER*> maxEvents <*NUMBER*>
-HealthApp,1,17667,7.0,<*TIMESTAMP*> | Step_LSC | <*HEX*> | onExtend : <*HEX*> <*NUMBER*> <*NUMBER*> <*NUMBER*>
-HealthApp,2,14924,5.9,<*TIMESTAMP*> | Step_LSC | <*HEX*> | onStandStepChanged <*NUMBER*>
-HealthApp,3,12132,4.8,<*TIMESTAMP*> | Step_ExtSDM | <*HEX*> | calculateAltitudeWithCache totalAltitude = <*NUMBER*>
-HealthApp,4,8807,3.5,<*TIMESTAMP*> | Step_ExtSDM | <*HEX*> | calculateCaloriesWithCache totalCalories = <*TIMESTAMP*>
-HealthApp,5,7943,3.1,<*TIMESTAMP*> | Step_StandReportReceiver | <*HEX*> | REPORT : <*NUMBER*> <*NUMBER*> <*TIMESTAMP*> <*NUMBER*>
+Hadoop,1,5271,2.9,2015-10-18 <*TIMESTAMP*> WARN [ LeaseRenewer : msrabi@ msra-sa-41 : <*NUMBER*> ] org.apache.hadoop.ipc.Client : Address change detected. Old : msra-sa-41 / <*IP_ADDRESS*> New : msra-sa-41 : <*NUMBER*>
+Hadoop,2,3524,2.0,2015-10-17 <*TIMESTAMP*> INFO [ IPC Server handler <*NUMBER*> on <*NUMBER*> ] org.apache.hadoop.mapred.TaskAttemptListenerImpl : MapCompletionEvents request from attempt_1445062781478_0017_r_000000_0. startIndex <*NUMBER*> maxEvents <*NUMBER*>
+Hadoop,3,3106,1.7,2015-10-17 <*TIMESTAMP*> INFO [ main ] org.apache.hadoop.mapred.MapTask : ( EQUATOR ) <*NUMBER*> kvi <*NUMBER*> ( <*NUMBER*> )
+Hadoop,4,2982,1.7,2015-10-17 <*TIMESTAMP*> INFO [ main ] org.apache.hadoop.mapred.MapTask : Spilling map output
+Hadoop,5,2550,1.4,2015-10-17 <*TIMESTAMP*> INFO [ SpillThread ] org.apache.hadoop.mapred.MapTask : Finished spill <*NUMBER*>
+HealthApp,1,17667,7.0,<*TIMESTAMP*> | Step_LSC | <*NUMBER*> | onExtend : <*NUMBER*> <*NUMBER*> <*NUMBER*> <*NUMBER*>
+HealthApp,2,14924,5.9,<*TIMESTAMP*> | Step_LSC | <*NUMBER*> | onStandStepChanged <*NUMBER*>
+HealthApp,3,12132,4.8,<*TIMESTAMP*> | Step_ExtSDM | <*NUMBER*> | calculateAltitudeWithCache totalAltitude = <*NUMBER*>
+HealthApp,4,8807,3.5,<*TIMESTAMP*> | Step_ExtSDM | <*NUMBER*> | calculateCaloriesWithCache totalCalories = <*TIMESTAMP*>
+HealthApp,5,7943,3.1,<*TIMESTAMP*> | Step_StandReportReceiver | <*NUMBER*> | REPORT : <*NUMBER*> <*NUMBER*> <*TIMESTAMP*> <*NUMBER*>
 Linux,1,8903,34.8,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> combo kernel : Out of Memory : Killed process <*NUMBER*> ( httpd ) .
 Linux,2,1597,6.2,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> combo sshd ( pam_unix ) [ <*NUMBER*> ] : authentication failure; logname = uid = <*NUMBER*> euid = <*NUMBER*> tty = NODEVssh ruser = rhost = <*IP_ADDRESS*> user = root
 Linux,3,1580,6.2,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> combo ftpd [ <*NUMBER*> ] : connection from <*IP_ADDRESS*> ( ) at <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> <*NUMBER*>
@@ -29,23 +29,23 @@ Mac,2,1004,0.9,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> authorMacBook-Pro corecapt
 Mac,3,891,0.8,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> --- last message repeated <*NUMBER*> times ---
 Mac,4,808,0.7,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> authorMacBook-Pro QQ [ <*NUMBER*> ] : tcp_connection_handle_connect_conditions_bad <*NUMBER*> failed : <*NUMBER*> - No network route
 Mac,5,766,0.7,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> authorMacBook-Pro corecaptured [ <*NUMBER*> ] : CCFile : : captureLog
-Openstack,1,5077,2.7,nova-compute .log.1.2017-05-17_ <*TIMESTAMP*> <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] image <*UUID*> at ( <*PATH*> ) : checking
-Openstack,2,5077,2.7,"nova-compute .log.1.2017-05-17_ <*TIMESTAMP*> <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] image <*UUID*> at ( <*PATH*> ) : in use : on this node <*NUMBER*> local , <*NUMBER*> on other nodes sharing this instance storage"
-Openstack,3,5070,2.7,nova-compute .log.1.2017-05-17_ <*TIMESTAMP*> <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] Active base files : <*PATH*>
-Openstack,4,4051,2.1,nova-compute .log.2017-05-17_ <*TIMESTAMP*> <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] image <*UUID*> at ( <*PATH*> ) : checking
-Openstack,5,4051,2.1,"nova-compute .log.2017-05-17_ <*TIMESTAMP*> <*TIMESTAMP*> <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] image <*UUID*> at ( <*PATH*> ) : in use : on this node <*NUMBER*> local , <*NUMBER*> on other nodes sharing this instance storage"
-Proxifier,1,4206,19.7,[ <*NUMBER*> <*TIMESTAMP*> ] chrome.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> open through proxy proxy.cse.cuhk.edu.hk : <*NUMBER*> HTTPS
-Proxifier,2,1048,4.9,"[ <*NUMBER*> <*TIMESTAMP*> ] chrome.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> close , <*NUMBER*> bytes sent , <*NUMBER*> bytes received , lifetime <*NUMBER*> : <*NUMBER*>"
-Proxifier,3,956,4.5,"[ <*NUMBER*> <*TIMESTAMP*> ] chrome.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> close , <*NUMBER*> bytes ( <*NUMBER*> KB ) sent , <*NUMBER*> bytes ( <*NUMBER*> KB ) received , lifetime <*NUMBER*> : <*NUMBER*>"
-Proxifier,4,551,2.6,"[ <*NUMBER*> <*TIMESTAMP*> ] chrome.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> close , <*NUMBER*> bytes sent , <*NUMBER*> bytes received , lifetime <1 sec"
-Proxifier,5,442,2.1,"[ <*NUMBER*> <*TIMESTAMP*> ] chrome.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> close , <*NUMBER*> bytes ( <*NUMBER*> KB ) sent , <*NUMBER*> bytes received , lifetime <*NUMBER*> : <*NUMBER*>"
+Openstack,1,4051,2.1,nova-compute .log.2017-05-17_ <*TIMESTAMP*> 2017-05-17 <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] image <*UUID*> at ( <*PATH*> ) : checking
+Openstack,2,4051,2.1,"nova-compute .log.2017-05-17_ <*TIMESTAMP*> 2017-05-17 <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] image <*UUID*> at ( <*PATH*> ) : in use : on this node <*NUMBER*> local , <*NUMBER*> on other nodes sharing this instance storage"
+Openstack,3,4051,2.1,nova-compute .log.2017-05-17_ <*TIMESTAMP*> 2017-05-17 <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] Active base files : <*PATH*>
+Openstack,4,2920,1.5,nova-compute .log.1.2017-05-17_ <*TIMESTAMP*> 2017-05-16 <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] image <*UUID*> at ( <*PATH*> ) : checking
+Openstack,5,2920,1.5,"nova-compute .log.1.2017-05-17_ <*TIMESTAMP*> 2017-05-16 <*TIMESTAMP*> <*NUMBER*> INFO nova.virt.libvirt.imagecache [ req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - - ] image <*UUID*> at ( <*PATH*> ) : in use : on this node <*NUMBER*> local , <*NUMBER*> on other nodes sharing this instance storage"
+Proxifier,1,4206,19.7,[ 10.30 <*TIMESTAMP*> ] chrome.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> open through proxy proxy.cse.cuhk.edu.hk : <*NUMBER*> HTTPS
+Proxifier,2,1048,4.9,"[ 10.30 <*TIMESTAMP*> ] chrome.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> close , <*NUMBER*> bytes sent , <*NUMBER*> bytes received , lifetime <*NUMBER*> : <*NUMBER*>"
+Proxifier,3,551,2.6,"[ 10.30 <*TIMESTAMP*> ] chrome.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> close , <*NUMBER*> bytes sent , <*NUMBER*> bytes received , lifetime <1 sec"
+Proxifier,4,138,0.6,[ 10.30 <*TIMESTAMP*> ] firefox.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> open through proxy proxy.cse.cuhk.edu.hk : <*NUMBER*> HTTPS
+Proxifier,5,127,0.6,[ 10.30 <*TIMESTAMP*> ] WeChat.exe - proxy.cse.cuhk.edu.hk : <*NUMBER*> open through proxy proxy.cse.cuhk.edu.hk : <*NUMBER*> HTTPS
 SSH,1,139818,21.3,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> LabSZ sshd [ <*NUMBER*> ] : Failed password for root from <*IP_ADDRESS*> port <*NUMBER*> ssh2
 SSH,2,139572,21.3,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> LabSZ sshd [ <*NUMBER*> ] : pam_unix ( sshd : auth ) : authentication failure; logname = uid = <*NUMBER*> euid = <*NUMBER*> tty = ssh ruser = rhost = <*IP_ADDRESS*> user = root
 SSH,3,68958,10.5,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> LabSZ sshd [ <*NUMBER*> ] : Connection closed by <*IP_ADDRESS*> [ preauth ]
 SSH,4,46593,7.1,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> LabSZ sshd [ <*NUMBER*> ] : Received disconnect from <*IP_ADDRESS*> : <*NUMBER*> : Bye Bye [ preauth ]
 SSH,5,37963,5.8,<*TIMESTAMP*> <*NUMBER*> <*TIMESTAMP*> LabSZ sshd [ <*NUMBER*> ] : PAM service ( sshd ) ignoring max retries; <*NUMBER*> > <*NUMBER*>
-Zookeeper,1,10429,14.0,<*TIMESTAMP*> <*TIMESTAMP*> - INFO [ / <*IP_ADDRESS*> : QuorumCnxManager$Listener@493 ] - Received connection request / <*IP_ADDRESS*>
-Zookeeper,2,10358,13.9,<*TIMESTAMP*> <*TIMESTAMP*> - WARN [ RecvWorker : <*HEX*> : QuorumCnxManager$RecvWorker@765 ] - Interrupting SendWorker
-Zookeeper,3,10358,13.9,<*TIMESTAMP*> <*TIMESTAMP*> - WARN [ SendWorker : <*HEX*> : QuorumCnxManager$SendWorker@679 ] - Interrupted while waiting for message on queue
-Zookeeper,4,10358,13.9,<*TIMESTAMP*> <*TIMESTAMP*> - WARN [ SendWorker : <*HEX*> : QuorumCnxManager$SendWorker@688 ] - Send worker leaving thread
-Zookeeper,5,10356,13.9,"<*TIMESTAMP*> <*TIMESTAMP*> - WARN [ RecvWorker : <*HEX*> : QuorumCnxManager$RecvWorker@762 ] - Connection broken for id <*HEX*> , my id = <*NUMBER*> , error ="
+Zookeeper,1,10364,14.0,2015-07-29 <*TIMESTAMP*> - INFO [ / <*IP_ADDRESS*> : QuorumCnxManager$Listener@493 ] - Received connection request / <*IP_ADDRESS*>
+Zookeeper,2,10364,14.0,2015-07-29 <*TIMESTAMP*> - WARN [ RecvWorker : <*NUMBER*> : QuorumCnxManager$RecvWorker@765 ] - Interrupting SendWorker
+Zookeeper,3,10364,14.0,2015-07-29 <*TIMESTAMP*> - WARN [ SendWorker : <*NUMBER*> : QuorumCnxManager$SendWorker@688 ] - Send worker leaving thread
+Zookeeper,4,10362,14.0,"2015-07-29 <*TIMESTAMP*> - WARN [ RecvWorker : <*NUMBER*> : QuorumCnxManager$RecvWorker@762 ] - Connection broken for id <*NUMBER*> , my id = <*NUMBER*> , error ="
+Zookeeper,5,10361,13.9,2015-07-29 <*TIMESTAMP*> - WARN [ SendWorker : <*NUMBER*> : QuorumCnxManager$SendWorker@679 ] - Interrupted while waiting for message on queue
