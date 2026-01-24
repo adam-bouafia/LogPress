@@ -1,0 +1,71 @@
+Dataset,Method,Memory_MB,CPU_%,Energy_J
+BGL,Gzip,246.5 ± 0.0,97.7,82.299
+BGL,Bzip2,249.5 ± 0.0,100.0,137.827
+BGL,Lzma,905.3 ± 0.0,100.0,577.249
+BGL,Zstd Raw,333.6 ± 0.0,100.0,2538.956
+BGL,Logpress,3564.3 ± 0.0,46.8,25567.962
+BGL,Logzip,136.3 ± 0.0,87.8,214.682
+BGL,Logreducer,1047.4 ± 0.0,99.3,976.102
+Apache,Gzip,10.2 ± 0.0,99.5,1.341
+Apache,Bzip2,17.2 ± 0.0,99.2,9.119
+Apache,Lzma,683.1 ± 0.0,94.6,11.367
+Apache,Zstd Raw,14.3 ± 0.0,99.9,46.503
+Apache,Logpress,252.3 ± 0.0,62.2,1333.762
+Apache,Logzip,6.4 ± 0.0,101.2,6.715
+Apache,Logreducer,687.6 ± 0.0,100.4,25.527
+Hadoop,Gzip,68.2 ± 0.0,100.5,6.617
+Hadoop,Bzip2,70.7 ± 0.0,100.1,55.078
+Hadoop,Lzma,736.4 ± 0.0,99.9,69.910
+Hadoop,Zstd Raw,91.4 ± 0.0,100.0,456.896
+Hadoop,Logpress,794.0 ± 0.0,61.9,4301.718
+Hadoop,Logzip,35.9 ± 0.0,97.5,41.164
+Hadoop,Logreducer,756.1 ± 0.0,85.2,178.070
+HealthApp,Gzip,51.8 ± 0.0,98.7,10.777
+HealthApp,Bzip2,58.5 ± 0.0,100.1,27.135
+HealthApp,Lzma,724.2 ± 0.0,100.0,114.556
+HealthApp,Zstd Raw,66.7 ± 0.0,97.4,599.714
+HealthApp,Logpress,930.8 ± 0.0,48.3,6196.265
+HealthApp,Logzip,30.0 ± 0.0,92.8,36.475
+HealthApp,Logreducer,774.9 ± 0.0,89.9,255.493
+Linux,Gzip,11.2 ± 0.0,112.3,1.141
+Linux,Bzip2,14.4 ± 0.0,100.4,3.895
+Linux,Lzma,680.0 ± 0.0,98.5,8.333
+Linux,Zstd Raw,11.2 ± 0.0,100.4,17.769
+Linux,Logpress,118.2 ± 0.0,90.5,439.255
+Linux,Logzip,5.3 ± 0.0,98.7,3.664
+Linux,Logreducer,683.3 ± 0.0,100.1,16.519
+Mac,Gzip,79.9 ± 0.0,102.0,3.324
+Mac,Bzip2,79.9 ± 0.0,99.7,26.213
+Mac,Lzma,723.0 ± 0.0,100.1,43.273
+Mac,Zstd Raw,79.9 ± 0.0,99.9,305.443
+Mac,Logpress,606.0 ± 0.0,99.2,1926.068
+Mac,Logzip,35.6 ± 0.0,100.0,19.833
+Mac,Logreducer,716.0 ± 0.0,99.3,75.914
+Openstack,Gzip,119.9 ± 0.0,41.1,25.736
+Openstack,Bzip2,122.8 ± 0.0,99.2,110.435
+Openstack,Lzma,788.6 ± 0.0,89.9,237.012
+Openstack,Zstd Raw,160.4 ± 0.0,96.2,1815.700
+Openstack,Logpress,1366.4 ± 0.0,72.8,7960.838
+Openstack,Logzip,59.3 ± 0.0,87.2,61.634
+Openstack,Logreducer,772.7 ± 0.0,74.5,402.839
+Proxifier,Gzip,5.4 ± 0.0,95.0,0.777
+Proxifier,Bzip2,12.2 ± 0.0,101.0,5.536
+Proxifier,Lzma,678.1 ± 0.0,98.8,8.640
+Proxifier,Zstd Raw,7.2 ± 0.0,99.9,28.002
+Proxifier,Logpress,103.4 ± 0.0,84.0,417.797
+Proxifier,Logzip,3.1 ± 0.0,104.4,2.963
+Proxifier,Logreducer,679.8 ± 0.0,86.8,13.667
+SSH,Gzip,151.3 ± 0.0,56.7,51.827
+SSH,Bzip2,154.3 ± 0.0,99.9,115.855
+SSH,Lzma,820.6 ± 0.0,84.1,367.208
+SSH,Zstd Raw,208.4 ± 0.0,98.9,1880.985
+SSH,Logpress,3529.7 ± 0.0,47.8,25504.168
+SSH,Logzip,89.4 ± 0.0,83.8,122.903
+SSH,Logreducer,928.2 ± 0.0,99.1,655.848
+Zookeeper,Gzip,21.4 ± 0.0,98.9,3.633
+Zookeeper,Bzip2,27.5 ± 0.0,99.4,19.999
+Zookeeper,Lzma,693.5 ± 0.0,100.6,26.306
+Zookeeper,Zstd Raw,29.6 ± 0.0,100.0,517.641
+Zookeeper,Logpress,324.5 ± 0.0,31.7,4703.754
+Zookeeper,Logzip,12.2 ± 0.0,89.9,14.976
+Zookeeper,Logreducer,702.9 ± 0.0,77.5,74.368
